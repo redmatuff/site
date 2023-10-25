@@ -1,4 +1,10 @@
+@font-face {
+    font-family: "Reem";
+    src: url(../font/Reem_Kufi_Fun/ReemKufiFun-VariableFont_wght.ttf);
+}
+
 body {
+    font-family: "Reem";
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -9,4 +15,41 @@ main{
     background-color: white;
     flex: 1;
     padding: 2rem;
+}
+
+h1{
+    font-size: 32pt;
+}
+
+h2{
+    font-size: 21pt;
+}
+h3{
+    font-size: 17pt;
+}
+h4{
+    font-size: 14pt;
+}
+
+
+h5{
+    font-size: 10pt;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+h6 {
+    font-size: 9pt;
+    text-decoration: underline;
+}
+
+p{
+    font-size: 12pt;
+}
+
+.corrigir{
+    color: red;
+    font-size: 15pt;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
 }

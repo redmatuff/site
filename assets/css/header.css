@@ -3,6 +3,22 @@
     src: url(../font/Reem_Kufi_Fun/ReemKufiFun-VariableFont_wght.ttf);
 }
 
+@font-face{
+    font-family: "punk-typewriter";
+    src: url(../font/punk_typewriter/Punk\ Typewriter.otf);
+}
+
+@font-face {
+    font-family: "rec";
+    src: url(../font/r_c/R&C-Demo.otf);
+}
+
+@font-face {
+    font-family: "hemi";
+    src: url(../font/hemi_head/hemi\ head\ bd\ it.otf);
+}
+
+
 header{
     font-family: "Reem";
     word-spacing: 4px;
@@ -15,6 +31,7 @@ header .barra-sup{
     align-items: center;
     justify-content: space-around;
     padding: 0 1rem;
+    z-index: 5;
 }
 
 header .titulo-container{
@@ -36,6 +53,7 @@ header .titulo {
 header .div-btns-barra{
     display: flex;
     padding-left: 1rem;
+    z-index: 5;
 }
 
 header .btn-barra {
@@ -64,6 +82,7 @@ header .menu-btn {
     display: flex;
     flex-direction: column;
     width: 5.4rem;
+    opacity: 80%;
 }
 
 header .menu-btn a{
@@ -96,7 +115,42 @@ header nav{
     flex-direction: column;
 }
 
+header #banner {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    height: 35vh;
+    background-color: black;
+    color: white;
+    padding: 0;
+    /* z-index: -2; */
+}
 
+header #banner-txt {
+    font-family: "punk-typewriter";
+    position: absolute;
+    height: 35vh;
+    transform: translate(0, -35vh);
+    color: rgba(255, 255, 255, 0.700);
+    text-shadow: 3px 3px 3px rgba(255, 255, 255, 0.308);
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    padding-left: 3rem;
+    /* background-color: red; */
+    /* z-index: 0; */
+    /* background-color: yellow; */
+}
+header h1{
+    font-size: 25vh;
+    /* background-color: red; */
+    line-height: 20vh;
+    /* padding: -1rem; */
+}
+header h5{
+    font-size: 5vh;
+    /* background-color: blue; */
+    font-weight: 100;
+}
 
 
 /* Estilos para telas com no máximo 1100px*/
@@ -170,10 +224,15 @@ header nav{
     header .barra-sup{
         justify-content: space-between;
     }
+
+    header #banner{
+        visibility: hidden;
+        position: absolute;
+    }
+    header #banner-txt{
+        visibility: hidden;
+    }
 }
-
-
-
 
 /* Estilos para telas com no máximo 580px*/
 @media (max-width: 580px) {
