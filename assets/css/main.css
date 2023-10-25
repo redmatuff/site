@@ -1,0 +1,12 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #2c7b66;
+}
+
+main{
+    background-color: white;
+    flex: 1;
+    padding: 2rem;
+}

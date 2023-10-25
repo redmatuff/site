@@ -1,5 +1,3 @@
-/* Colocar fonte */
-/* Formatar botoes */
 @font-face {
     font-family: "Reem";
     src: url(../font/Reem_Kufi_Fun/ReemKufiFun-VariableFont_wght.ttf);
@@ -11,9 +9,7 @@ header{
 }
 
 header .barra-sup{
-    /* width: 100vw; */
     display: flex;
-    /* flex: 1; */
     background-color: #222;
     color: #fff;
     align-items: center;
@@ -37,25 +33,45 @@ header .titulo {
     align-items: center;
 }
 
-header .btns{
+header .div-btns-barra{
     display: flex;
     padding-left: 1rem;
 }
 
-header button {
+header .btn-barra {
     font-size: 9pt;
     font-weight: 600;
     margin: 0 0.3rem;
     width: 4.8rem;
     height: 2.5rem;
-    background-color: #2c7b66;
+    /* background-color: #2c7b66; */
     /* background-color: #4ACAA8; */
-    /* background-color: rgb(70, 70, 70); */
-    /* background: linear-gradient(to bottom, black, gray, black ); */
+    background: linear-gradient(to bottom, #4ACAA8, #2c7b66);
     color: white;
     border: none;
     border-radius: 10px;
     box-shadow: 3px 3px 5px rgb(0, 0, 0);
+    text-shadow: 2px 2px 3px black;
+}
+
+header .menu-btn {
+    font-size: 9.5pt;
+    position: absolute;
+    background-color: #222;
+    top: 3.9rem;
+    font-weight: 100;
+    padding: 0rem;
+    display: flex;
+    flex-direction: column;
+    width: 5.4rem;
+}
+
+header .menu-btn a{
+    color: white;
+    text-decoration: none;
+    padding: 0.7rem 0rem;
+    text-align: center;
+    
 }
 
 header .hamb-icon-container{
@@ -68,7 +84,17 @@ header .hamb-icon{
 }
 
 
+header nav{
+}
 
+.menu{   
+    position: absolute;
+    right: 0;
+}
+.btns-menu{
+    display: flex;
+    flex-direction: column;
+}
 
 
 
@@ -92,10 +118,49 @@ header .hamb-icon{
         position: inherit;
     }
 
-    header .btns {
-        visibility: hidden;
+    header .div-btns-barra {
+        /* visibility: hidden; */
         position: absolute;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        top: 3.9rem;
+        background-color: #222222ee;
+        padding: 0.5rem 1.5rem;
+        border-top: black solid 2px;
+        
+        /* justify-content: left; */
     }
+
+    header .btn-barra{
+        width: 12rem;
+        font-size: 10pt;
+        font-weight: 600;
+        height: 2.5rem;
+        background-color: #2c7b66;
+        border-radius: 0px;
+        margin: 2px 0;
+        text-align: left;
+    }
+
+    header .menu-btn{
+        position: relative;
+        top: auto;
+        background-color: transparent;
+        width: 10rem;
+        /* background-color: red; */
+        padding: 0 1rem;
+        
+    }
+    
+    header .menu-btn :last-child{
+        margin-bottom: 1rem;
+    }
+
+    header .menu-btn a{
+        text-align: left;
+    }
+
     header .hamb-icon-container {
         position: inherit;
         visibility: visible;
