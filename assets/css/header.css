@@ -52,6 +52,8 @@ header .logo{
 header .titulo {
     margin: 0rem 1rem;
     align-items: center;
+    position: absolute;
+    visibility: hidden;
 }
 
 
@@ -161,7 +163,7 @@ header h4{
         position: absolute;
     }
     header .barra-sup {
-        justify-content: space-between;
+        justify-content: space-around;
     }
 }
 
@@ -205,7 +207,7 @@ header h4{
         background-color: transparent;
         width: 10rem;
         padding: 0 1rem;
-        visibility: visible;
+        visibility: hidden; /* usar no javascript para abrir o menu */
     }
     
     header .menu-btn :last-child{
@@ -226,6 +228,10 @@ header h4{
         justify-content: space-between;
     }
 
+    header .banner-container{
+        position: absolute;
+        visibility: hidden;
+    }
     header #banner{
         visibility: hidden;
         position: absolute;
