@@ -3,12 +3,12 @@
     src: url(../font/Reem_Kufi_Fun/ReemKufiFun-VariableFont_wght.ttf);
 }
 
-@font-face{
+/* @font-face{
     font-family: "punk-typewriter";
     src: url(../font/punk_typewriter/Punk\ Typewriter.otf);
-}
+} */
 
-@font-face {
+/* @font-face {
     font-family: "rec";
     src: url(../font/r_c/R&C-Demo.otf);
 }
@@ -16,13 +16,14 @@
 @font-face {
     font-family: "hemi";
     src: url(../font/hemi_head/hemi\ head\ bd\ it.otf);
-}
+} */
 
 
 header{
     font-family: "Reem";
     word-spacing: 4px;
 }
+
 
 header .barra-sup{
     display: flex;
@@ -34,6 +35,9 @@ header .barra-sup{
     z-index: 5;
 }
 
+
+
+/* TITULO E LOGO */
 header .titulo-container{
     display: flex;
     height: 3.5rem;
@@ -50,20 +54,22 @@ header .titulo {
     align-items: center;
 }
 
+
+
+
+
+/* BARRA DE BOTÕES */
 header .div-btns-barra{
     display: flex;
     padding-left: 1rem;
     z-index: 5;
 }
-
 header .btn-barra {
     font-size: 9pt;
     font-weight: 600;
     margin: 0 0.3rem;
     width: 4.8rem;
     height: 2.5rem;
-    /* background-color: #2c7b66; */
-    /* background-color: #4ACAA8; */
     background: linear-gradient(to bottom, #4ACAA8, #2c7b66);
     color: white;
     border: none;
@@ -72,6 +78,7 @@ header .btn-barra {
     text-shadow: 2px 2px 3px black;
 }
 
+/* MENU DOS BOTÕES */
 header .menu-btn {
     font-size: 9.5pt;
     position: absolute;
@@ -83,8 +90,8 @@ header .menu-btn {
     flex-direction: column;
     width: 5.4rem;
     opacity: 80%;
+    visibility: hidden; /* usar no javascript para aparecer quando clicado */
 }
-
 header .menu-btn a{
     color: white;
     text-decoration: none;
@@ -93,37 +100,33 @@ header .menu-btn a{
     
 }
 
+
+/* ICONE HAMBURGUER */
 header .hamb-icon-container{
     position: absolute;
     visibility: hidden;
 }
-
 header .hamb-icon{
     height: 2rem;
 }
 
 
-header nav{
-}
 
-.menu{   
-    position: absolute;
-    right: 0;
-}
-.btns-menu{
-    display: flex;
-    flex-direction: column;
-}
 
+
+
+/* BANNER */
+header .banner-img{
+    width: 100%;
+    height: 45vh;
+}
 header #banner {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     height: 35vh;
     background-color: black;
     color: white;
     padding: 0;
-    /* z-index: -2; */
 }
-
 header #banner-txt {
     font-family: "punk-typewriter";
     position: absolute;
@@ -133,24 +136,22 @@ header #banner-txt {
     text-shadow: 3px 3px 3px rgba(255, 255, 255, 0.308);
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
     justify-content: center;
     padding-left: 3rem;
-    /* background-color: red; */
-    /* z-index: 0; */
-    /* background-color: yellow; */
 }
+
 header h1{
-    font-size: 25vh;
-    /* background-color: red; */
-    line-height: 20vh;
-    /* padding: -1rem; */
+    font-size: 20vh;
+    line-height: 16vh;
 }
-header h5{
-    font-size: 5vh;
-    /* background-color: blue; */
+header h4{
+    font-size: 4vh;
     font-weight: 100;
 }
+
+
+
+
 
 
 /* Estilos para telas com no máximo 1100px*/
@@ -163,6 +164,8 @@ header h5{
         justify-content: space-between;
     }
 }
+
+
 
 
 /* Estilos para telas com no máximo 768px*/
@@ -182,8 +185,7 @@ header h5{
         background-color: #222222ee;
         padding: 0.5rem 1.5rem;
         border-top: black solid 2px;
-        
-        /* justify-content: left; */
+        visibility: hidden; /* usar no javascript para abrir o menu */
     }
 
     header .btn-barra{
@@ -202,9 +204,8 @@ header h5{
         top: auto;
         background-color: transparent;
         width: 10rem;
-        /* background-color: red; */
         padding: 0 1rem;
-        
+        visibility: visible;
     }
     
     header .menu-btn :last-child{
@@ -233,6 +234,10 @@ header h5{
         visibility: hidden;
     }
 }
+
+
+
+
 
 /* Estilos para telas com no máximo 580px*/
 @media (max-width: 580px) {
