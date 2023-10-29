@@ -3,6 +3,101 @@
     src: url(../font/Reem_Kufi_Fun/ReemKufiFun-VariableFont_wght.ttf);
 }
 
+@font-face {
+    font-family: "banner-1";
+    src: url(../font/Acme/Acme-Regular.ttf);
+}
+
+@font-face {
+    font-family: "banner-2";
+    src: url(../font/Antonio/Antonio-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "banner-3";
+    src: url(../font/Audiowide/Audiowide-Regular.ttf);
+}
+
+@font-face {
+    font-family: "banner-4";
+    src: url(../font/Big_Shoulders_Display/BigShouldersDisplay-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "banner-5";
+    src: url(../font/Caveat/Caveat-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "banner-6";
+    src: url(../font/Graduate/Graduate-Regular.ttf);
+}
+
+@font-face {
+    font-family: "banner-7";
+    src: url(../font/Gruppo/Gruppo-Regular.ttf);
+}
+
+@font-face {
+    font-family: "banner-8";
+    src: url(../font/hemi_head/hemi\ head\ bd\ it.otf);
+}
+
+@font-face {
+    font-family: "banner-9";
+    src: url(../font/Michroma/Michroma-Regular.ttf);
+}
+
+@font-face {
+    font-family: "banner-10";
+    src: url(../font/Odibee_Sans/OdibeeSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: "banner-11";
+    src: url(../font/Orbitron/Orbitron-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "banner-12";
+    src: url(../font/Saira/Saira-Italic-VariableFont_wdth\,wght.ttf);
+}
+
+@font-face {
+    font-family: "banner-13";
+    src: url(../font/Sedgwick_Ave_Display/SedgwickAveDisplay-Regular.ttf);
+}
+
+@font-face {
+    font-family: "banner-14";
+    src: url(../font/Six_Caps/SixCaps-Regular.ttf);
+}
+
+@font-face {
+    font-family: "banner-15";
+    src: url(../font/Sniglet/Sniglet-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: "banner-";
+    src: url(../font/);
+}
+
+@font-face {
+    font-family: "banner-";
+    src: url(../font/);
+}
+
+@font-face {
+    font-family: "banner-";
+    src: url(../font/);
+}
+
+@font-face {
+    font-family: "banner-";
+    src: url(../font/);
+}
+
 /* @font-face{
     font-family: "punk-typewriter";
     src: url(../font/punk_typewriter/Punk\ Typewriter.otf);
@@ -126,29 +221,52 @@ header #banner {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     height: 35vh;
     background-color: black;
-    color: white;
+    /* color: white; */
     padding: 0;
 }
-header #banner-txt {
-    font-family: "punk-typewriter";
+
+
+header .banner-txt-container{
     position: absolute;
-    height: 35vh;
-    transform: translate(0, -35vh);
-    color: rgba(255, 255, 255, 0.700);
-    text-shadow: 3px 3px 3px rgba(255, 255, 255, 0.308);
+    height: 45vh;
+    transform: translate(0, -45vh);
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.30);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 3rem;
+    padding: 0 3rem;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: calc(100% - 2*3rem);
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* 2  10 11 14 */
+header #banner-txt {
+    width: 50%;
+}
+
+header hr {
+    border: 0;
+    height: 3px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 0, 0, 0.75),rgba(255, 0, 0, 0.75),
+        rgba(0, 76, 255, 0.75), rgba(0, 76, 255, 0.75), rgba(255, 255, 255, 0))
 }
 
 header h1{
-    font-size: 20vh;
-    line-height: 16vh;
+    font-family: "banner-10";
+    font-size: 10vh;
+    /* line-height: 16vh; */
+    padding-top: 4vh ;
 }
 header h4{
-    font-size: 4vh;
-    font-weight: 100;
+    font-family: "banner-10";
+    font-size: 3vh;
+    /* line-height: 10pt; */
+    /* font-weight: 600; */
+}
+
+header .titulo-dir{
+    float: right;
 }
 
 
