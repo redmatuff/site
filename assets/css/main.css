@@ -80,20 +80,23 @@ main ul {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    align-items: flex-start;
-    padding-right: 5vw;
+    align-items: stretch;
+    /* padding-right: 3vw; */
     padding-bottom: 4rem;
     padding-top: 1rem;
 }
 
+/* ************************ */
 main ul li {
-    min-width: 33vw;
+    /* line-height: 5pt; */
+    min-width: 40%;
     flex: 1;
     display: flex;
-    /* align-items: center; */
+    align-items: center;
     padding: 0.5rem 0;
     /* justify-content: center; */
     /* background-color: red; */
+    /* border: solid 1px red; */
 }
 
 main ul li img {
@@ -103,6 +106,7 @@ main ul li img {
 
 main ul li p {
     margin: 0 2rem 0 1rem;
+    /* line-height: 50%; */
     /* background-color: blue; */
 }
 
@@ -180,7 +184,7 @@ main p{
     font-weight: 600;
 }
 
-@media (max-width: 630px) {
+@media (max-width: 650px) {
     .recurso-container {
         flex-direction: column;    
     }
@@ -198,6 +202,17 @@ main p{
         max-width: none;
         /* padding-right: 1rem; */
     }
+
+
+    main ul li {
+        min-width: 100%;
+
+    } 
+   
+
+
+
+
 }
 
 @media (min-width: 1400px) {
@@ -235,14 +250,6 @@ main p{
     .apenas-desktop {
         visibility: visible;
         position: inherit;
-    }
-
-
-
-
-
-    main ul li {
-        min-width: 20vw;
     }
 
     .sobre-proj {
