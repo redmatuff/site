@@ -11,6 +11,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
     background-color: #2c7b66;
+    background-color: #002321;
 
 }
 
@@ -21,7 +22,10 @@ main {
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    
+    /* justify-content: space-evenly; */
+    /* background-color: rebeccapurple;  */
+    /* background-color: #002321; */
+    background-color: white;
 }
 
 
@@ -35,6 +39,7 @@ main {
 
 .content {
     padding: 2rem;
+    background-color: white;
 }
 
 .apenas-desktop {
@@ -44,6 +49,7 @@ main {
 
 .recurso-container{
     display: flex;
+    margin-bottom: 2rem;
 }
 
 .recurso-container .img-container{
@@ -76,15 +82,41 @@ main ul {
     flex-wrap: wrap;
     align-items: flex-start;
     padding-right: 5vw;
+    padding-bottom: 4rem;
+    padding-top: 1rem;
 }
 
 main ul li {
     min-width: 33vw;
     flex: 1;
+    display: flex;
+    /* align-items: center; */
+    padding: 0.5rem 0;
+    /* justify-content: center; */
+    /* background-color: red; */
 }
 
 main ul li img {
     height: 2rem;
+    /* margin: 0 1rem; */
+}
+
+main ul li p {
+    margin: 0 2rem 0 1rem;
+    /* background-color: blue; */
+}
+
+main hr {
+    margin-bottom: 3rem;
+    height: 1px;
+    border: 0;
+    /* background-color: white; */
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0));
+}
+
+main .sobre-proj hr{
+    /* background-color: white; */
+    background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(255, 255, 255));
 }
 
 
@@ -148,16 +180,57 @@ main p{
     font-weight: 600;
 }
 
+@media (max-width: 630px) {
+    .recurso-container {
+        flex-direction: column;    
+    }
+    .recurso-descricao{
+        padding: 1rem 0;
+        order: 1;
+    }
+    .img-container{
+        order: 2;
+    }
 
+    .recurso-container img {
+        /* height: 10rem; */
+        /* width: 15rem; */
+        max-width: none;
+        /* padding-right: 1rem; */
+    }
+}
 
-
+@media (min-width: 1400px) {
+    main{
+        background-image: linear-gradient(to right, #3ca488, #3ca488, white, white);
+    }
+    .sobre-proj{
+        max-width: 500px;
+    }
+    .content{
+        max-width: 1000px;
+    }
+}
 
 @media (min-width: 1100px) {
-    main {
+    /* main {
         display: grid;
         grid-template-columns: 35% 65%;
         grid-template-rows: 1fr;
+    } */
+    main{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
     }
+
+    .sobre-proj{
+        width: 35%;
+    }
+    .content{
+        width: 65%;
+    }
+
 
     .apenas-desktop {
         visibility: visible;
