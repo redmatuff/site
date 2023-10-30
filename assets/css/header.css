@@ -264,6 +264,12 @@ header h4{
     /* line-height: 10pt; */
     /* font-weight: 600; */
 }
+header h5 {
+    font-family: "banner-10";
+    font-size: 3vh;
+    /* line-height: 10pt; */
+    /* font-weight: 600; */
+}
 
 header .titulo-dir{
     float: right;
@@ -282,6 +288,9 @@ header .titulo-dir{
     }
     header .barra-sup {
         justify-content: space-around;
+    }
+    header h5 {
+        font-size: 2.5vh;
     }
 }
 
