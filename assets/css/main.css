@@ -49,7 +49,7 @@ main {
 
 .recurso-container{
     display: flex;
-    margin-bottom: 2rem;
+    margin: 1rem 0 2rem 0;
 }
 
 .recurso-container .img-container{
@@ -62,17 +62,44 @@ main {
     max-width: 35vw;
     padding-right: 1rem;
 }
+
+
 .recurso-descricao{
     padding-left: 1rem;
     max-height: 10rem;
-    overflow: hidden;
+    overflow: auto;
+    margin-bottom: 1rem;
+
+    /*  */
+    /* height: 140px;     */
+
+    /*  */
+    /* scrollbar-width: thin; */
+        /* Largura da barra de rolagem */
+    /* scrollbar-color: #763535 #111e98; */
+        /* Cor do indicador e da trilha da barra de rolagem */
+    /* scrollbar-face-color: #611212; */
+            /* Cor do indicador da barra de rolagem no IE */
+    /* scrollbar-track-color: #139d3e; */
+        /* Cor da trilha da barra de rolagem no IE */
+
 }
 
+main ::-webkit-scrollbar {
+    width: 5px;
+     border-radius: 3px;
+}
 
+main ::-webkit-scrollbar-thumb {
+    background-color: #003f3cab;
+    border-radius: 3px;
+}
 
-
-
-
+main ::-webkit-scrollbar-track {
+    background-color: #e0e0e0;
+    border-radius: 3px;
+    /* Cor da trilha da barra de rolagem */
+}
 
 
 
@@ -94,6 +121,7 @@ main ul li {
     display: flex;
     align-items: center;
     padding: 0.5rem 0;
+    height: 3.5rem;
     /* justify-content: center; */
     /* background-color: red; */
     /* border: solid 1px red; */
@@ -127,7 +155,7 @@ main .sobre-proj hr{
 
 
 main h1{
-    font-size: 32pt;
+    font-size: 2.8rem;
     padding: 1rem 0;
     color: #2c7b66;
     background-image: linear-gradient(to bottom, #4ACAA8, #2c7b66);
@@ -138,26 +166,26 @@ main h1{
 
 main h2{
     color: #003f3cab;
-    font-size: 21pt;
+    font-size: 2rem;
     padding: 1rem 0;
 }
 
 main h3{
     color: #003f3cab;
-    font-size: 17pt;
+    font-size: 1.5rem;
     padding: 1rem 0;
 }
 
 main h4{
     color: #003f3cab;
-    font-size: 14pt;
+    font-size: 1.2rem;
     padding: 1rem 0;
 }
 
 
 main h5{
     color: #003f3cab;
-    font-size: 10pt;
+    font-size: 0.7rem;
     font-weight: 600;
     text-decoration: underline;
     padding: 1rem 0;
@@ -165,21 +193,21 @@ main h5{
 
 main h6 {
     color: #003f3cab;
-    font-size: 9pt;
+    font-size: 0.85rem;
     text-decoration: underline;
     padding: 1rem 0;
 }
 
 main p{
-    font-size: 12pt;
+    font-size: 1rem;
     padding: 0.4rem 0;
-    line-height: 16pt;
+    line-height: 1.4rem;
     font-weight: 100;
 }
 
 .corrigir{
     color: red;
-    font-size: 15pt;
+    font-size: 1.3rem;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 600;
 }
@@ -260,7 +288,8 @@ main p{
         /* border-top: solid 1px white; */
         /* border-bottom: solid 1px white; */
         /* border-right: solid 1px black; */
-        box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+        box-shadow: 4px 0px 3px rgba(0, 0, 0, 0.6);
+        z-index: 2;
     }
     
     .sobre-proj p{
@@ -269,7 +298,7 @@ main p{
     }
 
     .sobre-proj h1 {
-        font-size: 32pt;
+        font-size: 2.8rem;
         padding: 1rem 0;
         color: #00282685;
         /* background-image: linear-gradient(to bottom, #2c7b66, #2c7b66, #000);
