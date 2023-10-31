@@ -24,7 +24,7 @@ hamburgerIcon.addEventListener('click', function(){
 });
 
 window.addEventListener('resize', function(){
-    if (window.innerWidth >= 768){
+    if (window.innerWidth > 768){
         menu.style.visibility = 'visible';
         for (let i = 0; i < menuBtn.length; i++){
             menuBtn[i].style.visibility = 'hidden';
@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', function() {
         botao.addEventListener('click', function() {
 
 
-            if(window.innerWidth >= 768){
+            if(window.innerWidth > 768){
                 console.log("botao clicado");
                 // Fecha todos os menus
                 menus.forEach(function(menu) {
@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Adiciona um ouvinte de clique ao documento para fechar o menu se clicar fora do botão/menus
     document.addEventListener('click', function(event) {
-        if (!event.target.matches('.div-btns-barra .btn-barra') && window.innerWidth >= 768) {
+        if (!event.target.matches('.div-btns-barra .btn-barra') && window.innerWidth > 768) {
             menus.forEach(function(menu) {
                 menu.style.visibility = 'hidden';
             });

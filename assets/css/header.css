@@ -331,7 +331,7 @@ header .titulo-dir{
         right: 0;
         display: flex;
         flex-direction: column;
-        top: 3.9rem;
+        top: 6rem;
         background-color: #222222ee;
         padding: 0.5rem 1.5rem;
         border-top: black solid 2px;
