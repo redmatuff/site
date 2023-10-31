@@ -414,3 +414,19 @@ header .titulo-dir{
         /* width: calc(1400px - 2*3rem); */
     }
 }
+
+
+@media (min-height: 1200px) {
+    header h1{
+        font-size: 80pt;
+    }
+    header h4{
+        font-size: 20pt;
+    }
+
+    header h5{
+        font-size: 15pt;
+    }
+
+
+}
