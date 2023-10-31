@@ -7,16 +7,17 @@ const menuBtn = document.querySelectorAll('.menu-btn');
 hamburgerIcon.addEventListener('click', function(){
     // console.log('ctrlMenu chamado');
     if (menuAtivo == 0){
-        menu.style.visibility = 'visible';
+        menu.style.display = 'flex';
+
         for (let i = 0; i < menuBtn.length; i++){
-            menuBtn[i].style.visibility = 'visible';
+            menuBtn[i].style.display = 'flex';
         }
         menuAtivo = 1;
         console.log('menu visivel');
     }else{
-        menu.style.visibility = 'hidden';
+        menu.style.display = 'none';
         for (let i = 0; i < menuBtn.length; i++){
-            menuBtn[i].style.visibility = 'hidden';
+            menuBtn[i].style.display = 'none';
         }        
         menuAtivo = 0;   
         console.log('menu escondido');
@@ -25,15 +26,15 @@ hamburgerIcon.addEventListener('click', function(){
 
 window.addEventListener('resize', function(){
     if (window.innerWidth > 768){
-        menu.style.visibility = 'visible';
+        menu.style.display = 'flex';
         for (let i = 0; i < menuBtn.length; i++){
-            menuBtn[i].style.visibility = 'hidden';
+            menuBtn[i].style.display = 'none';
         }        menuAtivo = 1;
         // console.log(menuAtivo);
     }else{
-        menu.style.visibility = 'hidden';
+        menu.style.display = 'none';
         for (let i = 0; i < menuBtn.length; i++){
-            menuBtn[i].style.visibility = 'hidden';
+            menuBtn[i].style.display = 'none';
         }        menuAtivo = 0;
         // console.log(menuAtivo);
     }
@@ -44,9 +45,9 @@ document.addEventListener('click', function(event) {
         // console.log('Clique dentro do menu!');
     }else {
         if(window.innerWidth <= 768){
-            menu.style.visibility = 'hidden';
+            menu.style.display = 'none';
             for (let i = 0; i < menuBtn.length; i++){
-                menuBtn[i].style.visibility = 'hidden';
+                menuBtn[i].style.display = 'none';
             }        
             menuAtivo = 0;
         }
@@ -68,11 +69,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 console.log("botao clicado");
                 // Fecha todos os menus
                 menus.forEach(function(menu) {
-                    menu.style.visibility = 'hidden';
+                    menu.style.display = 'none';
                     console.log("escondeu");
                 });
                 // Abre o menu associado ao botão clicado
-                menus[index].style.visibility = 'visible';            
+                menus[index].style.display = 'flex';            
             }
 
 
@@ -84,7 +85,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.addEventListener('click', function(event) {
         if (!event.target.matches('.div-btns-barra .btn-barra') && window.innerWidth > 768) {
             menus.forEach(function(menu) {
-                menu.style.visibility = 'hidden';
+                menu.style.display = 'none';
             });
         }
     });
