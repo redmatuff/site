@@ -144,13 +144,31 @@ header .logo{
     margin: 0;
     height: 3rem;
 }
-header .titulo {
+header .titulo-barra{
     margin: 0rem 1rem;
     align-items: center;
     position: absolute;
     visibility: hidden;
 }
 
+header .titulo-barra-longo {
+    position: absolute;
+    visibility: hidden;
+}
+
+header .titulo-barra-curto {
+    position: absolute;
+    visibility: hidden;
+}
+
+header h2 {
+    font-size: 1rem;
+    margin-top: 0.3rem;
+}
+header h3{
+    font-size: 0.65rem;
+    margin-bottom: 0.2rem;
+}
 
 
 
@@ -278,7 +296,7 @@ header .titulo-dir{
 
 /* Estilos para telas com no máximo 1100px*/
 @media (max-width: 1100px) {
-    header .titulo {
+    header .titulo-barra{
         visibility: hidden;
         position: absolute;
     }
@@ -298,7 +316,11 @@ header .titulo-dir{
 
 /* Estilos para telas com no máximo 768px*/
 @media (max-width: 768px) {
-    header .titulo {
+    header .barra-sup {
+        height: 6rem;
+    }
+
+    header .titulo-barra{
         visibility: visible;
         position: inherit;
     }
@@ -365,6 +387,12 @@ header .titulo-dir{
     header #banner-txt{
         visibility: hidden;
     }
+
+    header .titulo-barra-longo {
+        position: inherit;
+        visibility: visible;
+    }
+
 }
 
 
@@ -372,13 +400,34 @@ header .titulo-dir{
 
 
 /* Estilos para telas com no máximo 580px*/
-@media (max-width: 580px) {
+@media (max-width: 660px) {
     header .barra-sup {
-        
+        height: 6rem;
     }
-    header .titulo {
-        visibility: hidden;
+    header .titulo-barra{
+        /* display: flex; */
+        /* align-items: center; */
+        /* justify-content: center; */
+        /* flex: 1; */
+        /* background-color: red; */
+    }
+
+    header .titulo-container{
+        display: flex;
+        /* justify-content: space-between; */
+        flex: 1;
+        /* padding-right: 30%; */
+        /* background-color: red; */
+    }
+
+    header .titulo-barra-longo {
         position: absolute;
+        visibility: hidden;
+    }
+
+    header .titulo-barra-curto {
+        position: inherit;
+        visibility: visible;
     }
 }
 
@@ -413,6 +462,7 @@ header .titulo-dir{
     header .banner-txt-container {
         /* width: calc(1400px - 2*3rem); */
     }
+
 }
 
 

@@ -59,7 +59,6 @@ main {
 .recurso-container img{
     height: 10rem;
     width: 15rem;
-    max-width: 35vw;
     padding-right: 1rem;
 }
 
@@ -211,6 +210,16 @@ main p{
     font-family: 'Courier New', Courier, monospace;
     font-weight: 600;
 }
+
+
+@media (max-width: 400px) {
+    .recurso-container img {
+        height: 40vw;
+        width: 60vw;
+        padding-right: 1rem;
+    }
+}
+
 
 @media (max-width: 650px) {
     .recurso-container {
