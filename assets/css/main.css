@@ -211,6 +211,41 @@ main p{
     font-weight: 600;
 }
 
+.linha-form{
+    display: flex;
+    flex: 1;
+    justify-content: end;
+}
+
+.linha-form input{
+    font-family: "Reem";
+    width: 100%;
+    padding: 0.6rem;
+    border-radius: 5px;
+    border-color: transparent;
+    margin: 0.2rem;
+}
+
+.linha-form textarea {
+    font-family: "Reem";
+    width: 100%;
+    padding: 0.6rem;
+    border-radius: 5px;
+    border-color: transparent;
+    margin: 0.2rem;
+    height: 8rem;
+}
+
+.linha-form button{
+    font-family: "Reem";
+    padding: 0.6rem;
+    border-radius: 5px;
+    margin: 0.2rem;
+    border: transparent;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.65);
+}
+
+
 
 @media (max-width: 400px) {
     .recurso-container img {
