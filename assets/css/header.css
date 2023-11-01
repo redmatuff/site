@@ -342,7 +342,7 @@ header .titulo-dir{
         background-color: #222222ee;
         padding: 0.5rem 1.5rem;
         border-top: black solid 2px;
-        display: flex;
+        display: none;
         position: absolute;
         /* visibility: hidden; usar no javascript para abrir o menu */
     }
