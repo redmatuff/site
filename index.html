@@ -1,12 +1,8 @@
-<!-- Implementar botão de resetar formulário -->
-<!-- Obrigar colocar um e-mail no formulário para poder clicar em enviar -->
-<!-- Exibir mensagem mostranso que a mensagem foi enviada corretamente ou não (caso e-mail nao tenha sido adicionado) -->
-<!-- Voltar com a mensagem no formulário caso a mensagem não tenha sido enviada -->
-
-<!-- Adição de links externos no footer-->
 <!-- Limpeza e organização do código -->
 <!-- Criação de outras páginas -->
 <!-- Adição de links internos para outras páginas -->
+<!-- Consertar Javascript do menu de modo que ao passar o mouse em cima já abre o menu do botão -->
+<!-- Consertar o Javascipt de modo que ao tirar o cursor, o menu feche-->
 
 
 <!DOCTYPE html>
@@ -23,112 +19,188 @@
     <link rel="stylesheet" href="assets/css/index.css">
 </head>
 <body>
+
     
+
+
+    
+
     <header>
+
+        <!-- Header 1. Barra Superior -->
         <div class="barra-sup">
 
-            <!-- titulo e logo -->
+            <!-- Header 1.1. Titulo e Logo -->
             <div class="titulo-container">
-                <img src="assets/icons/logo-transparente.png" alt="logo REDMat" class="logo">
+                
+                <!-- Header 1.1.1. Logo -->
+                <a href="index.html">
+                    <img src="assets/icons/logo-transparente.png" alt="logo REDMat" class="logo">
+                </a>
+
+                <!-- Header 1.1.2. Títulos Longos e Curtos -->
                 <div class="titulo-barra">
+
                     <div class="titulo-barra-longo">
-                        <h3>Universidade Federal Fluminense</h3>
-                        <h3>Instituto de Matemática e Estatística</h3>
+                        <a href="https://www.uff.br/">                   
+                            <h3>Universidade Federal Fluminense</h3>
+                        </a>
+                        <a href="https://ime.uff.br/">
+                            <h3>Instituto de Matemática e Estatística</h3>
+                        </a>
                         <h2>Recursos&nbsp;Educacionais&nbsp;Digitais para o Ensino&nbsp;da&nbsp;Matemática</h2>
                     </div>
-
                         
                     <div class="titulo-barra-curto">
-                        <h3>Universiade Federal Fuminense</h3>
-                        <h3>Instituto de Matemática e Estatística</h3>
+                        <a href="https://www.uff.br/">                   
+                            <h3>Universiade Federal Fuminense</h3>
+                        </a>
+                        <a href="https://ime.uff.br/">
+                            <h3>Instituto de Matemática e Estatística</h3>
+                        </a>
                     </div>
 
-
                 </div>
-                <!-- <div></div> -->
+
             </div>
 
-            <!-- botões -->
+            <!-- Header 1.2. Barra de Botões ou Menu -->
             <div class="div-btns-barra">
-                
-                <button class="btn-barra">Home</button>
-                    <div class="menu-btn">
 
-                    </div>
-                <button class="btn-barra">Quem Somos</button>
-                    <div class="menu-btn">
-
-                    </div>
-                <button class="btn-barra">Seja Membro</button>
-                    <div class="menu-btn">
-
-                    </div>
-                
+                <!-- Botão 1 -->
                 <div>
-                    <button class="btn-barra">Projetos de Ensino</button>
+                    <a href="index.html">
+                        <button class="btn-barra">Home</button> <!-- Botão da barra-->
+                    </a>
                     <div class="menu-btn">
-                        <a href="#">opção 1</a>
-                        <a href="#">opção 2</a>
-                        <a href="#">opção 3</a>
+                        <!-- Colocar tags <a> aqui para criar o menu do botão -->
+                        <!-- <a href="link">Exemplo</a> -->
                     </div>
                 </div>
-                
+                <!-- Fim do Botão 1. Pra criar novos botões basta copiar estas ultimas ~10 linhas de código -->
+                <!-- A criação de novos botões pode prejudicar a responsividade do código. Recomenda-se manter o número de botões menor ou igual a 7, e avaliar qual botão é dispensável. Exemplo: Quem Somos e Seja Membro pode se fundir em um único botão. Além disso, Home é um botão dispensável já que é possível is para página inicial clicando no logo na barra -->
+
+
+                <!-- Botão 2 -->
                 <div>
-                    <button class="btn-barra">Livros Eletrônicos</button>
+                    <a href="pages/quem-somos.html">
+                        <button class="btn-barra">Quem Somos</button>
+                    </a>
                     <div class="menu-btn">
-                        <a href="#">opção 1</a>
-                        <a href="#">opção 2</a>
-                        <a href="#">opção 3</a>
+
                     </div>
                 </div>
+                <!-- Fim do Botão 2 -->
                 
+                <!-- Botão 3 -->
                 <div>
-                    <button class="btn-barra">Recursos Digitais</button>
+                    <a href="pages/seja-membro.html">
+                        <button class="btn-barra">Seja Membro</button>
+                    </a>
                     <div class="menu-btn">
-                        <a href="#">menu do botão</a>
-                        <a href="#">menu do botão</a>
-                        <a href="#">menu do botão</a>
+
+                    </div>
+                </div>
+                <!-- Fim do Botão 3 -->
+
+                <!-- Botão 4 -->
+                <div>
+                    <a href="pages/proj-ensino.html">
+                        <button class="btn-barra">Projetos de Ensino</button>
+                    </a>
+                    <div class="menu-btn">
+                        <a href="#">Geogebra 3D (2020-2021)</a>
+                        <a href="#">Disciplinas no distanciamento social (2020)</a>
+                        <a href="#">Novas tecnologias de ensino (2020--)</a>
+                        <a href="#">GACV (2020-2022)</a>
+                        <a href="#">FCG (2023--)</a>
+                    </div>
+                </div>
+                <!-- Fim do Botão 4 -->
+
+                <!-- Botão 5 -->
+                <div>
+                    <a href="pages/livros-eletronicos.html">
+                        <button class="btn-barra">Livros Eletrônicos</button>
+                    </a>        
+                    <div class="menu-btn">
+                        <a href="#">Calculo com Geobebra 3D vol. I</a>
+                        <a href="#">Calculo com Geobebra 3D vol. II</a>
+                        <a href="#">Geometria Analítica com Geogebra</a>
+                        <a href="#">Apostila Cálculo Diferencial de Várias Variáveis</a>
+                        <a href="#">Site Cálculo 1A (em andamento)</a>
+                        <a href="#">Site Cálculo 2B (em andamento)</a>
+                        <a href="#">Site Cálculo 3A (em andamento)</a>
+                    </div>
+                </div>
+                <!-- Fim do Botão 5 -->
+                
+                <!-- Botão 6 -->
+                <div>
+                    <a href="pages/recursos.html">
+                        <button class="btn-barra">Recursos Digitais</button>
+                    </a>
+                    
+                    <div class="menu-btn">
+                        <a href="#">Funções de Uma Variável</a>
+                        <a href="#">Cálculo de Funções de Uma Variável</a>
+                        <a href="#">Cálculo de Funções de Várias Variáveis</a>
+                        <a href="#">Equações Diferenciais Ordinárias</a>
                     </div>               
                 </div>
+                <!-- Fim do Botão 6 -->
                 
-
+                <!-- Botão 7 -->
                 <div>
-                    <button class="btn-barra">Contato</button>
+                    <a href="pages/contato.html">
+                        <button class="btn-barra">Contato</button>
+                    </a>
                     <div class="menu-btn">
 
                     </div>
                 </div>
-                
             </div>
+            <!-- Fim do Botão 7 -->
 
-            <!-- menu hamb icon -->
+             <!-- Header 1.3. Ícone do Menu Hamburguer -->
             <div class="hamb-icon-container">
                 <img class="hamb-icon" src="assets/icons/hamb-traco.png" alt="icone-hamburguer">
             </div>
+
         </div>
 
-        <!-- <div id="banner">
-            
-        </div> -->
-        <div class="banner-container">
-            <img class="banner-img" src="assets/img/banner-redmat V5 brilho.png" alt="banner">
-            <div class="banner-txt-container">
 
+        <!-- Header 2. Banner -->
+        <div class="banner-container">
+
+            <!-- Header 2.1. Imagem do Banner -->
+            <img class="banner-img" src="assets/img/banner-redmat V5 brilho.png" alt="banner">
+
+            <!-- Header 2.2. Textos do Banner -->
+            <div class="banner-txt-container">
                 <div id = "banner-txt">
-                    <h4>Universidade Federal Fluminense</h4>
-                    <h4>Instituto de Matemática e Estatística</h4>
-                    <h1>REDMat</h1>
+                    <a href="https://www.uff.br/">                   
+                        <h4>Universidade Federal Fluminense</h4>
+                    </a>
+                    <a href="https://ime.uff.br/">
+                        <h4>Instituto de Matemática e Estatística</h4>
+                    </a>
+                    <a href="index.html">
+                        <h1>REDMat</h1>
+                    </a>
                     <hr>
                     <h5 class="titulo-dir">Recursos&nbsp;Educacionais&nbsp;Digitais para&nbsp;o&nbsp;ensino&nbsp;da&nbsp;Matemática</h5>
                 </div>
-
-
-
             </div>
+
         </div>
 
-
     </header>
+
+
+
+
+
 
     
     <main>
@@ -163,20 +235,19 @@
                     <form action="https://formsubmit.co/redmatuff@gmail.com" method="POST">
                         <div class="linha-form">
                             <input type="text" placeholder="Nome" name="name">
-                            <input type="text" placeholder="E-mail" name="email">
+                            <input type="text" placeholder="E-mail" name="email" pattern=".+@.+[.].+" required title="Por favor, insira um endereço de e-mail válido (ex: exemplo@dominio.com)">
                         </div>
                         <div class="linha-form">
                             <input type="text" placeholder="Assunto" name="_subject">
                         </div>
                         <input type="hidden" name="_captcha" value="false">
                         <div class="linha-form">
-                            <textarea id="mensagem" class="msg" type="text" placeholder="Mensagem" name="message"></textarea>
+                            <textarea id="mensagem" class="msg" type="text" placeholder="Mensagem" name="message" required></textarea>
                         </div>
                         <div class="linha-form">
-                            <button>Resetar Formulário</button>
                             <button>Enviar Mensagem</button>
                         </div>
-                        <input type="hidden" name="_next" value="https://redmatuff.github.io/site/">
+                        <input type="hidden" name="_next" value="https://redmatuff.github.io/pages/msg-enviada.html">
                     </form>
              
 
@@ -197,7 +268,7 @@
             <h2>Projetos de Ensino com participação do REDMat</h2>
             <p>Os monitores REDMAT atuaram ou atuam nos seguintes projetos de ensino do Instituto de Matemática e Estatística.</p>
             <ul>
-                <li><img src="assets/icons/geogebra-icon.png" alt="icone geogebra 3D"><p>Geogebra&nbsp;3D (2020-2021)</p></li>
+                <li><img src="assets/icons/geogebra-icon-peq.png" alt="icone geogebra 3D"><p>Geogebra&nbsp;3D (2020-2021)</p></li>
                 <li><img src="assets/icons/livro-icone.png" alt="icone geogebra 3D"><p>Disciplinas no distanciamento social&nbsp;(2020)</p></li>
                 <li><img src="assets/icons/raio-icone.png" alt="icone geogebra 3D"><p>Novas tecnologias de ensino&nbsp;(2020--)</p></li>
                 <li><img src="assets/icons/raio-icone.png" alt="icone geogebra 3D"><p>GACV (2020-2022)</p></li>
@@ -209,9 +280,9 @@
             <h2>Livros eletrônicos, Apostilas e Ambientes Virtuais de Aprendizagem</h2>
             <p>Os monitores REDMAT colaboraram na produção do seguinte material digital:</p>
             <ul>
-                <li><img src="assets/icons/geogebra-icon.png" alt="icone geogebra 3D"><p>Calculo com Geobebra&nbsp;3D vol.&nbsp;I</p></li>
-                <li><img src="assets/icons/geogebra-icon.png" alt="icone geogebra 3D"><p>Calculo com Geobebra&nbsp;3D vol.&nbsp;II</p></li>
-                <li><img src="assets/icons/geogebra-icon.png" alt="icone geogebra 3D"><p>Geometria Analítica com Geogebra</p></li>
+                <li><img src="assets/icons/geogebra-icon-peq.png" alt="icone geogebra 3D"><p>Calculo com Geobebra&nbsp;3D vol.&nbsp;I</p></li>
+                <li><img src="assets/icons/geogebra-icon-peq.png" alt="icone geogebra 3D"><p>Calculo com Geobebra&nbsp;3D vol.&nbsp;II</p></li>
+                <li><img src="assets/icons/geogebra-icon-peq.png" alt="icone geogebra 3D"><p>Geometria Analítica com Geogebra</p></li>
                 <li><img src="assets/icons/livro-icone.png" alt="icone geogebra 3D"><p>Apostila Cálculo Diferencial de Várias Variáveis</p></li>
 
                 <li><img src="assets/icons/site-icone.png" alt="icone geogebra 3D"><p>Site Cálculo&nbsp;1A (em&nbsp;andamento)</p></li>
@@ -226,7 +297,7 @@
             
             <div class="recurso-container">
                 <div class="img-container">
-                    <img src="assets/img/img-padrao.bmp" alt="funções de uma variável">
+                    <img src="assets/img/func.png" alt="funções de uma variável">
 
                 </div>
                 <div class="recurso-descricao">
@@ -238,7 +309,7 @@
             
             <div class="recurso-container">
                 <div class="img-container">
-                    <img src="assets/img/img-padrao.bmp" alt="funções de uma variável">
+                    <img src="assets/img/calc1.png" alt="calculo de funções de uma variável">
 
                 </div>
                 <div class="recurso-descricao">
@@ -250,7 +321,7 @@
 
             <div class="recurso-container">
                 <div class="img-container">
-                    <img src="assets/img/img-padrao.bmp" alt="funções de várias variáveis">
+                    <img src="assets/img/calc2.png" alt="calculo de funções de várias variáveis">
 
                 </div>
                 <div class="recurso-descricao">
@@ -262,7 +333,7 @@
 
             <div class="recurso-container">
                 <div class="img-container">
-                    <img src="assets/img/img-padrao.bmp" alt="equações diferenciais ordinárias">
+                    <img src="assets/img/edo.png" alt="equações diferenciais ordinárias">
 
                 </div>
                 <div class="recurso-descricao">
@@ -312,12 +383,21 @@
                 <p>Blocos G - Campus do Gragoatá</p>
                 <p>24.210-201</p>
                 <p>São Domingos - Niterói - RJ</p>
-                <p>redmatuff@gmail.com</p>
+                <p>
+                <a href="mailto:@redmatuff@gmail.com">redmatuff@gmail.com</a>
+                </p>
             </div>
             <div class="sec-ft" id="sec-1">
-                <img src="assets/icons/instagram.png" alt="icone do instagram">
-                <img src="assets/icons/youtube.png" alt="icone do youtube">
-                <img src="assets/icons/telegram.png" alt="icone do telegram">
+                <a href="https://www.instagram.com/monitoriaredmatuff/" target="_blank">
+                    <img src="assets/icons/instagram.png" alt="icone do instagram">
+                </a>
+
+                <a href="https://www.youtube.com/@redmatematicadauff1602" target="_blank">
+                    <img src="assets/icons/youtube.png" alt="icone do youtube">
+                </a>
+                <a href="https://www.t.me/balarconUFF"  target="_blank">
+                    <img src="assets/icons/telegram.png" alt="icone do telegram">
+                </a>
             </div>
         </div>
         <p class="copyright">© 2023 REDMat - Todos os Direitos Reservados</p>

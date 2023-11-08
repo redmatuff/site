@@ -4,125 +4,20 @@
 }
 
 @font-face {
-    font-family: "banner-1";
-    src: url(../font/Acme/Acme-Regular.ttf);
-}
-
-@font-face {
-    font-family: "banner-2";
-    src: url(../font/Antonio/Antonio-VariableFont_wght.ttf);
-}
-
-@font-face {
-    font-family: "banner-3";
-    src: url(../font/Audiowide/Audiowide-Regular.ttf);
-}
-
-@font-face {
-    font-family: "banner-4";
-    src: url(../font/Big_Shoulders_Display/BigShouldersDisplay-VariableFont_wght.ttf);
-}
-
-@font-face {
-    font-family: "banner-5";
-    src: url(../font/Caveat/Caveat-VariableFont_wght.ttf);
-}
-
-@font-face {
-    font-family: "banner-6";
-    src: url(../font/Graduate/Graduate-Regular.ttf);
-}
-
-@font-face {
-    font-family: "banner-7";
-    src: url(../font/Gruppo/Gruppo-Regular.ttf);
-}
-
-@font-face {
-    font-family: "banner-8";
-    src: url(../font/hemi_head/hemi\ head\ bd\ it.otf);
-}
-
-@font-face {
-    font-family: "banner-9";
-    src: url(../font/Michroma/Michroma-Regular.ttf);
-}
-
-@font-face {
-    font-family: "banner-10";
+    font-family: "odibee";
     src: url(../font/Odibee_Sans/OdibeeSans-Regular.ttf);
 }
-
-@font-face {
-    font-family: "banner-11";
-    src: url(../font/Orbitron/Orbitron-VariableFont_wght.ttf);
-}
-
-@font-face {
-    font-family: "banner-12";
-    src: url(../font/Saira/Saira-Italic-VariableFont_wdth\,wght.ttf);
-}
-
-@font-face {
-    font-family: "banner-13";
-    src: url(../font/Sedgwick_Ave_Display/SedgwickAveDisplay-Regular.ttf);
-}
-
-@font-face {
-    font-family: "banner-14";
-    src: url(../font/Six_Caps/SixCaps-Regular.ttf);
-}
-
-@font-face {
-    font-family: "banner-15";
-    src: url(../font/Sniglet/Sniglet-ExtraBold.ttf);
-}
-
-@font-face {
-    font-family: "banner-";
-    src: url(../font/);
-}
-
-@font-face {
-    font-family: "banner-";
-    src: url(../font/);
-}
-
-@font-face {
-    font-family: "banner-";
-    src: url(../font/);
-}
-
-@font-face {
-    font-family: "banner-";
-    src: url(../font/);
-}
-
-/* @font-face{
-    font-family: "punk-typewriter";
-    src: url(../font/punk_typewriter/Punk\ Typewriter.otf);
-} */
-
-/* @font-face {
-    font-family: "rec";
-    src: url(../font/r_c/R&C-Demo.otf);
-}
-
-@font-face {
-    font-family: "hemi";
-    src: url(../font/hemi_head/hemi\ head\ bd\ it.otf);
-} */
-
 
 header{
     font-family: "Reem";
     word-spacing: 4px;
 }
 
-
+/* 1. BARRA SUPERIOR */
 header .barra-sup{
     display: flex;
     background-color: #222;
+    background-image: linear-gradient(to left, #000, #222, #000);
     color: #fff;
     align-items: center;
     justify-content: space-around;
@@ -131,37 +26,31 @@ header .barra-sup{
 }
 
 
-
-/* TITULO E LOGO */
+/* 1.1. TITULO E LOGO */
 header .titulo-container{
     display: flex;
     height: 3.5rem;
     align-items: center;
     padding: 0.2rem;
 }
+
 header .logo{
     padding: 0;
     margin: 0;
     height: 3rem;
 }
+
 header .titulo-barra{
     margin: 0rem 1rem;
     align-items: center;
-
     display: none;
-    /* position: absolute; */
-    /* visibility: hidden; */
 }
 
 header .titulo-barra-longo {
     display: none;
-    /* position: absolute; */
-    /* visibility: hidden; */
 }
 
 header .titulo-barra-curto {
-    /* position: absolute; */
-    /* visibility: hidden; */
     display: none;
 }
 
@@ -169,11 +58,11 @@ header h2 {
     font-size: 1rem;
     margin-top: 0.3rem;
 }
+
 header h3{
     font-size: 0.65rem;
     margin-bottom: 0.2rem;
 }
-
 
 
 
@@ -182,9 +71,11 @@ header .div-btns-barra{
     display: flex;
     padding-left: 1rem;
     z-index: 5;
+    position: relative;
 }
 
 header .btn-barra {
+    cursor: pointer;
     font-size: 9pt;
     font-weight: 600;
     margin: 0 0.3rem;
@@ -202,16 +93,19 @@ header .btn-barra {
 header .menu-btn {
     font-size: 9.5pt;
     background-color: #222;
-    top: 3.9rem;
+    top: 3.1rem;
     font-weight: 100;
     padding: 0rem;
     display: flex;
     flex-direction: column;
     width: 5.4rem;
+    width: 8.4rem;
+    transform: translateX(-1.5rem);
     opacity: 80%;
 
     display: none;
     position: absolute;
+    /* z-index: -2; */
     /* visibility: hidden; usar no javascript para aparecer quando clicado */
 }
 header .menu-btn a{
@@ -219,6 +113,8 @@ header .menu-btn a{
     text-decoration: none;
     padding: 0.7rem 0rem;
     text-align: center;
+    /* width: 30rem; */
+    /* background-color: red; */
     
 }
 
@@ -264,6 +160,12 @@ header .banner-txt-container{
 header #banner-txt {
     width: 50%;
     overflow: hidden;
+    /* background-color: red; */
+}
+
+header #banner-txt a{
+    display: flex;
+    width: fit-content;
 }
 
 header hr {
@@ -274,22 +176,27 @@ header hr {
 }
 
 header h1{
-    font-family: "banner-10";
+    font-family: "odibee";
     font-size: 10vh;
     /* line-height: 16vh; */
     padding-top: 4vh ;
 }
 header h4{
-    font-family: "banner-10";
+    font-family: "odibee";
     font-size: 3vh;
     /* line-height: 10pt; */
     /* font-weight: 600; */
 }
 header h5 {
-    font-family: "banner-10";
+    font-family: "odibee";
     font-size: 3vh;
     /* line-height: 10pt; */
     /* font-weight: 600; */
+}
+
+header a {
+    text-decoration: inherit;
+    color: inherit;
 }
 
 header .titulo-dir{
@@ -328,6 +235,10 @@ header .titulo-dir{
         height: 6rem;
     }
 
+    header .area-menu {
+        display: none;
+    }
+
     header .titulo-barra{
         display: inline;
         /* visibility: visible; */
@@ -352,6 +263,7 @@ header .titulo-dir{
         font-size: 10pt;
         font-weight: 600;
         height: 2.5rem;
+        /* cursor: pointer; */
         /* background: linear-gradient(to bottom, #4acaa850, #2c7b6650); */
         /* background: rgba(0, 0, 0, 0.3); */
         background: transparent;
@@ -364,7 +276,7 @@ header .titulo-dir{
         box-shadow: none;
         /* text-decoration: underline; */
         /* line-height: 20rem; */
-
+        
         display: flex;
         align-items: end;
         justify-content: center;

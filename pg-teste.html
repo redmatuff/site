@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Função de Bessel (J0)</title>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <style>
+    /* Estilo para o gráfico */
+    svg {
+      width: 100%;
+      height: 300px;
+    }
+    path {
+      fill: none;
+      stroke: #007bff; /* Cor da linha do gráfico */
+      stroke-width: 2px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Função de Bessel (J0)</h1>
+  <svg></svg>
+
+  <script>
+    // Configuração do gráfico
+    const width = window.innerWidth;
+    const height = 300;
+    const margin = { top: 20, right: 20, bottom: 30, left: 40 };
+
+    const svg = d3.select('svg')
+      .attr('width', width)
+      .attr('height', height);
+
+    const xScale = d3.scaleLinear()
+      .domain([0, 20]) // Intervalo de x de 0 a 20 (ajuste conforme necessário)
+      .range([margin.left, width - margin.right]);
+
+    const yScale = d3.scaleLinear()
+      .domain([-1, 1]) // Intervalo de y de -1 a 1
+      .range([height - margin.bottom, margin.top]);
+
+    const line = d3.line()
+      .x(d => xScale(d.x))
+      .y(d => yScale(d.y));
+
+    // Calcula a função de Bessel de primeira espécie de ordem zero (J0(x))
+    function besselJ0(x) {
+      let result = 0;
+      let factorial = 1;
+      for (let n = 0; n <= 20; n++) {
+        result += (Math.pow(-1, n) / (factorial * factorial)) * Math.pow(x / 2, 2 * n);
+        factorial *= (n + 1);
+      }
+      return result;
+    }
+
+    const data = d3.range(0, 20.1, 0.1).map(x => ({ x, y: besselJ0(x) }));
+
+    // Desenha o gráfico
+    svg.append('path')
+      .datum(data)
+      .attr('d', line);
+
+  </script>
+</body>
+</html>
