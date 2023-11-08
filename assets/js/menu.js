@@ -73,9 +73,10 @@ document.addEventListener('click', function(event) {
 
 
 // ****** BUSCAR MANEIRA DE REMOVER OU ADICIONAR LISTENER QUANDO A TELA ALTERAR O TAMANHO A INVER DE RECARREGAS A PAGINA INTEIRA ********************************
-window.onresize = function(event) {
-    location.reload(); // Recarrega a página quando a janela é redimensionada
-};
+// window.onresize = function(event) {
+    // Recarrega a página quando a janela é redimensionada
+    // location.reload();
+// };
 // Precisa ser executado se a pagina sofrer variação de tamanho para adicionar ou remover os listeners abaixo
 
 
