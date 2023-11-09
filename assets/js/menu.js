@@ -53,17 +53,7 @@ hamburgerIcon.addEventListener('click', function(){
         hamburgerIcon.src=urlHambX;
         // console.log('menu visivel');
     }else{
-
-
-
-
-        // menu.style.display = 'none';
-        menu.style.backgroundColor = 'green';
-
-
-
-
-
+        menu.style.display = 'none';
         for (let i = 0; i < menuBtn.length; i++){
             menuBtn[i].style.display = 'none';
         }        
@@ -87,17 +77,23 @@ window.addEventListener('resize', function(){
         
 
 
-        // menu.style.display = 'none';
-        menu.style.backgroundColor = 'red';
 
-
-
-
-        for (let i = 0; i < menuBtn.length; i++){
-            menuBtn[i].style.display = 'none';
+        // Bug em Scroll em celulares está fechando o menu. O codigo abaixo testa se é um dispositivo móvel
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            // console.log("Dispositivo móvel");
+        } else {
+            // console.log("PC");
         }
-        menuAtivo = 0;
-        hamburgerIcon.src=urlHambTraco;
+            menu.style.display = 'none';
+            for (let i = 0; i < menuBtn.length; i++){
+                menuBtn[i].style.display = 'none';
+            }
+            menuAtivo = 0;
+            hamburgerIcon.src=urlHambTraco;
+
+
+
+
     }
 });
 
@@ -108,18 +104,12 @@ document.addEventListener('click', function(event) {
     }else {
         // console.log('Clique fora do menu!');
         if(window.innerWidth <= 768){
-
-
-
-            // menu.style.display = 'none';
-            menu.style.backgroundColor = 'blue';
-
-
-
+            menu.style.display = 'none';
             for (let i = 0; i < menuBtn.length; i++){
                 menuBtn[i].style.display = 'none';
             }        
             menuAtivo = 0;
+            hamburgerIcon.src=urlHambTraco;
         }
     }
 });
