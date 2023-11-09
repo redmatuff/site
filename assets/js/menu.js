@@ -53,7 +53,13 @@ hamburgerIcon.addEventListener('click', function(){
         hamburgerIcon.src=urlHambX;
         // console.log('menu visivel');
     }else{
-        menu.style.display = 'none';
+
+
+
+
+        // menu.style.display = 'none';
+        menu.style.backgroundColor = 'green';
+        
         for (let i = 0; i < menuBtn.length; i++){
             menuBtn[i].style.display = 'none';
         }        
@@ -104,7 +110,14 @@ document.addEventListener('click', function(event) {
     }else {
         // console.log('Clique fora do menu!');
         if(window.innerWidth <= 768){
-            menu.style.display = 'none';
+
+
+
+            // menu.style.display = 'none';
+            menu.style.backgroundColor = 'blue';
+
+
+
             for (let i = 0; i < menuBtn.length; i++){
                 menuBtn[i].style.display = 'none';
             }        
