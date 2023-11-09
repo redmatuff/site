@@ -1,4 +1,6 @@
 // *********** Os caminhos para as imagens do menu hamburguer podem variar de acordo com o nível onde a página se encontra
+// *********** Ao redimensionar a tela de 769 para 766 px no PC o menu aparece de forma indesejada. A solução mais fácil que está comentada está fazendo o menu fechar ao fazer scroll em celular.
+
 var urlHambX = 'assets/icons/hamb-x.png';
 var urlHambTraco = 'assets/icons/hamb-traco.png';
 
@@ -57,9 +59,13 @@ hamburgerIcon.addEventListener('click', function(){
 
 
 
-        // menu.style.display = 'none';
-        menu.style.backgroundColor = 'green';
-        
+        menu.style.display = 'none';
+        // menu.style.backgroundColor = 'green';
+
+
+
+
+
         for (let i = 0; i < menuBtn.length; i++){
             menuBtn[i].style.display = 'none';
         }        
@@ -84,18 +90,24 @@ window.addEventListener('resize', function(){
 
 
 
+        // Solução abaixo não funciona
         // Bug em Scroll em celulares está fechando o menu. O codigo abaixo testa se é um dispositivo móvel
-        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        // if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
             // console.log("Dispositivo móvel");
-        } else {
+        // } else {
             // console.log("PC");
-        }
-            menu.style.display = 'none';
-            for (let i = 0; i < menuBtn.length; i++){
-                menuBtn[i].style.display = 'none';
-            }
-            menuAtivo = 0;
-            hamburgerIcon.src=urlHambTraco;
+        // }
+
+
+
+
+            // menu.style.display = 'none';
+            // for (let i = 0; i < menuBtn.length; i++){
+            //     menuBtn[i].style.display = 'none';
+            // }
+            // menuAtivo = 0;
+            // hamburgerIcon.src=urlHambTraco;
+
 
 
 
@@ -113,8 +125,8 @@ document.addEventListener('click', function(event) {
 
 
 
-            // menu.style.display = 'none';
-            menu.style.backgroundColor = 'blue';
+            menu.style.display = 'none';
+            // menu.style.backgroundColor = 'blue';
 
 
 
@@ -138,22 +150,9 @@ document.addEventListener('click', function(event) {
 
 
 
-// ****** BUSCAR MANEIRA DE REMOVER OU ADICIONAR LISTENER QUANDO A TELA ALTERAR O TAMANHO A INVES DE RECARREGAR A PAGINA INTEIRA ********************************
-// window.onresize = function(event) {
-    // Recarrega a página quando a janela é redimensionada
-    // location.reload();
-// };
-// Precisa ser executado se a pagina sofrer variação de tamanho para adicionar ou remover os listeners abaixo
-
-
-
-
-
-
 
 // Listeners que só agem quando a tela for maior que 768px
 document.addEventListener('DOMContentLoaded', function() {
-
 
     // Se o cursor entrar no botão e a tela for larga, fecha todos os outros menus de botão que podem estar abertos e abre o menu correto
     botoes.forEach(function(botao, index) {
@@ -175,9 +174,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-
-
-
     // Mesma lógica anterior mas para touchscreen
     // Se tocar no botão e a tela for larga, fecha todos os outros menus de botão que podem estar abertos e abre o menu correto
     botoes.forEach(function(botao, index) {
@@ -192,32 +188,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-
-
-
-
-
-
-    // menuBtn.forEach(function(menu, index){
-    //     menu.addEventListener('touchend', function() {
-    //         if(window.innerWidth > 768){
-    //             menu.style.display = 'none';
-    //         }
-    //     });
-    // });
-    
-
-
-
-
-
-
-
-
-
-
-
-
     // Adiciona um ouvinte de clique ao documento para fechar o menu se clicar fora do botão/menus (importante em celular exibindo versão para PC)
     document.addEventListener('click', function(event) {
         if (!event.target.matches('.div-btns-barra .btn-barra') && window.innerWidth > 768) {
@@ -226,14 +196,5 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         }
     });
+
 });
-
-
-
-
-
-
-
-
-
-
