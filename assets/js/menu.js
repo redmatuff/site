@@ -53,7 +53,17 @@ hamburgerIcon.addEventListener('click', function(){
         hamburgerIcon.src=urlHambX;
         // console.log('menu visivel');
     }else{
-        menu.style.display = 'none';
+
+
+
+
+        // menu.style.display = 'none';
+        menu.style.backgroundColor = 'green';
+
+
+
+
+
         for (let i = 0; i < menuBtn.length; i++){
             menuBtn[i].style.display = 'none';
         }        
@@ -74,7 +84,15 @@ window.addEventListener('resize', function(){
         menuAtivo = 1;
         hamburgerIcon.src=urlHambTraco;
     }else{
-        menu.style.display = 'none';
+        
+
+
+        // menu.style.display = 'none';
+        menu.style.backgroundColor = 'red';
+
+
+
+
         for (let i = 0; i < menuBtn.length; i++){
             menuBtn[i].style.display = 'none';
         }
@@ -90,7 +108,14 @@ document.addEventListener('click', function(event) {
     }else {
         // console.log('Clique fora do menu!');
         if(window.innerWidth <= 768){
-            menu.style.display = 'none';
+
+
+
+            // menu.style.display = 'none';
+            menu.style.backgroundColor = 'blue';
+
+
+
             for (let i = 0; i < menuBtn.length; i++){
                 menuBtn[i].style.display = 'none';
             }        
@@ -190,14 +215,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-    // Adiciona um ouvinte de clique ao documento para fechar o menu se clicar fora do botão/menus
-    // document.addEventListener('click', function(event) {
-    //     if (!event.target.matches('.div-btns-barra .btn-barra') && window.innerWidth > 768) {
-    //         menuBtn.forEach(function(menu) {
-    //             menu.style.display = 'none';
-    //         });
-    //     }
-    // });
+    // Adiciona um ouvinte de clique ao documento para fechar o menu se clicar fora do botão/menus (importante em celular exibindo versão para PC)
+    document.addEventListener('click', function(event) {
+        if (!event.target.matches('.div-btns-barra .btn-barra') && window.innerWidth > 768) {
+            menuBtn.forEach(function(menu) {
+                menu.style.display = 'none';
+            });
+        }
+    });
 });
 
 
