@@ -1,24 +1,30 @@
-@font-face {
+/* Fontes */
+@font-face{
     font-family: "Reem";
     src: url(../font/Reem_Kufi_Fun/ReemKufiFun-VariableFont_wght.ttf);
 }
 
-@font-face {
+@font-face{
     font-family: "odibee";
     src: url(../font/Odibee_Sans/OdibeeSans-Regular.ttf);
 }
 
+
+
+
 header{
     font-family: "Reem";
     word-spacing: 4px;
+    color: white;
 }
+
+
 
 /* 1. BARRA SUPERIOR */
 header .barra-sup{
     display: flex;
     background-color: #222;
     background-image: linear-gradient(to left, #000, #222, #000);
-    color: #fff;
     align-items: center;
     justify-content: space-around;
     padding: 0 1rem;
@@ -33,48 +39,41 @@ header .titulo-container{
     align-items: center;
     padding: 0.2rem;
 }
-
 header .logo{
     padding: 0;
     margin: 0;
     height: 3rem;
 }
-
 header .titulo-barra{
     margin: 0rem 1rem;
     align-items: center;
     display: none;
 }
-
-header .titulo-barra-longo {
+header .titulo-barra-longo{
     display: none;
 }
-
-header .titulo-barra-curto {
+header .titulo-barra-curto{
     display: none;
 }
-
-header h2 {
+header h2{
     font-size: 1rem;
     margin-top: 0.3rem;
 }
-
 header h3{
     font-size: 0.65rem;
     margin-bottom: 0.2rem;
 }
 
 
-
-/* BARRA DE BOTÕES */
+/* 1.2. BARRA DE BOTÕES */
 header .div-btns-barra{
     display: flex;
     padding-left: 1rem;
     z-index: 5;
     position: relative;
 }
-
-header .btn-barra {
+ /* 1.2.1. BOTÃO DA BARRA */
+header .btn-barra{
     cursor: pointer;
     font-size: 9pt;
     font-weight: 600;
@@ -82,15 +81,15 @@ header .btn-barra {
     width: 4.8rem;
     height: 2.5rem;
     background: linear-gradient(to bottom, #4ACAA8, #2c7b66);
-    color: white;
+    color: inherit;
     border: none;
     border-radius: 10px;
     box-shadow: 3px 3px 5px rgb(0, 0, 0);
     text-shadow: 2px 2px 3px black;
 }
 
-/* MENU DOS BOTÕES */
-header .menu-btn {
+/* 1.2.2.MENU DOS BOTÕES */
+header .menu-btn{
     font-size: 9.5pt;
     background-color: #222;
     top: 3.1rem;
@@ -102,28 +101,20 @@ header .menu-btn {
     width: 8.4rem;
     transform: translateX(-1.5rem);
     opacity: 80%;
-
     display: none;
     position: absolute;
-    /* z-index: -2; */
-    /* visibility: hidden; usar no javascript para aparecer quando clicado */
 }
+/* 1.2.2.1 Opções do menu dos botões */
 header .menu-btn a{
-    color: white;
     text-decoration: none;
     padding: 0.7rem 0rem;
-    text-align: center;
-    /* width: 30rem; */
-    /* background-color: red; */
-    
+    text-align: center;    
 }
 
 
-/* ICONE HAMBURGUER */
+/* 1.3. ICONE HAMBURGUER */
 header .hamb-icon-container{
     display: none;
-    /* position: absolute; */
-    /* visibility: hidden; */
 }
 header .hamb-icon{
     height: 2rem;
@@ -131,16 +122,12 @@ header .hamb-icon{
 
 
 
-
-
-
-/* BANNER */
+/* 2.BANNER */
 header .banner-img{
     width: 100%;
     height: 45vh;
     max-height: 450px;
 }
-
 header .banner-txt-container{
     position: absolute;
     height: 45vh;
@@ -155,50 +142,33 @@ header .banner-txt-container{
     width: calc(100% - 2*3rem);
     color: rgba(255, 255, 255, 0.8);
 }
-
-/* 2  10 11 14 */
-header #banner-txt {
+header .txt-banner{
     width: 50%;
     overflow: hidden;
-    /* background-color: red; */
 }
-
-header #banner-txt a{
-    display: flex;
-    width: fit-content;
-}
-
-header hr {
+header .banner-container hr{
     border: 0;
     height: 3px;
     background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 0, 0, 0.75),rgba(255, 0, 0, 0.75),
         rgba(0, 76, 255, 0.75), rgba(0, 76, 255, 0.75), rgba(255, 255, 255, 0))
 }
-
 header h1{
     font-family: "odibee";
     font-size: 10vh;
-    /* line-height: 16vh; */
     padding-top: 4vh ;
 }
 header h4{
     font-family: "odibee";
     font-size: 3vh;
-    /* line-height: 10pt; */
-    /* font-weight: 600; */
 }
-header h5 {
+header h5{
     font-family: "odibee";
     font-size: 3vh;
-    /* line-height: 10pt; */
-    /* font-weight: 600; */
 }
-
-header a {
+header a{
     text-decoration: inherit;
     color: inherit;
 }
-
 header .titulo-dir{
     text-align: right;
 }
@@ -208,44 +178,41 @@ header .titulo-dir{
 
 
 
-/* Estilos para telas com no máximo 1100px*/
-@media (max-width: 1100px) {
+/* RESPONSIVIDADE */
+
+
+
+
+
+
+/* Estilos para telas com largura menor ou igual a 1100px */
+@media (max-width: 1100px){
+
     header .titulo-barra{
-        /* visibility: hidden; */
-        /* position: absolute; */
         display: none;
     }
-    header .barra-sup {
+    header .barra-sup{
         justify-content: space-around;
     }
-    header h5 {
+    header h5{
         font-size: 2.5vh;
     }
-    header #banner-txt {
+    header .txt-banner{
         width: 60%;
     }
 }
 
 
+/* Estilos para telas com largura menor ou igual a 768px */
+@media (max-width: 768px){
 
-
-/* Estilos para telas com no máximo 768px*/
-@media (max-width: 768px) {
-    header .barra-sup {
+    header .barra-sup{
         height: 6rem;
     }
-
-    header .area-menu {
-        display: none;
-    }
-
     header .titulo-barra{
         display: inline;
-        /* visibility: visible; */
-        /* position: inherit; */
     }
-
-    header .div-btns-barra {
+    header .div-btns-barra{
         right: 0;
         display: flex;
         flex-direction: column;
@@ -255,155 +222,94 @@ header .titulo-dir{
         border-top: black solid 2px;
         display: none;
         position: absolute;
-        /* visibility: hidden; usar no javascript para abrir o menu */
     }
-
     header .btn-barra{
         width: 12rem;
         font-size: 10pt;
         font-weight: 600;
         height: 2.5rem;
-        /* cursor: pointer; */
-        /* background: linear-gradient(to bottom, #4acaa850, #2c7b6650); */
-        /* background: rgba(0, 0, 0, 0.3); */
         background: transparent;
         border-radius: 0rem;
         border-bottom: #4ACAA875 solid 1px;
-        /* border-top: black solid 1px; */
-        /* color: #; */
-        /* padding-left: 3rem; */
-        /* text-align: center; */
         box-shadow: none;
-        /* text-decoration: underline; */
-        /* line-height: 20rem; */
-        
         display: flex;
         align-items: end;
         justify-content: center;
         margin: 2px 0;
         text-align: left;
     }
-
     header .menu-btn{
         position: relative;
-        /* background-color: red; */
         top: auto;
         background-color: transparent;
         width: 10rem;
         padding: 0 1rem;
         display: none;
-        /* visibility: hidden; usar no javascript para abrir o menu */
     }
-    
     header .menu-btn :last-child{
         margin-bottom: 1rem;
     }
-
     header .menu-btn a{
         text-align: left;
     }
-
-    header .hamb-icon-container {
+    header .hamb-icon-container{
         display: inline;
-        /* position: inherit; */
-        /* visibility: visible; */
         height: 2rem;
     }
-
     header .barra-sup{
         justify-content: space-between;
     }
-
     header .banner-container{
         display: none;
-        /* position: absolute; */
-        /* visibility: hidden; */
     }
     header #banner{
         display: none;
-        /* visibility: hidden; */
-        /* position: absolute; */
     }
-    header #banner-txt{
+    header .txt-banner{
         display: none;
-        /* visibility: hidden; */
     }
-
-    header .titulo-barra-longo {
+    header .titulo-barra-longo{
         display: inline;
-        /* position: inherit; */
-        /* visibility: visible; */
     }
-
 }
 
 
+/* Estilos para telas com largura menor ou igual a 670px */
+@media (max-width: 670px){
 
-/* Estilos para telas com no máximo 580px*/
-@media (max-width: 670px) {
-    header .titulo-barra-longo {
-        /* position: absolute; */
-        /* visibility: hidden; */
+    header .titulo-barra-longo{
         display: none;
     }
-
-    header .titulo-barra-curto {
+    header .titulo-barra-curto{
         display: inline;
-        /* position: inherit; */
-        /* visibility: visible; */
     }
-
     header h3{
         font-size: 0.8rem;
     }
 }
 
 
-@media (min-width: 1400px) {
+/* Estilos para telas com largura maior ou igual a 1400px */
+@media (min-width: 1400px){
+
     header .banner-txt-container{
-        /* width: 1400px;    */
-        /* padding: 4rem; */
         padding-left: 20vw;
         padding-right: 0;
-        width: calc(100% - 20vw);
+        width: calc(100% - 20vw);        
     }
-
-
-
-    header {
-        /* background-color: red; */
-        /* display: flex; */
-        /* flex-direction: column; */
-        /* align-items: center; */
-    }
-
-    header .barra-sup{
-        /* width: 1400px; */
-        /* width: 100%; */
-        /* padding: 0; */
-    }
-    header .banner-container .banner-txt{
-        
-    }
-
-    header .banner-txt-container {
-        /* width: calc(1400px - 2*3rem); */
-    }
-
 }
 
 
-@media (min-height: 1200px) {
+/* Estilos para telas com largura maior ou igual a 1200px */
+@media (min-height: 1200px){
+
     header h1{
         font-size: 80pt;
     }
     header h4{
         font-size: 20pt;
     }
-
     header h5{
         font-size: 15pt;
     }
-
-
 }
