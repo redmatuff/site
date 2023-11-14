@@ -1,8 +1,6 @@
 var header = document.getElementsByTagName('header')[0];
 header.innerHTML = `
 
-
-
         <!-- Header 1. Barra Superior -->
         <div class="barra-sup">
 
@@ -170,8 +168,5 @@ header.innerHTML = `
             </div>
 
         </div>
-
-
-
 
 `
