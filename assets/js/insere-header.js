@@ -174,7 +174,11 @@ header.innerHTML = `
 
 
 var caminhoAtual = window.location.pathname;
-// Verifica se o nome do arquivo é index.html para corrigir caminhos
+
+// Verifica se o nome do arquivo é index.html para corrigir
 if (caminhoAtual.endsWith('index.html')) {
+    console.log('Este é o index.html');
     header.innerHTML.replace("../","");
+} else {
+    console.log('Este não é o index.html');
 }
