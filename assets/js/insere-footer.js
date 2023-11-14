@@ -19,14 +19,14 @@ footer.innerHTML = `
         </div>
         <div class="sec-ft" id="sec-1">
             <a href="https://www.instagram.com/monitoriaredmatuff/" target="_blank">
-                <img src="../assets/icons/instagram.png" alt="icone do instagram">
+                <img src="https://redmatuff.github.io/site/assets/icons/instagram.png" alt="icone do instagram">
             </a>
 
             <a href="https://www.youtube.com/@redmatematicadauff1602" target="_blank">
-                <img src="../assets/icons/youtube.png" alt="icone do youtube">
+                <img src="https://redmatuff.github.io/site/assets/icons/youtube.png" alt="icone do youtube">
             </a>
             <a href="https://www.t.me/balarconUFF"  target="_blank">
-                <img src="../assets/icons/telegram.png" alt="icone do telegram">
+                <img src="https://redmatuff.github.io/site/assets/icons/telegram.png" alt="icone do telegram">
             </a>
         </div>
     </div>
