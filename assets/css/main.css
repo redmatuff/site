@@ -41,8 +41,7 @@ main {
 }
 
 .apenas-desktop {
-    visibility: hidden;
-    position: absolute;
+    display: none;
 }
 
 .recurso-container{
@@ -62,13 +61,14 @@ main {
     /* background-color: black; */
     box-shadow: 3px 3px 5px black;
     padding: 0.3rem;   
-    /* border: solid 1px black; */ */
+    /* border: solid 1px black; */
+    float: left;
 }
 
 
 .recurso-descricao{
     padding-left: 1rem;
-    max-height: 10rem;
+    /* max-height: 10rem; */
     overflow: auto;
     margin-bottom: 1rem;
 }
@@ -102,7 +102,7 @@ main ul {
 }
 
 /* ************************ */
-main ul li {
+main ul li, main ul li a {
     /* line-height: 5pt; */
     min-width: 40%;
     flex: 1;
@@ -216,19 +216,21 @@ main p{
     font-family: "Reem";
     width: 100%;
     padding: 0.6rem;
-    border-radius: 5px;
+    border-radius: 7px;
     border-color: transparent;
     margin: 0.2rem;
+    border: #3ca488 solid 1px;
 }
 
 .linha-form textarea {
     font-family: "Reem";
     width: 100%;
     padding: 0.6rem;
-    border-radius: 5px;
+    border-radius: 7px;
     border-color: transparent;
     margin: 0.2rem;
     height: 8rem;
+    border: #3ca488 solid 1px;
 }
 
 .linha-form button{
@@ -308,8 +310,7 @@ main p{
         width: 65%;
     }
     .apenas-desktop {
-        visibility: visible;
-        position: inherit;
+        display: inherit;
     }
 
     .sobre {

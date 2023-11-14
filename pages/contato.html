@@ -16,7 +16,35 @@
     <header></header>
         
     <main>
+        <section class="sobre">
+            <h2>Entre em Contato</h2>
+            <p>Um texto sobre as formas de entrar em contato</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae magni nesciunt nulla commodi nisi, debitis totam, facere distinctio voluptas voluptatibus tempore possimus magnam similique. Iste, beatae placeat. Odio, quaerat accusamus!</p>
+            <div class="apenas-desktop">
+                <!-- Colocar aqui uma informação que só aparece em telas grandes -->
+            </div>
+        </section>
+        <section class="content">
 
+            <h3>Formulário para você deixar sua mensagem</h3>
+            <form action="https://formsubmit.co/redmatuff@gmail.com" method="POST">
+                <div class="linha-form">
+                    <input type="text" placeholder="Nome" name="name">
+                    <input type="text" placeholder="E-mail" name="email" pattern=".+@.+[.].+" required title="Por favor, insira um endereço de e-mail válido (ex: exemplo@dominio.com)">
+                </div>
+                <div class="linha-form">
+                    <input type="text" placeholder="Assunto" name="_subject">
+                </div>
+                <input type="hidden" name="_captcha" value="false">
+                <div class="linha-form">
+                    <textarea id="mensagem" class="msg" type="text" placeholder="Mensagem" name="message" required></textarea>
+                </div>
+                <div class="linha-form">
+                    <button>Enviar Mensagem</button>
+                </div>
+                <input type="hidden" name="_next" value="https://redmatuff.github.io/pages/msg-enviada.html">
+            </form>
+        </section>
     </main>
 
     <footer></footer>
