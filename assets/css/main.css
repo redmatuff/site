@@ -31,7 +31,7 @@ main {
 
 .sobre {
     flex-direction: column;
-    padding: 2rem;
+    padding: 2rem 2rem 0.5rem 2rem;
 }
 
 
@@ -42,6 +42,7 @@ main {
 
 .apenas-desktop {
     display: none;
+    /* position: absolute; */
 }
 
 .recurso-container{
@@ -49,13 +50,14 @@ main {
     margin: 1rem 0 2rem 0;
 }
 
-.recurso-container .img-container{
-    float: right;
-}
+/* .recurso-container .img-container{ */
+    /* float: right; */
+/* } */
 
 .recurso-container img{
     height: 10rem;
     width: 15rem;
+    /* object-fit: cover; */
     margin-right: 2rem;
     margin-bottom: 1rem;
     border-radius: 1rem;
@@ -65,7 +67,6 @@ main {
     /* border: solid 1px black; */
     float: left;
 }
-
 
 .recurso-descricao{
     /* padding-left: 1rem; */
@@ -145,7 +146,6 @@ main hr {
 
 main .sobre hr{
     /* background-color: white; */
-    background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(255, 255, 255));
 }
 
 
@@ -182,17 +182,17 @@ main h4{
 
 main h5{
     color: #003f3cab;
-    font-size: 0.7rem;
+    font-size: 0.85rem;
     font-weight: 600;
-    text-decoration: underline;
-    padding: 1rem 0;
+    /* text-decoration: underline; */
+    padding: 0rem 0;
 }
 
 main h6 {
     color: #003f3cab;
-    font-size: 0.85rem;
+    font-size: 0.7rem;
     text-decoration: underline;
-    padding: 1rem 0;
+    padding: 0rem 0;
 }
 
 main p{
@@ -247,6 +247,7 @@ main p{
 
 
 
+
 @media (max-width: 400px) {
     .recurso-container img {
         height: 40vw;
@@ -257,21 +258,24 @@ main p{
 
 
 @media (max-width: 650px) {
-    .recurso-container {
+    .recurso-container div {
+        display: flex;
+        /* background-color: red; */
         flex-direction: column;
         align-items: center;
+        /* justify-content: center; */
     }
     .recurso-descricao{
         padding: 1rem 0;
         order: 1;
 
     }
-    .img-container{
+    .recurso-container{
         order: 2;
         display: flex;
         flex-direction: column;
         align-items: center;
-        /* justify-content: center; */
+        justify-content: center;
     }
 
     .recurso-container img {
@@ -316,6 +320,10 @@ main p{
         display: flex;
         flex-direction: row;
         justify-content: center;
+    }
+
+    main .sobre hr{
+    background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(255, 255, 255));
     }
 
     .sobre{
