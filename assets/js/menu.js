@@ -1,8 +1,16 @@
-// *********** Os caminhos para as imagens do menu hamburguer podem variar de acordo com o nível onde a página se encontra
-// *********** Ao redimensionar a tela de 769 para 766 px no PC o menu aparece de forma indesejada. A solução mais fácil que está comentada está fazendo o menu fechar ao fazer scroll em celular.
+// *********** Ao redimensionar a tela de 769 para 766 px no PC o menu aparece de forma indesejada. A solução mais fácil que está comentada está com bug, fazendo o menu fechar ao fazer scroll em celular.
+
 
 var urlHambX = 'assets/icons/hamb-x.png';
 var urlHambTraco = 'assets/icons/hamb-traco.png';
+
+// Corrige caminhos
+var caminhoAtual = window.location.pathname;
+if (!caminhoAtual.endsWith('index.html')) {
+    urlHambX = '../assets/icons/hamb-x.png';
+    urlHambTraco = '../assets/icons/hamb-traco.png';
+}
+
 
 let menuAtivo = 0;
 

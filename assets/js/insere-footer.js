@@ -34,10 +34,7 @@ footer.innerHTML = `
 `
 
 
-
-if (caminhoAtual.endsWith('index.html')) {
-    console.log('Footer: Este é o index.html');
-    footer.innerHTML.replace("../","");
-} else {
-    console.log('Footer: Este não é o index.html');
+var caminhoAtual = window.location.pathname;
+if (caminhoAtual.endsWith('index.html')) {  
+    footer.innerHTML = footer.innerHTML.replace(/\.\.\//g,'');
 }
