@@ -178,5 +178,5 @@ header.innerHTML = `
 var caminhoAtual = window.location.pathname;
 // Verifica se o nome do arquivo é index.html para corrigir
 if (caminhoAtual.endsWith('index.html')) {  
-    header.innerHTML = header.innerHTML.replace(/\.\.\//g,'');
+    // header.innerHTML = header.innerHTML.replace(/\.\.\//g,'');
 }

@@ -56,21 +56,24 @@ main {
 .recurso-container img{
     height: 10rem;
     width: 15rem;
-    margin-right: 1rem;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
     border-radius: 1rem;
     /* background-color: black; */
     box-shadow: 3px 3px 5px black;
-    padding: 0.3rem;   
+    padding: 0.3rem;
     /* border: solid 1px black; */
     float: left;
 }
 
 
 .recurso-descricao{
-    padding-left: 1rem;
+    /* padding-left: 1rem; */
     /* max-height: 10rem; */
-    overflow: auto;
+    /* overflow: auto; */
     margin-bottom: 1rem;
+    /* min-width: 10rem; */
+    /* float: right; */
 }
 
 main ::-webkit-scrollbar {
@@ -255,20 +258,32 @@ main p{
 
 @media (max-width: 650px) {
     .recurso-container {
-        flex-direction: column;    
+        flex-direction: column;
+        align-items: center;
     }
     .recurso-descricao{
         padding: 1rem 0;
         order: 1;
+
     }
     .img-container{
         order: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* justify-content: center; */
     }
 
     .recurso-container img {
         /* height: 10rem; */
         /* width: 15rem; */
         max-width: none;
+        float: none;
+        margin-right: 0rem;
+        /* margin-bottom: 1rem; */
+        /* padding: ; */
+        /* justify-content: center; */
+        /* align-items: center; */
         /* padding-right: 1rem; */
     }
 
