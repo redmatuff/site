@@ -1,5 +1,5 @@
-var header = document.getElementsByTagName('footer')[0];
-header.innerHTML = `
+var footer = document.getElementsByTagName('footer')[0];
+footer.innerHTML = `
 
     <div class="footer-content">
         <div class="sec-ft" id="sec-3">
@@ -31,11 +31,13 @@ header.innerHTML = `
         </div>
     </div>
     <p class="copyright">© 2023 REDMat - Todos os Direitos Reservados</p>
-
-
-
-
-
-
-
 `
+
+
+
+if (caminhoAtual.endsWith('index.html')) {
+    console.log('Footer: Este é o index.html');
+    footer.innerHTML.replace("../","");
+} else {
+    console.log('Footer: Este não é o index.html');
+}
