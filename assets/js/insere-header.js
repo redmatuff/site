@@ -1,4 +1,5 @@
 var header = document.getElementsByTagName('header')[0];
+
 header.innerHTML = `
 
         <!-- Header 1. Barra Superior -->
@@ -170,3 +171,10 @@ header.innerHTML = `
         </div>
 
 `
+
+
+var caminhoAtual = window.location.pathname;
+// Verifica se o nome do arquivo é index.html para corrigir caminhos
+if (caminhoAtual.endsWith('index.html')) {
+    header.innerHTML.replace("../","");
+}
