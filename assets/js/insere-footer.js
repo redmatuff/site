@@ -36,5 +36,5 @@ footer.innerHTML = `
 
 var caminhoAtual = window.location.pathname;
 if (caminhoAtual.endsWith('index.html')) {  
-    // footer.innerHTML = footer.innerHTML.replace(/\.\.\//g,'');
+    footer.innerHTML = footer.innerHTML.replace(/\.\.\//g,'');
 }
