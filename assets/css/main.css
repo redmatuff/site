@@ -106,17 +106,22 @@ main ul {
 }
 
 /* ************************ */
-main ul li, main ul li a {
-    /* line-height: 5pt; */
-    min-width: 40%;
-    flex: 1;
+main ul li a {
     display: flex;
     align-items: center;
+    /* color: black;res REDMat atuaram ou atuam nos seguintes projetos de ensino do Instituto de Matemática e Estatística. ￼ */
+    color: inherit;
+}
+
+main ul li {
+    display: flex;
+    align-items: center;
+    min-width: 40%;
+    max-width: 50%;
+    flex: 1;
+    /* border: solid 1px red; */
     padding: 0.5rem 0;
     height: 3.5rem;
-    /* justify-content: center; */
-    /* background-color: red; */
-    /* border: solid 1px red; */
 }
 
 main ul li img {
