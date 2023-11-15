@@ -161,7 +161,7 @@ header.innerHTML = `
                     <a href="https://ime.uff.br/">
                         <h4>Instituto de Matemática e Estatística</h4>
                     </a>
-                    <a href="../index.html">
+                    <a href="https://redmatuff.github.io/site/index.html">
                         <h1>REDMat</h1>
                     </a>
                     <hr>
