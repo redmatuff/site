@@ -8,7 +8,7 @@ header.innerHTML = `
             <div class="titulo-container">
                 
                 <!-- Header 1.1.1. Logo -->
-                <a href="../index.html">
+                <a href="https://redmatuff.github.io/site/index.html">
                     <!-- <img src="../assets/icons/logo-transparente.png" alt="logo REDMat" class="logo"> -->
                     <img src="https://redmatuff.github.io/site/assets/icons/logo-transparente.png" alt="logo REDMat" class="logo">
                     
