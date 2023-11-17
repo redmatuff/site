@@ -20,10 +20,7 @@ const menuBtn = document.querySelectorAll('.menu-btn');
 const botoes = document.querySelectorAll('.btn-barra');
 
 
-
-
 // Melhorar esta função abaixo para diferentes níveis onde a página se encontra
-
 
 // urlHambX = verificarImagem(urlHambX);
 
@@ -46,12 +43,6 @@ const botoes = document.querySelectorAll('.btn-barra');
 
 
 
-
-
-
-
-
-
 // Adicionar listener no icone do menu hamburguer
 hamburgerIcon.addEventListener('click', function(){
     if (menuAtivo == 0){
@@ -64,15 +55,8 @@ hamburgerIcon.addEventListener('click', function(){
         // console.log('menu visivel');
     }else{
 
-
-
-
         menu.style.display = 'none';
         // menu.style.backgroundColor = 'green';
-
-
-
-
 
         for (let i = 0; i < menuBtn.length; i++){
             menuBtn[i].style.display = 'none';
@@ -83,6 +67,79 @@ hamburgerIcon.addEventListener('click', function(){
         
     }
 });
+
+
+
+
+
+
+
+
+
+// Função de debounce
+function debounce(func, wait, immediate) {
+    var timeout;
+    return function() {
+        var context = this, args = arguments;
+        var later = function() {
+            timeout = null;
+            if (!immediate) func.apply(context, args);
+        };
+        var callNow = immediate && !timeout;
+        clearTimeout(timeout);
+        timeout = setTimeout(later, wait);
+        if (callNow) func.apply(context, args);
+    };
+}
+
+// Função que será chamada quando a janela for redimensionada
+function handleResize() {
+    // Coloque aqui o código que você deseja executar quando a janela for redimensionada
+    if (window.innerWidth > 768){
+        menu.style.display = 'flex';
+        for (let i = 0; i < menuBtn.length; i++){
+            menuBtn[i].style.display = 'none';
+        }
+        menuAtivo = 1;
+        hamburgerIcon.src=urlHambTraco;
+    }else{
+
+
+
+
+
+        menu.style.display = 'none';
+        for (let i = 0; i < menuBtn.length; i++){
+            menuBtn[i].style.display = 'none';
+        }
+        menuAtivo = 0;
+        hamburgerIcon.src=urlHambTraco;
+
+
+
+        
+
+    }
+
+    console.log('Janela redimensionada!');
+}
+
+// Adiciona um ouvinte de evento para o evento de redimensionamento usando o debounce
+window.addEventListener('resize', debounce(handleResize, 250));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // Adicionar listener ao ajustar tamanho da janela para não desconfigurar o menu sem precisar recarregar a página
 window.addEventListener('resize', function(){
@@ -95,9 +152,6 @@ window.addEventListener('resize', function(){
         hamburgerIcon.src=urlHambTraco;
     }else{
         
-
-
-
         // Solução abaixo não funciona
         // Bug em Scroll em celulares está fechando o menu. O codigo abaixo testa se é um dispositivo móvel
         // if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
@@ -106,19 +160,12 @@ window.addEventListener('resize', function(){
             // console.log("PC");
         // }
 
-
-
-
             // menu.style.display = 'none';
             // for (let i = 0; i < menuBtn.length; i++){
             //     menuBtn[i].style.display = 'none';
             // }
             // menuAtivo = 0;
             // hamburgerIcon.src=urlHambTraco;
-
-
-
-
 
     }
 });
