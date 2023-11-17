@@ -34,6 +34,7 @@ footer.innerHTML = `
 `
 
 
+// Solução para caminhos relativos. Não usado para evitar problemas de inconsistência:
 // var caminhoAtual = window.location.pathname;
 // if (caminhoAtual.endsWith('index.html')) {  
 //     footer.innerHTML = footer.innerHTML.replace(/\.\.\//g,'');

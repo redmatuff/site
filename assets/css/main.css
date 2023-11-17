@@ -48,6 +48,7 @@ main {
 .recurso-container{
     display: flex;
     margin: 1rem 0 2rem 0;
+    /* background-color: blue; */
 }
 
 /* .recurso-container .img-container{ */
@@ -73,6 +74,14 @@ main {
     /* max-height: 10rem; */
     /* overflow: auto; */
     margin-bottom: 1rem;
+    /* background-color: red; */
+    
+    /* width: 54rem; */
+    /* width: 100%; */
+    /* clear: both; */
+    /* flex: 1; */
+    /* display: flex; */
+    /* width: 100%; */
     /* min-width: 10rem; */
     /* float: right; */
 }
@@ -257,6 +266,17 @@ main a{
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.65);
 }
 
+main button {
+    font-family: "Reem";
+    padding: 0.6rem;
+    border-radius: 5px;
+    margin: 0.2rem;
+    border: transparent;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.65);
+}
+main a button{
+    cursor: pointer;
+}
 
 
 

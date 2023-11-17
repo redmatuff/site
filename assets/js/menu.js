@@ -81,9 +81,10 @@ hamburgerIcon.addEventListener('click', function(){
 
 
 
-var larguraJanela = $(window).width(), alturaJanela = $(window).height();
+var larguraJanela = $(window).width();
+// var alturaJanela = $(window).height();
 
-// Função de debounce
+// Função de debounce evita muitas chamadas da função ao executar um resize. Torna a navegação mais eficiente
 function debounce(func, wait, immediate) {
     var timeout;
     return function() {
@@ -111,6 +112,7 @@ function handleResize() {
         hamburgerIcon.src=urlHambTraco;
     }else{
 
+        // Evita chamar a função de fechar o menu em navegadores de smartphones onde o sumiço da barra de navegação provoca a chamada do resize pois há aumento na altura da janela. 
         if($(window).width() != larguraJanela){
 
             menu.style.display = 'none';
@@ -121,8 +123,6 @@ function handleResize() {
             hamburgerIcon.src=urlHambTraco;
         
         }
-
-
 
     }
 
