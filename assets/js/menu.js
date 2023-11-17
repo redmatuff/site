@@ -76,6 +76,13 @@ hamburgerIcon.addEventListener('click', function(){
 
 
 
+
+
+
+
+
+var larguraJanela = $(window).width(), alturaJanela = $(window).height();
+
 // Função de debounce
 function debounce(func, wait, immediate) {
     var timeout;
@@ -104,20 +111,18 @@ function handleResize() {
         hamburgerIcon.src=urlHambTraco;
     }else{
 
+        if($(window).width() != larguraJanela){
 
-
-
-
-        menu.style.display = 'none';
-        for (let i = 0; i < menuBtn.length; i++){
-            menuBtn[i].style.display = 'none';
-        }
-        menuAtivo = 0;
-        hamburgerIcon.src=urlHambTraco;
-
-
-
+            menu.style.display = 'none';
+            for (let i = 0; i < menuBtn.length; i++){
+                menuBtn[i].style.display = 'none';
+            }
+            menuAtivo = 0;
+            hamburgerIcon.src=urlHambTraco;
         
+        }
+
+
 
     }
 
