@@ -54,10 +54,8 @@ hamburgerIcon.addEventListener('click', function(){
         hamburgerIcon.src=urlHambX;
         // console.log('menu visivel');
     }else{
-
         menu.style.display = 'none';
         // menu.style.backgroundColor = 'green';
-
         for (let i = 0; i < menuBtn.length; i++){
             menuBtn[i].style.display = 'none';
         }        
@@ -80,8 +78,9 @@ hamburgerIcon.addEventListener('click', function(){
 
 
 
-
-var larguraJanela = $(window).width();
+var larguraJanela = window.innerWidth;
+console.log(' ===== largutaJanela = '+ larguraJanela + '===========');
+// var larguraJanela = $(window).width();
 // var alturaJanela = $(window).height();
 
 // Função de debounce evita muitas chamadas da função ao executar um resize. Torna a navegação mais eficiente
@@ -102,19 +101,21 @@ function debounce(func, wait, immediate) {
 
 // Função que será chamada quando a janela for redimensionada
 function handleResize() {
+    console.log('resize');
     // Coloque aqui o código que você deseja executar quando a janela for redimensionada
     if (window.innerWidth > 768){
         menu.style.display = 'flex';
         for (let i = 0; i < menuBtn.length; i++){
             menuBtn[i].style.display = 'none';
         }
-        menuAtivo = 1;
+        menuAtivo = 0;
         hamburgerIcon.src=urlHambTraco;
+        console.log("chamou pra ativar menu");
     }else{
 
         // Evita chamar a função de fechar o menu em navegadores de smartphones onde o sumiço da barra de navegação provoca a chamada do resize pois há aumento na altura da janela. 
-        if($(window).width() != larguraJanela){
-
+        if(window.innerWidth != larguraJanela){
+            console.log('innerwidth = '+window.innerWidth+'. LarguraJanela = '+larguraJanela);
             menu.style.display = 'none';
             for (let i = 0; i < menuBtn.length; i++){
                 menuBtn[i].style.display = 'none';
