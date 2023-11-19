@@ -75,6 +75,7 @@ main {
     /* max-height: 10rem; */
     /* overflow: auto; */
     margin-bottom: 1rem;
+    margin-top: 1rem;
     text-align: justify;
     /* background-color: red; */
     
@@ -186,14 +187,14 @@ main h2{
 
 main h3{
     color: #003f3cab;
-    font-size: 1.5rem;
-    padding: 1rem 0;
+    font-size: 1.4rem;
+    padding: 1rem 0 0.4rem 0;
 }
 
 main h4{
     color: #003f3cab;
     font-size: 1.2rem;
-    padding: 1rem 0;
+    padding: 1rem 0 0.4rem 0;
 }
 
 
