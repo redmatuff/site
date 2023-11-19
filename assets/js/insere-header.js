@@ -11,7 +11,6 @@ header.innerHTML = `
                 <a href="https://redmatuff.github.io/site/index.html">
                     <!-- <img src="../assets/icons/logo-transparente.png" alt="logo REDMat" class="logo"> -->
                     <img src="https://redmatuff.github.io/site/assets/icons/logo-transparente.png" alt="logo REDMat" class="logo">
-                    
                 </a>
 
                 <!-- Header 1.1.2. Títulos Longos e Curtos -->
