@@ -208,13 +208,14 @@ main .sobre hr{
 
 
 main h1{
+    color: #003f3cab;
     font-size: 2.8rem;
     padding: 1rem 0;
-    color: #2c7b66;
-    background-image: linear-gradient(to bottom, #4ACAA8, #2c7b66);
-    color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
+    /* color: #2c7b66; */
+    /* background-image: linear-gradient(to bottom, #4ACAA8, #2c7b66); */
+    /* color: transparent; */
+    /* -webkit-background-clip: text; */
+    /* background-clip: text; */
 }
 
 main h2{
@@ -265,9 +266,13 @@ main a{
     /* font-weight: 600; */
 }
 
-.corrigir{
+.revisar{
+    color: rgb(222, 78, 78);
+}
+.comentario{
     color: red;
-    font-size: 1.3rem;
+    background-color: yellow;
+    font-size: 1rem;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 600;
 }
@@ -350,6 +355,12 @@ main a button{
         flex-direction: column;
         align-items: center;
         justify-content: center;
+    }
+    .recurso-container h3{
+        text-align: center;
+    }
+    .recurso h3{
+        text-align: center;
     }
 
     .recurso-container img {
