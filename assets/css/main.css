@@ -68,6 +68,14 @@ main {
     padding: 0.3rem;
     /* border: solid 1px black; */
     float: left;
+    /* opacity: 0.9; */
+    /* transition: box-shadow 0.3s ease; */
+    transition: filter 0.3s ease;
+}
+
+.recurso-container a:hover img{
+    /* box-shadow: 5px 5px 9px black; */
+    filter: contrast(65%)
 }
 
 .recurso-descricao .logo {
@@ -164,7 +172,15 @@ main ul li img {
     /* border: solid 1px red; */
     background-color: rgba(255, 255, 255, 0.519);
     /* margin: 0 1rem; */
+    transition: filter 0.3s ease;
 }
+    
+main ul li:hover img {
+    /* box-shadow: 5px 5px 9px black; */
+    filter: contrast(65%)
+}
+
+
 
 main ul li p {
     margin: 0 2rem 0 1rem;
