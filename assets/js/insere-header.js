@@ -84,6 +84,7 @@ header.innerHTML = `
                         <button class="btn-barra">Projetos de Ensino</button>
                     </a>
                     <div class="menu-btn">
+                        <a href="https://redmatuff.github.io/site/pages/proj-ensino.html#manim">Recursos Computacionais com Python</a>
                         <a href="https://redmatuff.github.io/site/pages/proj-ensino.html#geog-3d">Geogebra 3D (2020-2021)</a>
                         <a href="https://redmatuff.github.io/site/pages/proj-ensino.html#disc-dist-soc">Disciplinas no distanciamento social (2020)</a>
                         <a href="https://redmatuff.github.io/site/pages/proj-ensino.html#novas-tec-ensino">Novas tecnologias de ensino (2020--)</a>
@@ -113,7 +114,7 @@ header.innerHTML = `
                 <!-- Botão 6 -->
                 <div>
                     <a href="https://redmatuff.github.io/site/pages/recursos.html">
-                        <button class="btn-barra">Recursos Digitais</button>
+                        <button class="btn-barra">Recursos Comp.</button>
                     </a>
                     
                     <div class="menu-btn">

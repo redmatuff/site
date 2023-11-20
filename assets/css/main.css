@@ -70,6 +70,23 @@ main {
     float: left;
 }
 
+.recurso-descricao .logo {
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    /* width: 10rem; */
+    /* transform: translate(-14.75rem); */
+    margin: 0;
+    border-radius: 50%;
+    /* border-color: white solid 1rem; */
+    transform: translate(-5.6rem, 7rem);
+    background-color: rgba(255, 255, 255, 1);
+    padding: 0.1rem;
+    opacity: 50%;
+    border: solid black 0.1rem;
+    /* box-shadow: 3px 3px 5px white; */
+}
+
 .recurso-descricao{
     /* padding-left: 1rem; */
     /* max-height: 10rem; */
@@ -89,6 +106,7 @@ main {
     /* min-width: 10rem; */
     /* float: right; */
 }
+
 
 main ::-webkit-scrollbar {
     width: 5px;
@@ -214,7 +232,7 @@ main h6 {
 }
 
 main p{
-    
+    text-indent: 1.5rem;
     font-size: 1rem;
     padding: 0.4rem 0;
     line-height: 1.4rem;
