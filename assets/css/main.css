@@ -115,6 +115,10 @@ main {
     /* float: right; */
 }
 
+.recurso-descricao .logo{
+    transform: translate(-3.6rem, 7rem);
+}
+
 
 main ::-webkit-scrollbar {
     width: 5px;
@@ -248,7 +252,7 @@ main h6 {
 }
 
 main p{
-    text-indent: 1.5rem;
+    /* text-indent: 1.5rem; */
     font-size: 1rem;
     padding: 0.4rem 0;
     line-height: 1.4rem;
