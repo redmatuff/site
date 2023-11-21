@@ -106,7 +106,7 @@ header .menu-btn{
 
 
 
-.menu-btn a {
+header .menu-btn a {
     text-decoration: none;
     padding: 0.7rem 0.4rem;
     text-align: center;
@@ -114,11 +114,11 @@ header .menu-btn{
     transition: opacity 0.3s ease;
 }
 
-.menu-btn a:hover {
+header .menu-btn a:hover {
     opacity: 1;
 }
 
-.menu-btn a:hover{
+header .menu-btn a:hover{
     background-image: linear-gradient(to right, #111, transparent, #111);
 }
 

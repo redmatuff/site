@@ -3,17 +3,26 @@
     src: url(../font/Reem_Kufi_Fun/ReemKufiFun-VariableFont_wght.ttf);
 }
 
-
-
 body {
     font-family: "Reem";
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: #2c7b66;
     background-color: #002321;
-
 }
+
+.revisar {
+    color: rgb(222, 78, 78);
+}
+
+.comentario {
+    color: red;
+    background-color: yellow;
+    font-size: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+}
+
 
 main {
     padding: 0rem;
@@ -29,23 +38,23 @@ main {
 
 
 
-.sobre {
+main .sobre {
     flex-direction: column;
     padding: 2rem 2rem 0.5rem 2rem;
 }
 
 
-.content {
+main .content {
     padding: 2rem;
     background-color: white;
 }
 
-.apenas-desktop {
+main .apenas-desktop {
     display: none;
     /* position: absolute; */
 }
 
-.recurso-container{
+main .recurso-container{
     display: flex;
     flex-direction: column;
     margin: 1rem 0 2rem 0;
@@ -56,7 +65,7 @@ main {
     /* float: right; */
 /* } */
 
-.recurso-container img{
+main .recurso-container img{
     height: 10rem;
     width: 15rem;
     /* object-fit: cover; */
@@ -73,12 +82,12 @@ main {
     transition: filter 0.3s ease;
 }
 
-.recurso-container a:hover img{
+main .recurso-container a:hover img{
     /* box-shadow: 5px 5px 9px black; */
     filter: contrast(65%)
 }
 
-.recurso-descricao .logo {
+main .recurso-descricao .logo {
     position: absolute;
     width: 3rem;
     height: 3rem;
@@ -95,7 +104,7 @@ main {
     /* box-shadow: 3px 3px 5px white; */
 }
 
-.recurso-descricao{
+main .recurso-descricao{
     /* padding-left: 1rem; */
     /* max-height: 10rem; */
     /* overflow: auto; */
@@ -113,10 +122,6 @@ main {
     /* width: 100%; */
     /* min-width: 10rem; */
     /* float: right; */
-}
-
-.recurso-descricao .logo{
-    transform: translate(-3.6rem, 7rem);
 }
 
 
@@ -266,24 +271,15 @@ main a{
     /* font-weight: 600; */
 }
 
-.revisar{
-    color: rgb(222, 78, 78);
-}
-.comentario{
-    color: red;
-    background-color: yellow;
-    font-size: 1rem;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: 600;
-}
 
-.linha-form{
+
+main .linha-form{
     display: flex;
     flex: 1;
     justify-content: end;
 }
 
-.linha-form input{
+main .linha-form input{
     font-family: "Reem";
     width: 100%;
     padding: 0.6rem;
@@ -293,7 +289,7 @@ main a{
     border: #3ca488 solid 1px;
 }
 
-.linha-form textarea {
+main .linha-form textarea {
     font-family: "Reem";
     width: 100%;
     padding: 0.6rem;
@@ -304,7 +300,7 @@ main a{
     border: #3ca488 solid 1px;
 }
 
-.linha-form button{
+main .linha-form button{
     font-family: "Reem";
     padding: 0.6rem;
     border-radius: 5px;
@@ -327,43 +323,50 @@ main a button{
 
 
 
+
 @media (max-width: 400px) {
-    .recurso-container img {
-        height: 40vw;
-        width: 60vw;
-        padding-right: 1rem;
+    main .recurso-container img {
+        /* height: 40vw; */
+        /* width: 60vw; */
+        /* padding-right: 1rem; */
+    }
+    main .recurso-descricao .logo {
+        /* transform: translate(-6%,12%); */
     }
 }
 
 
 @media (max-width: 650px) {
-    .recurso-container div {
+    main .recurso-container div {
         display: flex;
         /* background-color: red; */
         flex-direction: column;
         align-items: center;
         /* justify-content: center; */
     }
-    .recurso-descricao{
+    main .recurso-descricao{
         padding: 1rem 0;
         order: 1;
-
     }
-    .recurso-container{
+
+    main .recurso-descricao .logo {
+        transform: translate(-3.6rem, 7rem);
+    }
+    main .recurso-container{
         order: 2;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
-    .recurso-container h3{
+    main .recurso-container h3{
         text-align: center;
     }
-    .recurso h3{
+    main .recurso h3{
         text-align: center;
     }
 
-    .recurso-container img {
+    main .recurso-container img {
         /* height: 10rem; */
         /* width: 15rem; */
         max-width: none;
@@ -392,10 +395,10 @@ main a button{
     main{
         background-image: linear-gradient(to right, #3ca488, #3ca488, white, white);
     }
-    .sobre{
+    main .sobre{
         max-width: 500px;
     }
-    .content{
+    main .content{
         max-width: 1000px;
     }
 }
@@ -411,17 +414,17 @@ main a button{
     background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(255, 255, 255));
     }
 
-    .sobre{
+    main .sobre{
         width: 35%;
     }
-    .content{
+    main .content{
         width: 65%;
     }
-    .apenas-desktop {
+    main .apenas-desktop {
         display: inherit;
     }
 
-    .sobre {
+    main .sobre {
         /* background-image: linear-gradient(to bottom, white, #2c7b66, white); */
         background-color: #3ca488;
         /* background-image: linear-gradient(to right, #2c7b66, #2c7b66, black); */
@@ -433,12 +436,12 @@ main a button{
         z-index: 2;
     }
     
-    .sobre p{
+    main .sobre p{
         color: white;
         text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);
     }
 
-    .sobre h1 {
+    main .sobre h1 {
         font-size: 2.8rem;
         padding: 1rem 0;
         color: #00282685;
@@ -448,9 +451,5 @@ main a button{
         background-clip: text; */
 
     }
-
-
-
-
 
 }
