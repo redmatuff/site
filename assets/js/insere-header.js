@@ -105,6 +105,15 @@ header.innerHTML = `
                     <a href="https://www.geogebra.org/m/wtmkn9nv">Geometria Analítica com Geogebra</a>
                     <a href="https://redmatuff.github.io/calculovariasvariaveis/assets/pdf/apostila/apostila-completa.pdf">Apostila Cálculo Diferencial de Várias Variáveis</a>
                     <a href="https://redmatuff.github.io/site/pages/livros-eletronicos.html#ap-fgcv">Apostila de FGCV</a>
+
+
+
+
+<p class = "comentario"> link errado no fgcv </p>
+
+
+
+
                     <a href="http://www.gma.uff.br/calculo1a/">Site Cálculo 1A </a>
                     <a href="https://redmatuff.github.io/calculovariasvariaveis/">Site Cálculo 2B </a>
                     <a href="http://www.gma.uff.br/calculo3a/">Site Cálculo 3A </a>
