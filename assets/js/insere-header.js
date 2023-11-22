@@ -114,12 +114,12 @@ header.innerHTML = `
                     <a href="https://www.geogebra.org/m/jke7hpfs">Calculo com Geobebra 3D vol. II</a>
                     <a href="https://www.geogebra.org/m/wtmkn9nv">Geometria Analítica com Geogebra</a>
                     <a href="https://redmatuff.github.io/calculovariasvariaveis/assets/pdf/apostila/apostila-completa.pdf">Apostila Cálculo Diferencial de Várias Variáveis</a>
-                    <a href="https://redmatuff.github.io/site/pages/livros-eletronicos.html#ap-fgcv">Apostila de FGCV</a>
+                    <a href="https://fcgeometria.notion.site/fcgeometria/Fundamentos-de-C-lculo-e-Geometria-d169bff4f8e34c229fdd97b514ff02e4
+                    ">Apostila de FGCV</a>
 
 
 
 
-<p class = "comentario"> link errado no fgcv </p>
 
 
 
