@@ -138,7 +138,7 @@ main .recurso-container .recurso-content .recurso-box {
   /* float: right; */
 }
 
-main .recurso-container .recurso-content .recurso-box div {
+main .recurso-container .recurso-content .recurso-box {
   display: flex;
   /* flex-direction: column; */
 }

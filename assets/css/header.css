@@ -73,7 +73,7 @@ header .div-btns-barra{
 header .btn-barra{
     cursor: pointer;
     font-size: 9pt;
-    font-weight: 600;
+    /* font-weight: 600; */
     margin: 0 0.3rem;
     width: 4.8rem;
     height: 2.5rem;
@@ -321,7 +321,7 @@ header .titulo-dir{
     header .btn-barra{
         width: 12rem;
         font-size: 10pt;
-        font-weight: 600;
+        /* font-weight: 600; */
         height: 2.5rem;
         background: transparent;
         border-radius: 0rem;
