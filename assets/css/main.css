@@ -76,7 +76,7 @@ main .recurso-container img {
   box-shadow: 3px 3px 5px black;
   padding: 0.3rem;
   /* border: solid 1px black; */
-  float: left;
+  /* float: left; */
   /* opacity: 0.9; */
   /* transition: box-shadow 0.3s ease; */
   transition: filter 0.3s ease;
@@ -121,12 +121,14 @@ main .recurso-container .recurso-content .recurso-box {
   margin-top: 1rem;
   text-align: justify;
   /* background-color: red; */
-
+  /* display: flex; */
   /* width: 54rem; */
   /* width: 100%; */
   /* clear: both; */
   /* flex: 1; */
-  display: flex;
+  /* display: flex; */
+  /* flex: 1; */
+  /* flex-direction: column; */
   /* justify-content: space-around; */
   /* flex: 1; */
 
@@ -136,8 +138,15 @@ main .recurso-container .recurso-content .recurso-box {
   /* float: right; */
 }
 
+main .recurso-container .recurso-content .recurso-box div {
+  display: flex;
+  /* flex-direction: column; */
+}
+
 main .recurso-container .recurso-content .recurso-box .recurso-descricao {
+  padding-top: 0.5rem;
   /* background-color: blue; */
+  flex-direction: column;
   /* flex: 1; */
   /* width: 100%; */
   /* width: 30rem; */
@@ -274,8 +283,8 @@ main h5 {
 main h6 {
   color: #003f3cab;
   font-size: 0.7rem;
-  text-decoration: underline;
-  padding: 0rem 0;
+  /* text-decoration: underline; */
+  padding: 0.3rem 0;
 }
 
 main p {
