@@ -4,289 +4,333 @@
 <!-- remover console.log dos JavaScripts -->
 <!-- Remover comentários inúteis e adicionar comentários importantes -->
 
-
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="assets/icons/icone-aba.png" type="image/png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="assets/icons/icone-aba.png" type="image/png" />
     <title>REDMat</title>
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/header.css">
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/footer.css">
-    <link rel="stylesheet" href="assets/css/index.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/header.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/footer.css" />
+    <link rel="stylesheet" href="assets/css/index.css" />
+  </head>
+  <body>
     <header></header>
-    
+
     <main>
+      <section class="sobre">
+        <h2>Sobre o Projeto</h2>
+        <p>
+          O projeto de monitoria REDMat (Recursos Educacionais Digitais para o
+          ensino da Matemática) nasceu em 2021 e visa desenvolver conteúdo
+          digital para ajudar no processo de ensino-aprendizagem do discente em
+          disciplinas do IME. O conteúdo é apresentado de uma maneira mais
+          moderna e interativa através de plataformas digitais e recursos
+          computacionais.
+        </p>
 
-        <section class="sobre">
-            <h2>Sobre o Projeto</h2>
-            <p>O projeto de monitoria REDMat (Recursos Educacionais Digitais para o ensino da Matemática) nasceu em 2021 e visa desenvolver conteúdo digital para ajudar no processo de ensino-aprendizagem do discente em disciplinas do IME. O conteúdo é apresentado de uma maneira mais moderna e interativa através de plataformas digitais e recursos computacionais.</p>
-
-
-            <div class="apenas-desktop">
-                <hr>
-                <div class="equipes">
-                    <h2>Equipes</h2>    
-                    <ul>
-
-                        <li>
-                            <a href="pages/quem-somos.html#eq2024">
-                                <img src="assets/icons/pessoas-icone.png" alt="icone pessoas"><p>2024</p>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="pages/quem-somos.html#eq2023">
-                                <img src="assets/icons/pessoas-icone.png" alt="icone pessoas"><p>2023</p>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="pages/quem-somos.html#eq2022">
-                                <img src="assets/icons/pessoas-icone.png" alt="icone pessoas"><p>2022</p>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="pages/quem-somos.html#eq2021">
-                                <img src="assets/icons/pessoas-icone.png" alt="icone pessoas"><p>2021</p>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="pages/quem-somos.html#eq2020">
-                                <img src="assets/icons/pessoas-icone.png" alt="icone pessoas"><p>2020</p>
-                            </a>
-                        </li>
-
-                    </ul>
-                </div>
-                <hr>
-
-
-
-                <div class="contato">
-                    <h2>Contato</h2>
-
-
-
-
-                    <form action="https://formsubmit.co/redmatuff@gmail.com" method="POST">
-                        <div class="linha-form">
-                            <input type="text" placeholder="Nome" name="name">
-                            <input type="text" placeholder="E-mail" name="email" pattern=".+@.+[.].+" required title="Por favor, insira um endereço de e-mail válido (ex: exemplo@dominio.com)">
-                        </div>
-                        <div class="linha-form">
-                            <input type="text" placeholder="Assunto" name="_subject">
-                        </div>
-                        <input type="hidden" name="_captcha" value="false">
-                        <div class="linha-form">
-                            <textarea id="mensagem" class="msg" type="text" placeholder="Mensagem" name="message" required></textarea>
-                        </div>
-                        <div class="linha-form">
-                            <button>Enviar Mensagem</button>
-                        </div>
-                        <input type="hidden" name="_next" value="https://redmatuff.github.io/site/pages/msg-enviada.html">
-                    </form>
-             
-
-
-
-                </div>
-
-
-
-            </div>
-
-        </section>
-
-
-
-        <section class="content">
-            
-            <h2>
-                <a href="pages/proj-ensino.html">
-                    Projetos de Ensino com participação do REDMat
-                </a>
-            </h2>
-            <p>Os monitores REDMat atuaram ou atuam nos seguintes projetos de ensino do Instituto de Matemática e Estatística.</p>
-            <!-- <p class="comentario">colocar links nos itens</p> -->
-
+        <div class="apenas-desktop">
+          <hr />
+          <div class="equipes">
+            <h2>Equipes</h2>
             <ul>
-                <li>
-                    <a href="pages/proj-ensino.html#manim">
-                        <img src="assets/icons/python-logo.jpg" alt="icone python">
-                        <p>Recursos Computacionais com Python (2023)</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="pages/proj-ensino.html#geog-3d">
-                        <img src="assets/icons/geogebra-icon-peq.png" alt="icone geogebra 3D">
-                        <p>Geogebra&nbsp;3D (2020-2021)</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="pages/proj-ensino.html#disc-dist-soc">
-                        <img src="assets/icons/livro-icone.png" alt="icone geogebra 3D">
-                        <p>Disciplinas no distanciamento social&nbsp;(2020)</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="pages/proj-ensino.html#novas-tec-ensino">
-                        <img src="assets/icons/raio-icone.png" alt="icone geogebra 3D">
-                        <p>Novas tecnologias de ensino&nbsp;(2020--)</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="pages/proj-ensino.html#gacv">
-                        <img src="assets/icons/raio-icone.png" alt="icone geogebra 3D">
-                        <p>GACV (2020-2022)</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="pages/proj-ensino.html#fcg">
-                        <img src="assets/icons/raio-icone.png" alt="icone geogebra 3D">
-                        <p>FCG (2023--)</p>
-                    </a>
-                </li>
-              
+              <li>
+                <a href="pages/quem-somos.html#eq2024">
+                  <img
+                    src="assets/icons/pessoas-icone.png"
+                    alt="icone pessoas"
+                  />
+                  <p>2024</p>
+                </a>
+              </li>
 
+              <li>
+                <a href="pages/quem-somos.html#eq2023">
+                  <img
+                    src="assets/icons/pessoas-icone.png"
+                    alt="icone pessoas"
+                  />
+                  <p>2023</p>
+                </a>
+              </li>
+
+              <li>
+                <a href="pages/quem-somos.html#eq2022">
+                  <img
+                    src="assets/icons/pessoas-icone.png"
+                    alt="icone pessoas"
+                  />
+                  <p>2022</p>
+                </a>
+              </li>
+
+              <li>
+                <a href="pages/quem-somos.html#eq2021">
+                  <img
+                    src="assets/icons/pessoas-icone.png"
+                    alt="icone pessoas"
+                  />
+                  <p>2021</p>
+                </a>
+              </li>
+
+              <li>
+                <a href="pages/quem-somos.html#eq2020">
+                  <img
+                    src="assets/icons/pessoas-icone.png"
+                    alt="icone pessoas"
+                  />
+                  <p>2020</p>
+                </a>
+              </li>
             </ul>
-            
-            <hr>
-            
-            <h2>
-                <a href="pages/livros-eletronicos.html">
-                    Livros eletrônicos, Apostilas e Ambientes Virtuais de Aprendizagem
-                </a>
-            </h2>
+          </div>
+          <hr />
 
-            <p>Os monitores REDMat colaboraram na produção do seguinte material digital:</p>
-            
-            <p class="comentario">Alterar links nos itens caso a página de livros deixe de existir</p>
+          <div class="contato">
+            <h2>Contato</h2>
 
-            <ul>
+            <form
+              action="https://formsubmit.co/redmatuff@gmail.com"
+              method="POST"
+            >
+              <div class="linha-form">
+                <input type="text" placeholder="Nome" name="name" />
+                <input
+                  type="text"
+                  placeholder="E-mail"
+                  name="email"
+                  pattern=".+@.+[.].+"
+                  required
+                  title="Por favor, insira um endereço de e-mail válido (ex: exemplo@dominio.com)"
+                />
+              </div>
+              <div class="linha-form">
+                <input type="text" placeholder="Assunto" name="_subject" />
+              </div>
+              <input type="hidden" name="_captcha" value="false" />
+              <div class="linha-form">
+                <textarea
+                  id="mensagem"
+                  class="msg"
+                  type="text"
+                  placeholder="Mensagem"
+                  name="message"
+                  required
+                ></textarea>
+              </div>
+              <div class="linha-form">
+                <button>Enviar Mensagem</button>
+              </div>
+              <input
+                type="hidden"
+                name="_next"
+                value="https://redmatuff.github.io/site/pages/msg-enviada.html"
+              />
+            </form>
+          </div>
+        </div>
+      </section>
 
-                <li>
-                    <a href="pages/livros-eletronicos.html#calc-geogebra-v1">
-                        <img src="assets/icons/geogebra-icon-peq.png" alt="icone geogebra 3D">
-                        <p>Cálculo com Geobebra&nbsp;3D vol.&nbsp;I</p>
-                    </a>
-                </li>
-                
-                <li>
-                    <a href="pages/livros-eletronicos.html#calc-geogebra-v2">
-                        <img src="assets/icons/geogebra-icon-peq.png" alt="icone geogebra 3D">
-                        <p>Cálculo com Geobebra&nbsp;3D vol.&nbsp;II</p>
-                    </a>
-                </li>
+      <section class="content">
+        <h2>
+          <a href="pages/proj-ensino.html">
+            Projetos de Ensino com participação do REDMat
+          </a>
+        </h2>
+        <p>
+          Os monitores REDMat atuaram ou atuam nos seguintes projetos de ensino
+          do Instituto de Matemática e Estatística.
+        </p>
+        <!-- <p class="comentario">colocar links nos itens</p> -->
 
-                <li>
-                    <a href="pages/livros-eletronicos.html#geom-an-geogebra">
-                        <img src="assets/icons/geogebra-icon-peq.png" alt="icone geogebra 3D">
-                        <p>Geometria Analítica com Geogebra</p>
-                    </a>
-                </li>
-    
-                <li>
-                    <a href="pages/livros-eletronicos.html#ap-calc-varias-var">
-                        <img src="assets/icons/livro-icone.png" alt="icone geogebra 3D">
-                        <p>Apostila Cálculo Diferencial de Várias Variáveis</p>
-                    </a>
-                </li>
-                
-                <li>
-                    <a href="pages/livros-eletronicos.html#ap-fgcv">
-                        <img src="assets/icons/livro-icone.png" alt="icone geogebra 3D">
-                        <p> Apostila de FGCV</p>
-                    </a>
-                </li>
-                
-                <li>
-                    <a href="pages/livros-eletronicos.html#site-calc-1a">
-                        <img src="assets/icons/site-icone.png" alt="icone geogebra 3D">
-                        <p>Site Cálculo&nbsp;1A (em&nbsp;andamento)</p>
-                    </a>
-                </li>
-                
-                <li>
-                    <a href="pages/livros-eletronicos.html#site-calc-2b">
-                        <img src="assets/icons/site-icone.png" alt="icone geogebra 3D">
-                        <p>Site Cálculo&nbsp;2B (em&nbsp;andamento)</p>
-                    </a>
-                </li>
-                
-                <li>
-                    <a href="pages/livros-eletronicos.html#site-calc-3a">
-                        <img src="assets/icons/site-icone.png" alt="icone geogebra 3D">
-                        <p>Site Cálculo&nbsp;3A (em&nbsp;andamento)</p>
-                    </a>
-                </li>
+        <ul>
+          <li>
+            <a href="pages/proj-ensino.html#manim">
+              <img src="assets/icons/python-logo.jpg" alt="icone python" />
+              <p>Recursos Computacionais com Python (2023)</p>
+            </a>
+          </li>
+          <li>
+            <a href="pages/proj-ensino.html#geog-3d">
+              <img
+                src="assets/icons/geogebra-icon-peq.png"
+                alt="icone geogebra 3D"
+              />
+              <p>Geogebra&nbsp;3D (2020-2021)</p>
+            </a>
+          </li>
+          <li>
+            <a href="pages/proj-ensino.html#disc-dist-soc">
+              <img src="assets/icons/livro-icone.png" alt="icone geogebra 3D" />
+              <p>Disciplinas no distanciamento social&nbsp;(2020)</p>
+            </a>
+          </li>
+          <li>
+            <a href="pages/proj-ensino.html#novas-tec-ensino">
+              <img src="assets/icons/raio-icone.png" alt="icone geogebra 3D" />
+              <p>Novas tecnologias de ensino&nbsp;(2020--)</p>
+            </a>
+          </li>
+          <li>
+            <a href="pages/proj-ensino.html#gacv">
+              <img src="assets/icons/raio-icone.png" alt="icone geogebra 3D" />
+              <p>GACV (2020-2022)</p>
+            </a>
+          </li>
+          <li>
+            <a href="pages/proj-ensino.html#fcg">
+              <img src="assets/icons/raio-icone.png" alt="icone geogebra 3D" />
+              <p>FCG (2023--)</p>
+            </a>
+          </li>
+        </ul>
 
-                <!-- Usar o código abaixo para manter número par de itens caso necessário -->
-                <!-- <li style="display: none;">
+        <hr />
+
+        <h2>
+          <a href="pages/livros-eletronicos.html">
+            Livros eletrônicos, Apostilas e Ambientes Virtuais de Aprendizagem
+          </a>
+        </h2>
+
+        <p>
+          Os monitores REDMat colaboraram na produção do seguinte material
+          digital:
+        </p>
+
+        <p class="comentario">
+          Alterar links nos itens caso a página de livros deixe de existir
+        </p>
+
+        <ul>
+          <li>
+            <a href="pages/livros-eletronicos.html#calc-geogebra-v1">
+              <img
+                src="assets/icons/geogebra-icon-peq.png"
+                alt="icone geogebra 3D"
+              />
+              <p>Cálculo com Geobebra&nbsp;3D vol.&nbsp;I</p>
+            </a>
+          </li>
+
+          <li>
+            <a href="pages/livros-eletronicos.html#calc-geogebra-v2">
+              <img
+                src="assets/icons/geogebra-icon-peq.png"
+                alt="icone geogebra 3D"
+              />
+              <p>Cálculo com Geobebra&nbsp;3D vol.&nbsp;II</p>
+            </a>
+          </li>
+
+          <li>
+            <a href="pages/livros-eletronicos.html#geom-an-geogebra">
+              <img
+                src="assets/icons/geogebra-icon-peq.png"
+                alt="icone geogebra 3D"
+              />
+              <p>Geometria Analítica com Geogebra</p>
+            </a>
+          </li>
+
+          <li>
+            <a href="pages/livros-eletronicos.html#ap-calc-varias-var">
+              <img src="assets/icons/livro-icone.png" alt="icone geogebra 3D" />
+              <p>Apostila Cálculo Diferencial de Várias Variáveis</p>
+            </a>
+          </li>
+
+          <li>
+            <a href="pages/livros-eletronicos.html#ap-fgcv">
+              <img src="assets/icons/livro-icone.png" alt="icone geogebra 3D" />
+              <p>Apostila de FGCV</p>
+            </a>
+          </li>
+
+          <li>
+            <a href="pages/livros-eletronicos.html#site-calc-1a">
+              <img src="assets/icons/site-icone.png" alt="icone geogebra 3D" />
+              <p>Site Cálculo&nbsp;1A (em&nbsp;andamento)</p>
+            </a>
+          </li>
+
+          <li>
+            <a href="pages/livros-eletronicos.html#site-calc-2b">
+              <img src="assets/icons/site-icone.png" alt="icone geogebra 3D" />
+              <p>Site Cálculo&nbsp;2B (em&nbsp;andamento)</p>
+            </a>
+          </li>
+
+          <li>
+            <a href="pages/livros-eletronicos.html#site-calc-3a">
+              <img src="assets/icons/site-icone.png" alt="icone geogebra 3D" />
+              <p>Site Cálculo&nbsp;3A (em&nbsp;andamento)</p>
+            </a>
+          </li>
+
+          <!-- Usar o código abaixo para manter número par de itens caso necessário -->
+          <!-- <li style="display: none;">
                     <img src="" alt="">
                 </li> -->
+        </ul>
 
-            </ul>
+        <hr />
 
-            <hr>
+        <h2>
+          <a href="pages/recursos.html"> Recursos Computacionais </a>
+        </h2>
 
+        <p>
+          Os monitores REDMat colaboraram na produção do seguinte material
+          digital:
+        </p>
 
+        <!-- <p class="comentario">Fazer ícones mais minimalistas para esta área</p> -->
 
+        <ul>
+          <li>
+            <a href="pages/recursos.html#func-uma-var">
+              <img
+                src="assets/icons/icone-func.png"
+                alt="Funções de Uma Variável"
+              />
+              <p>Funções de Uma Variável</p>
+            </a>
+          </li>
+          <li>
+            <a href="pages/recursos.html#func-uma-var">
+              <img
+                src="assets/icons/icone-func.png"
+                alt="Funções de Uma Variável"
+              />
+              <p>Cálculo de Funções de Uma Variável</p>
+            </a>
+          </li>
+          <li>
+            <a href="pages/recursos.html#func-uma-var">
+              <img
+                src="assets/icons/icone-func.png"
+                alt="Funções de Uma Variável"
+              />
+              <p>Cálculo de Funções de Várias Variáveis</p>
+            </a>
+          </li>
+          <li>
+            <a href="pages/recursos.html#func-uma-var">
+              <img
+                src="assets/icons/icone-func.png"
+                alt="Funções de Uma Variável"
+              />
+              <p>Equações Diferenciais Ordinárias</p>
+            </a>
+          </li>
+        </ul>
 
-
-            <h2>
-                <a href="pages/recursos.html">
-                    Recursos Computacionais
-                </a>
-            </h2>
-
-            <p>Os monitores REDMat colaboraram na produção do seguinte material digital:</p>
-
-            <!-- <p class="comentario">Fazer ícones mais minimalistas para esta área</p> -->
-          
-            <ul>
-                <li>
-                    <a href="pages/recursos.html#func-uma-var">
-                        <img src="assets/icons/icone-func.png" alt="Funções de Uma Variável">
-                        <p>Funções de Uma Variável</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="pages/recursos.html#func-uma-var">
-                        <img src="assets/icons/icone-func.png" alt="Funções de Uma Variável">
-                        <p>Cálculo de Funções de Uma Variável</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="pages/recursos.html#func-uma-var">
-                        <img src="assets/icons/icone-func.png" alt="Funções de Uma Variável">
-                        <p>Cálculo de Funções de Várias Variáveis</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="pages/recursos.html#func-uma-var">
-                        <img src="assets/icons/icone-func.png" alt="Funções de Uma Variável">
-                        <p>Equações Diferenciais Ordinárias</p>
-                    </a>
-                </li>
-
-
-
-
-
-            </ul>
-
-
-
-            <!--
+        <!--
 
             <section class="recurso">
 
@@ -304,7 +348,7 @@
                         <a href="pages/recursos.html#func-uma-var">
                             <img src="assets/img/func.png" alt="Funções de Uma Variável">
                         </a>
-                        <div class="recurso-descricao">
+                        <div class="recurso-box">
                             <p class="comentario"> colocar aqui os textos das paginas dos recursos</p>
                             <p>Nesta seção, os monitores REDMat apresentam um material digital envolvente e informativo sobre as "Funções de Uma Variável". Explore conceitos fundamentais de matemática por meio de recursos visuais dinâmicos, proporcionando uma compreensão mais acessível e prazerosa.</p>
                         </div>
@@ -322,7 +366,7 @@
                         <a href="pages/recursos.html#calc-func-uma-var">
                             <img src="assets/img/calc1.png" alt="Cálculo de Funções de Uma Variável">
                         </a>
-                        <div class="recurso-descricao">
+                        <div class="recurso-box">
                             <p class="comentario"> colocar aqui os textos das paginas dos recursos</p>
 
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis saepe provident mollitia? Tempora mollitia id libero maxime officia quae dolores nesciunt corrupti! Molestiae, non nulla accusantium fugit dignissimos facilis laborum?</p>
@@ -341,7 +385,7 @@
                         <a href="pages/recursos.html#calc-func-varias-var">
                             <img src="assets/img/calc2.png" alt="Cálculo de Funções de Várias Variável">
                         </a>
-                        <div class="recurso-descricao">
+                        <div class="recurso-box">
                             <p class="comentario"> colocar aqui os textos das paginas dos recursos</p>
 
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis saepe provident mollitia? Tempora mollitia id libero maxime officia quae dolores nesciunt corrupti! Molestiae, non nulla accusantium fugit dignissimos facilis laborum?</p>
@@ -360,7 +404,7 @@
                         <a href="pages/recursos.html#edo">
                             <img src="assets/img/edo.png" alt="Equações Diferenciais Ordinárias">
                         </a>
-                        <div class="recurso-descricao">
+                        <div class="recurso-box">
                             <p class="comentario"> colocar aqui os textos das paginas dos recursos</p>
 
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis saepe provident mollitia? Tempora mollitia id libero maxime officia quae dolores nesciunt corrupti! Molestiae, non nulla accusantium fugit dignissimos facilis laborum?</p>
@@ -375,9 +419,7 @@
             </section>
             -->
 
-
-
-<!--             
+        <!--             
             <h3>Titulo 3</h3>
             <h4>Título 4</h4>
             <h5>Título 5</h5>
@@ -385,20 +427,7 @@
             <p>Texto comum</p>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo beatae tempora voluptatum qui iste sapiente, placeat obcaecati ipsam natus non exercitationem, commodi nesciunt. Porro, maiores praesentium? Sed provident unde veritatis?</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta modi, eligendi asperiores obcaecati totam dolorem quisquam minima incidunt magni sapiente praesentium enim similique quasi, voluptatibus magnam laboriosam earum itaque qui.</p> -->
-
-
-        </section>
-
-
-
-
-
-
-
-
-
-
-
+      </section>
     </main>
 
     <footer></footer>
@@ -407,9 +436,5 @@
     <script src="assets/js/insere-header.js"></script>
     <script src="assets/js/menu.js"></script>
     <script src="assets/js/insere-footer.js"></script>
-
-</body>
-
-
-
+  </body>
 </html>

@@ -1,5 +1,21 @@
 var header = document.getElementsByTagName('header')[0];
 
+
+
+                // <!-- Botão 0 -->
+                // <div>
+                //     <a href="https://redmatuff.github.io/site/index.html">
+                //         <button class="btn-barra">Home</button> <!-- Botão da barra-->
+                //     </a>
+                //     <div class="menu-btn">
+                //         <!-- Colocar tags <a> aqui para criar o menu do botão -->
+                //         <!-- <a href="../link">Exemplo</a> -->
+                //     </div>
+                // </div>
+                // <!-- Fim do Botão 1. Pra criar novos botões basta copiar estas ultimas ~10 linhas de código -->
+                // <!-- A criação de novos botões pode prejudicar a responsividade do código. Recomenda-se manter o número de botões menor ou igual a 7, e avaliar qual botão é dispensável. Exemplo: Quem Somos e Seja Membro pode se fundir em um único botão. Além disso, Home é um botão dispensável já que é possível is para página inicial clicando no logo na barra -->
+
+
 header.innerHTML = `
         <!-- Header 1. Barra Superior -->
         <div class="barra-sup">
@@ -42,21 +58,15 @@ header.innerHTML = `
             <!-- Header 1.2. Barra de Botões ou Menu -->
             <div class="div-btns-barra">
 
+
+
+
+
+
+
+
+
                 <!-- Botão 1 -->
-                <div>
-                    <a href="https://redmatuff.github.io/site/index.html">
-                        <button class="btn-barra">Home</button> <!-- Botão da barra-->
-                    </a>
-                    <div class="menu-btn">
-                        <!-- Colocar tags <a> aqui para criar o menu do botão -->
-                        <!-- <a href="../link">Exemplo</a> -->
-                    </div>
-                </div>
-                <!-- Fim do Botão 1. Pra criar novos botões basta copiar estas ultimas ~10 linhas de código -->
-                <!-- A criação de novos botões pode prejudicar a responsividade do código. Recomenda-se manter o número de botões menor ou igual a 7, e avaliar qual botão é dispensável. Exemplo: Quem Somos e Seja Membro pode se fundir em um único botão. Além disso, Home é um botão dispensável já que é possível is para página inicial clicando no logo na barra -->
-
-
-                <!-- Botão 2 -->
                 <div>
                     <a href="https://redmatuff.github.io/site/pages/quem-somos.html">
                         <button class="btn-barra">Quem Somos</button>
@@ -65,9 +75,9 @@ header.innerHTML = `
 
                     </div>
                 </div>
-                <!-- Fim do Botão 2 -->
+                <!-- Fim do Botão 1 -->
                 
-                <!-- Botão 3 -->
+                <!-- Botão 2 -->
                 <div>
                     <a href="https://redmatuff.github.io/site/pages/seja-membro.html">
                         <button class="btn-barra">Seja Membro</button>
@@ -76,9 +86,9 @@ header.innerHTML = `
 
                     </div>
                 </div>
-                <!-- Fim do Botão 3 -->
+                <!-- Fim do Botão 2 -->
 
-                <!-- Botão 4 -->
+                <!-- Botão 3 -->
                 <div>
                     <a href="https://redmatuff.github.io/site/pages/proj-ensino.html">
                         <button class="btn-barra">Projetos de Ensino</button>
@@ -92,9 +102,9 @@ header.innerHTML = `
                         <a href="https://redmatuff.github.io/site/pages/proj-ensino.html#fcg">FCG (2023--)</a>
                     </div>
                 </div>
-                <!-- Fim do Botão 4 -->
+                <!-- Fim do Botão 3 -->
 
-                <!-- Botão 5 -->
+                <!-- Botão 4 -->
                 <div>
                     <a href="https://redmatuff.github.io/site/pages/livros-eletronicos.html">
                         <button class="btn-barra">Livros Eletrônicos</button>
@@ -114,12 +124,29 @@ header.innerHTML = `
 
 
 
-                    <a href="http://www.gma.uff.br/calculo1a/">Site Cálculo 1A </a>
-                    <a href="https://redmatuff.github.io/calculovariasvariaveis/">Site Cálculo 2B </a>
-                    <a href="http://www.gma.uff.br/calculo3a/">Site Cálculo 3A </a>
+
                     </div>
                 </div>
-                <!-- Fim do Botão 5 -->
+                <!-- Fim do Botão 4 -->
+
+
+                <!-- Botão 5 -->
+
+                <div>
+                    <!-- <a href="https://redmatuff.github.io/site/pages/plataformas.html"> -->
+                        <button class="btn-barra">Plataformas</button>
+                    <!-- </a> -->
+                    
+                    <div class="menu-btn">
+                        <a href="http://www.gma.uff.br/calculo1a/">Site Cálculo 1A </a>
+                        <a href="https://redmatuff.github.io/calculovariasvariaveis/">Site Cálculo 2B </a>
+                        <a href="http://www.gma.uff.br/calculo3a/">Site Cálculo 3A </a>
+                    </div>               
+                </div>
+
+
+
+
                 
                 <!-- Botão 6 -->
                 <div>

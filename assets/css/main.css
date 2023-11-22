@@ -1,460 +1,465 @@
 @font-face {
-    font-family: "Reem";
-    src: url(../font/Reem_Kufi_Fun/ReemKufiFun-VariableFont_wght.ttf);
+  font-family: "Reem";
+  src: url(../font/Reem_Kufi_Fun/ReemKufiFun-VariableFont_wght.ttf);
 }
 
 body {
-    font-family: "Reem";
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    background-color: #002321;
+  font-family: "Reem";
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #002321;
 }
 
 .revisar {
-    color: rgb(222, 78, 78);
+  color: rgb(222, 78, 78);
 }
 
 .comentario {
-    color: red;
-    background-color: yellow;
-    width: fit-content;
-    font-size: 1rem;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: 600;
-    border-radius: 10px;
-    padding: 1rem;
-    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.65);
-    /* position: absolute; */
+  color: red;
+  background-color: yellow;
+  width: fit-content;
+  font-size: 1rem;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 600;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.65);
+  /* position: absolute; */
 }
-
 
 main {
-    padding: 0rem;
-    background-color: white;
-    color: #777;
-    overflow: hidden;
-    display: flex;
-    flex: 1; /* Para manter o footer sempre no final da pagina memso se o conteúdo for pequeno e a tela comprida*/
-    flex-direction: column;
-    background-color: white;
+  padding: 0rem;
+  background-color: white;
+  color: #777;
+  overflow: hidden;
+  display: flex;
+  flex: 1; /* Para manter o footer sempre no final da pagina memso se o conteúdo for pequeno e a tela comprida*/
+  flex-direction: column;
+  background-color: white;
 }
-
-
-
 
 main .sobre {
-    flex-direction: column;
-    padding: 2rem 2rem 0.5rem 2rem;
+  flex-direction: column;
+  padding: 2rem 2rem 0.5rem 2rem;
 }
 
-
 main .content {
-    padding: 2rem;
-    background-color: white;
+  padding: 2rem;
+  background-color: white;
 }
 
 main .apenas-desktop {
-    display: none;
-    /* position: absolute; */
+  display: none;
+  /* position: absolute; */
 }
 
-main .recurso-container{
-    display: flex;
-    flex-direction: column;
-    margin: 1rem 0 2rem 0;
-    /* background-color: blue; */
+main .recurso-container {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0 2rem 0;
+  /* background-color: blue; */
 }
 
 /* .recurso-container .img-container{ */
-    /* float: right; */
+/* float: right; */
 /* } */
 
-main .recurso-container img{
-    height: 10rem;
-    width: 15rem;
-    /* object-fit: cover; */
-    margin-right: 2rem;
-    margin-bottom: 1rem;
-    border-radius: 1rem;
-    /* background-color: black; */
-    box-shadow: 3px 3px 5px black;
-    padding: 0.3rem;
-    /* border: solid 1px black; */
-    float: left;
-    /* opacity: 0.9; */
-    /* transition: box-shadow 0.3s ease; */
-    transition: filter 0.3s ease;
+main .recurso-container img {
+  height: 10rem;
+  width: 15rem;
+  /* object-fit: cover; */
+  margin-right: 2rem;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+  /* background-color: black; */
+  box-shadow: 3px 3px 5px black;
+  padding: 0.3rem;
+  /* border: solid 1px black; */
+  float: left;
+  /* opacity: 0.9; */
+  /* transition: box-shadow 0.3s ease; */
+  transition: filter 0.3s ease;
 }
 
-main .recurso-container a:hover img{
-    /* box-shadow: 5px 5px 9px black; */
-    filter: contrast(65%)
+main .recurso-container a:hover img {
+  /* box-shadow: 5px 5px 9px black; */
+  filter: contrast(65%);
 }
 
-main .recurso-descricao .logo {
-    position: absolute;
-    width: 3rem;
-    height: 3rem;
-    /* width: 10rem; */
-    /* transform: translate(-14.75rem); */
-    margin: 0;
-    border-radius: 50%;
-    /* border-color: white solid 1rem; */
-    transform: translate(-5.6rem, 7rem);
-    background-color: rgba(255, 255, 255, 1);
-    padding: 0.1rem;
-    opacity: 50%;
-    border: solid black 0.1rem;
-    /* box-shadow: 3px 3px 5px white; */
+main .recurso-box .logo {
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  /* width: 10rem; */
+  /* transform: translate(-14.75rem); */
+  margin: 0;
+  border-radius: 50%;
+  /* border-color: white solid 1rem; */
+  transform: translate(-5.6rem, 7rem);
+  background-color: rgba(255, 255, 255, 1);
+  padding: 0.1rem;
+  opacity: 50%;
+  border: solid black 0.1rem;
+  /* box-shadow: 3px 3px 5px white; */
 }
 
-main .recurso-descricao{
-    /* padding-left: 1rem; */
-    /* max-height: 10rem; */
-    /* overflow: auto; */
-    margin-bottom: 1rem;
-    margin-top: 1rem;
-    text-align: justify;
-    /* background-color: red; */
-    
-    /* width: 54rem; */
-    /* width: 100%; */
-    /* clear: both; */
-    /* flex: 1; */
-    display: flex;
-    align-items: column;
-    /* width: 100%; */
-    /* min-width: 10rem; */
-    /* float: right; */
+
+
+main .recurso-container .recurso-content {
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  /* align-items: space-between  ; */
+  /* background-color: green; */
 }
+
+main .recurso-container .recurso-content .recurso-box {
+  /* padding-left: 1rem; */
+  /* max-height: 10rem; */
+  /* overflow: auto; */
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  text-align: justify;
+  /* background-color: red; */
+
+  /* width: 54rem; */
+  /* width: 100%; */
+  /* clear: both; */
+  /* flex: 1; */
+  display: flex;
+  /* justify-content: space-around; */
+  /* flex: 1; */
+
+  /* align-items: column; */
+  /* width: 100%; */
+  /* min-width: 10rem; */
+  /* float: right; */
+}
+
+main .recurso-container .recurso-content .recurso-box .recurso-descricao {
+  /* background-color: blue; */
+  /* flex: 1; */
+  /* width: 100%; */
+  /* width: 30rem; */
+  /* width: fit-content;   */
+  /* display: flex; */
+  /* flex: 1; */
+  /* width: 130%; */
+}
+
+
 
 
 main ::-webkit-scrollbar {
-    width: 5px;
-     border-radius: 3px;
+  width: 5px;
+  border-radius: 3px;
 }
 
 main ::-webkit-scrollbar-thumb {
-    background-color: #003f3cab;
-    border-radius: 3px;
+  background-color: #003f3cab;
+  border-radius: 3px;
 }
 
 main ::-webkit-scrollbar-track {
-    background-color: #e0e0e0;
-    border-radius: 3px;
-    /* Cor da trilha da barra de rolagem */
+  background-color: #e0e0e0;
+  border-radius: 3px;
+  /* Cor da trilha da barra de rolagem */
 }
 
-
-
 main ul {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: stretch;
-    /* padding-right: 3vw; */
-    padding-bottom: 4rem;
-    padding-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: stretch;
+  /* padding-right: 3vw; */
+  padding-bottom: 4rem;
+  padding-top: 1rem;
 }
 
 /* ************************ */
 main ul li a {
-    display: flex;
-    align-items: center;
-    /* color: black;res REDMat atuaram ou atuam nos seguintes projetos de ensino do Instituto de Matemática e Estatística. ￼ */
-    color: inherit;
+  display: flex;
+  align-items: center;
+  /* color: black;res REDMat atuaram ou atuam nos seguintes projetos de ensino do Instituto de Matemática e Estatística. ￼ */
+  color: inherit;
 }
 
 main ul li {
-    display: flex;
-    align-items: center;
-    min-width: 40%;
-    max-width: 50%;
-    flex: 1;
-    /* border: solid 1px red; */
-    padding: 0.5rem 0;
-    height: 3.5rem;
+  display: flex;
+  align-items: center;
+  min-width: 40%;
+  max-width: 50%;
+  flex: 1;
+  /* border: solid 1px red; */
+  padding: 0.5rem 0;
+  height: 3.5rem;
 }
 
 main ul li img {
-    height: 2rem;
-    width: 2rem;
-    padding: 0.2rem;
-    border-radius: 50%;
-    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.75);
-    /* border: solid 1px red; */
-    background-color: rgba(255, 255, 255, 0.519);
-    /* margin: 0 1rem; */
-    transition: filter 0.3s ease;
+  height: 2rem;
+  width: 2rem;
+  padding: 0.2rem;
+  border-radius: 50%;
+  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.75);
+  /* border: solid 1px red; */
+  background-color: rgba(255, 255, 255, 0.519);
+  /* margin: 0 1rem; */
+  transition: filter 0.3s ease;
 }
-    
+
 main ul li:hover img {
-    /* box-shadow: 5px 5px 9px black; */
-    filter: contrast(65%)
+  /* box-shadow: 5px 5px 9px black; */
+  filter: contrast(65%);
 }
-
-
 
 main ul li p {
-    margin: 0 2rem 0 1rem;
-    /* line-height: 50%; */
-    /* background-color: blue; */
+  margin: 0 2rem 0 1rem;
+  /* line-height: 50%; */
+  /* background-color: blue; */
 }
 
 main hr {
-    margin-bottom: 3rem;
-    height: 1px;
-    border: 0;
-    /* background-color: white; */
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0));
+  margin-bottom: 3rem;
+  height: 1px;
+  border: 0;
+  /* background-color: white; */
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.5),
+    rgba(255, 255, 255, 0)
+  );
 }
 
-main .sobre hr{
-    /* background-color: white; */
+main .sobre hr {
+  /* background-color: white; */
 }
 
-
-
-
-main h1{
-    color: #003f3cab;
-    font-size: 2.8rem;
-    padding: 1rem 0;
-    /* color: #2c7b66; */
-    /* background-image: linear-gradient(to bottom, #4ACAA8, #2c7b66); */
-    /* color: transparent; */
-    /* -webkit-background-clip: text; */
-    /* background-clip: text; */
+main h1 {
+  color: #003f3cab;
+  font-size: 2.8rem;
+  padding: 1rem 0;
+  /* color: #2c7b66; */
+  /* background-image: linear-gradient(to bottom, #4ACAA8, #2c7b66); */
+  /* color: transparent; */
+  /* -webkit-background-clip: text; */
+  /* background-clip: text; */
 }
 
-main h2{
-    color: #003f3cab;
-    font-size: 2rem;
-    padding: 1rem 0;
+main h2 {
+  color: #003f3cab;
+  font-size: 2rem;
+  padding: 1rem 0;
 }
 
-main h3{
-    color: #003f3cab;
-    font-size: 1.4rem;
-    padding: 1rem 0 0.4rem 0;
+main h3 {
+  color: #003f3cab;
+  font-size: 1.4rem;
+  padding: 1rem 0 0.4rem 0;
 }
 
-main h4{
-    color: #003f3cab;
-    font-size: 1.2rem;
-    padding: 1rem 0 0.4rem 0;
+main h4 {
+  color: #003f3cab;
+  font-size: 1.2rem;
+  padding: 1rem 0 0.4rem 0;
 }
 
-
-main h5{
-    color: #003f3cab;
-    font-size: 0.85rem;
-    font-weight: 600;
-    /* text-decoration: underline; */
-    padding: 0rem 0;
+main h5 {
+  color: #003f3cab;
+  font-size: 0.85rem;
+  font-weight: 600;
+  /* text-decoration: underline; */
+  padding: 0rem 0;
 }
 
 main h6 {
-    color: #003f3cab;
-    font-size: 0.7rem;
-    text-decoration: underline;
-    padding: 0rem 0;
+  color: #003f3cab;
+  font-size: 0.7rem;
+  text-decoration: underline;
+  padding: 0rem 0;
 }
 
-main p{
-    /* text-indent: 1.5rem; */
-    font-size: 1rem;
-    padding: 0.4rem 0;
-    line-height: 1.4rem;
-    font-weight: 100;
+main p {
+  /* text-indent: 1.5rem; */
+  font-size: 1rem;
+  padding: 0.4rem 0;
+  line-height: 1.4rem;
+  font-weight: 100;
 }
 
-main a{
-    text-decoration: none;
-    color: inherit;
-    /* font-weight: 600; */
+main a {
+  text-decoration: none;
+  color: inherit;
+  /* font-weight: 600; */
 }
 
-
-
-main .linha-form{
-    display: flex;
-    flex: 1;
-    justify-content: end;
+main .linha-form {
+  display: flex;
+  flex: 1;
+  justify-content: end;
 }
 
-main .linha-form input{
-    font-family: "Reem";
-    width: 100%;
-    padding: 0.6rem;
-    border-radius: 7px;
-    border-color: transparent;
-    margin: 0.2rem;
-    border: #3ca488 solid 1px;
+main .linha-form input {
+  font-family: "Reem";
+  width: 100%;
+  padding: 0.6rem;
+  border-radius: 7px;
+  border-color: transparent;
+  margin: 0.2rem;
+  border: #3ca488 solid 1px;
 }
 
 main .linha-form textarea {
-    font-family: "Reem";
-    width: 100%;
-    padding: 0.6rem;
-    border-radius: 7px;
-    border-color: transparent;
-    margin: 0.2rem;
-    height: 8rem;
-    border: #3ca488 solid 1px;
+  font-family: "Reem";
+  width: 100%;
+  padding: 0.6rem;
+  border-radius: 7px;
+  border-color: transparent;
+  margin: 0.2rem;
+  height: 8rem;
+  border: #3ca488 solid 1px;
 }
 
-main .linha-form button{
-    font-family: "Reem";
-    padding: 0.6rem;
-    border-radius: 5px;
-    margin: 0.2rem;
-    border: transparent;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.65);
+main .linha-form button {
+  font-family: "Reem";
+  padding: 0.6rem;
+  border-radius: 5px;
+  margin: 0.2rem;
+  border: transparent;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.65);
 }
 
 main button {
-    font-family: "Reem";
-    padding: 0.6rem;
-    border-radius: 5px;
-    margin: 0.2rem;
-    border: transparent;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.65);
+  font-family: "Reem";
+  padding: 0.6rem;
+  border-radius: 5px;
+  margin: 0.2rem;
+  border: transparent;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.65);
 }
-main a button{
-    cursor: pointer;
+main a button {
+  cursor: pointer;
 }
-
-
-
 
 @media (max-width: 400px) {
-    main .recurso-container img {
-        /* height: 40vw; */
-        /* width: 60vw; */
-        /* padding-right: 1rem; */
-    }
-    main .recurso-descricao .logo {
-        /* transform: translate(-6%,12%); */
-    }
+  main .recurso-container img {
+    /* height: 40vw; */
+    /* width: 60vw; */
+    /* padding-right: 1rem; */
+  }
+  main .recurso-box .logo {
+    /* transform: translate(-6%,12%); */
+  }
 }
 
-
 @media (max-width: 650px) {
-    main .recurso-container div {
-        display: flex;
-        /* background-color: red; */
-        flex-direction: column;
-        align-items: center;
-        /* justify-content: center; */
-    }
-    main .recurso-descricao{
-        padding: 1rem 0;
-        order: 1;
-    }
+  main .recurso-container div {
+    display: flex;
+    /* background-color: red; */
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+  }
+  main .recurso-box {
+    padding: 1rem 0;
+    order: 1;
+  }
 
-    main .recurso-descricao .logo {
-        transform: translate(-3.6rem, 7rem);
-    }
-    main .recurso-container{
-        order: 2;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    main .recurso-container h3{
-        text-align: center;
-    }
-    main .recurso h3{
-        text-align: center;
-    }
+  main .recurso-box .logo {
+    transform: translate(-3.6rem, 7rem);
+  }
+  main .recurso-container {
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  main .recurso-container h3 {
+    text-align: center;
+  }
+  main .recurso h3 {
+    text-align: center;
+  }
 
-    main .recurso-container img {
-        /* height: 10rem; */
-        /* width: 15rem; */
-        max-width: none;
-        float: none;
-        margin-right: 0rem;
-        /* margin-bottom: 1rem; */
-        /* padding: ; */
-        /* justify-content: center; */
-        /* align-items: center; */
-        /* padding-right: 1rem; */
-    }
+  main .recurso-container img {
+    /* height: 10rem; */
+    /* width: 15rem; */
+    max-width: none;
+    float: none;
+    margin-right: 0rem;
+    /* margin-bottom: 1rem; */
+    /* padding: ; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* padding-right: 1rem; */
+  }
 
-
-    main ul li {
-        min-width: 100%;
-
-    } 
-   
-
-
-
-
+  main ul li {
+    min-width: 100%;
+  }
 }
 
 @media (min-width: 1400px) {
-    main{
-        background-image: linear-gradient(to right, #3ca488, #3ca488, white, white);
-    }
-    main .sobre{
-        max-width: 500px;
-    }
-    main .content{
-        max-width: 1000px;
-    }
+  main {
+    background-image: linear-gradient(to right, #3ca488, #3ca488, white, white);
+  }
+  main .sobre {
+    max-width: 500px;
+  }
+  main .content {
+    max-width: 1000px;
+  }
 }
 
 @media (min-width: 1100px) {
-    main{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
+  main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
 
-    main .sobre hr{
-    background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(255, 255, 255));
-    }
+  main .sobre hr {
+    background-image: linear-gradient(
+      to right,
+      rgb(255, 255, 255),
+      rgb(255, 255, 255)
+    );
+  }
 
-    main .sobre{
-        width: 35%;
-    }
-    main .content{
-        width: 65%;
-    }
-    main .apenas-desktop {
-        display: inherit;
-    }
+  main .sobre {
+    width: 35%;
+  }
+  main .content {
+    width: 65%;
+  }
+  main .apenas-desktop {
+    display: inherit;
+  }
 
-    main .sobre {
-        /* background-image: linear-gradient(to bottom, white, #2c7b66, white); */
-        background-color: #3ca488;
-        /* background-image: linear-gradient(to right, #2c7b66, #2c7b66, black); */
-        /* background-color: #2c7b66; */
-        /* border-top: solid 1px white; */
-        /* border-bottom: solid 1px white; */
-        /* border-right: solid 1px black; */
-        box-shadow: 4px 0px 3px rgba(0, 0, 0, 0.6);
-        z-index: 2;
-    }
-    
-    main .sobre p{
-        color: white;
-        text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);
-    }
+  main .sobre {
+    /* background-image: linear-gradient(to bottom, white, #2c7b66, white); */
+    background-color: #3ca488;
+    /* background-image: linear-gradient(to right, #2c7b66, #2c7b66, black); */
+    /* background-color: #2c7b66; */
+    /* border-top: solid 1px white; */
+    /* border-bottom: solid 1px white; */
+    /* border-right: solid 1px black; */
+    box-shadow: 4px 0px 3px rgba(0, 0, 0, 0.6);
+    z-index: 2;
+  }
 
-    main .sobre h1 {
-        font-size: 2.8rem;
-        padding: 1rem 0;
-        color: #00282685;
-        /* background-image: linear-gradient(to bottom, #2c7b66, #2c7b66, #000);
+  main .sobre p {
+    color: white;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);
+  }
+
+  main .sobre h1 {
+    font-size: 2.8rem;
+    padding: 1rem 0;
+    color: #00282685;
+    /* background-image: linear-gradient(to bottom, #2c7b66, #2c7b66, #000);
         color: transparent;
         -webkit-background-clip: text;
         background-clip: text; */
-
-    }
-
+  }
 }
