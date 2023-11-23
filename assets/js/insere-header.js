@@ -165,15 +165,16 @@ header.innerHTML = `
                 
                 <!-- Botão 7 -->
                 <div>
-                    <a href="https://redmatuff.github.io/site/pages/contato.html">
-                        <button class="btn-barra">Contato</button>
+                    <a href="https://redmatuff.github.io/site/pages/projetos-extensao.html">
+                        <button class="btn-barra">Projetos de Extensão</button>
                     </a>
                     <div class="menu-btn">
 
                     </div>
                 </div>
+                <!-- Fim do Botão 7 -->
+
             </div>
-            <!-- Fim do Botão 7 -->
 
              <!-- Header 1.3. Ícone do Menu Hamburguer -->
             <div class="hamb-icon-container">
