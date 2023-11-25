@@ -32,7 +32,7 @@ main {
   padding: 0rem;
   background-color: white;
   color: #777;
-  overflow: hidden;
+  /* overflow: hidden; */
   display: flex;
   flex: 1; /* Para manter o footer sempre no final da pagina memso se o conteúdo for pequeno e a tela comprida*/
   flex-direction: column;
@@ -42,6 +42,7 @@ main {
 main .sobre {
   flex-direction: column;
   padding: 2rem 2rem 0.5rem 2rem;
+  /* position: fixed; */
 }
 
 main .content {
@@ -425,6 +426,7 @@ main a button {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: start;
   }
 
   main .sobre hr {
@@ -455,17 +457,37 @@ main a button {
     /* border-right: solid 1px black; */
     box-shadow: 4px 0px 3px rgba(0, 0, 0, 0.6);
     z-index: 2;
+    /* overflow-y: scroll; */
+    /* background-image: repeating-radial-gradient(black, white); */
+    /* display: flex; */
+
+    /* display: block; */
+    /* align-items: start; */
+    /* position: relative; */
+    position: sticky;
+    height: 100vh;
+    top: 0px;
   }
 
   main .sobre p {
+    /* position: sticky; */
+    /* top: 10px; */
+    /* height: 100vh; */
+    
+
     color: white;
     text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);
+    /* position: sticky; */
   }
 
   main .sobre h1 {
     font-size: 2.8rem;
     padding: 1rem 0;
+    
     color: #00282685;
+    /* color: red; */
+    /* position: sticky; */
+    /* top: 40px; */
     /* background-image: linear-gradient(to bottom, #2c7b66, #2c7b66, #000);
         color: transparent;
         -webkit-background-clip: text;

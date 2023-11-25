@@ -1,21 +1,5 @@
 var header = document.getElementsByTagName('header')[0];
 
-
-
-                // <!-- Botão 0 -->
-                // <div>
-                //     <a href="https://redmatuff.github.io/site/index.html">
-                //         <button class="btn-barra">Home</button> <!-- Botão da barra-->
-                //     </a>
-                //     <div class="menu-btn">
-                //         <!-- Colocar tags <a> aqui para criar o menu do botão -->
-                //         <!-- <a href="../link">Exemplo</a> -->
-                //     </div>
-                // </div>
-                // <!-- Fim do Botão 1. Pra criar novos botões basta copiar estas ultimas ~10 linhas de código -->
-                // <!-- A criação de novos botões pode prejudicar a responsividade do código. Recomenda-se manter o número de botões menor ou igual a 7, e avaliar qual botão é dispensável. Exemplo: Quem Somos e Seja Membro pode se fundir em um único botão. Além disso, Home é um botão dispensável já que é possível is para página inicial clicando no logo na barra -->
-
-
 header.innerHTML = `
         <!-- Header 1. Barra Superior -->
         <div class="barra-sup">
@@ -110,28 +94,17 @@ header.innerHTML = `
                         <button class="btn-barra">Livros Eletrônicos</button>
                     </a>        
                     <div class="menu-btn">
-                    <a href="https://www.geogebra.org/m/hzvsftdf">Calculo com Geobebra 3D vol. I</a>
-                    <a href="https://www.geogebra.org/m/jke7hpfs">Calculo com Geobebra 3D vol. II</a>
-                    <a href="https://www.geogebra.org/m/wtmkn9nv">Geometria Analítica com Geogebra</a>
-                    <a href="https://redmatuff.github.io/calculovariasvariaveis/assets/pdf/apostila/apostila-completa.pdf">Apostila Cálculo Diferencial de Várias Variáveis</a>
-                    <a href="https://fcgeometria.notion.site/fcgeometria/Fundamentos-de-C-lculo-e-Geometria-d169bff4f8e34c229fdd97b514ff02e4
-                    ">Apostila de FGCV</a>
-
-
-
-
-
-
-
-
-
+                        <a href="https://www.geogebra.org/m/hzvsftdf">Calculo com Geobebra 3D vol. I</a>
+                        <a href="https://www.geogebra.org/m/jke7hpfs">Calculo com Geobebra 3D vol. II</a>
+                        <a href="https://www.geogebra.org/m/wtmkn9nv">Geometria Analítica com Geogebra</a>
+                        <a href="https://redmatuff.github.io/calculovariasvariaveis/assets/pdf/apostila/apostila-completa.pdf">Apostila Cálculo Diferencial de Várias Variáveis</a>
+                        <a href="https://fcgeometria.notion.site/fcgeometria/Fundamentos-de-C-lculo-e-Geometria-d169bff4f8e34c229fdd97b514ff02e4
+                        ">Apostila de FGCV</a>
                     </div>
                 </div>
                 <!-- Fim do Botão 4 -->
 
-
                 <!-- Botão 5 -->
-
                 <div>
                     <!-- <a href="https://redmatuff.github.io/site/pages/plataformas.html"> -->
                         <button class="btn-barra">Plataformas</button>
@@ -143,10 +116,7 @@ header.innerHTML = `
                         <a href="http://www.gma.uff.br/calculo3a/">Site Cálculo 3A </a>
                     </div>               
                 </div>
-
-
-
-
+                <!-- Fim do Botão 5 -->
                 
                 <!-- Botão 6 -->
                 <div>
