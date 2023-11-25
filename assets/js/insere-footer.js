@@ -42,8 +42,9 @@ footer.innerHTML = `
         
 
     </div>
-    <p class="copyright">© 2023 REDMat - Todos os Direitos Reservados</p>
-
+    <div class="copyright">
+        <p>© 2023 REDMat - Todos os Direitos Reservados</p>
+    </div>
     
 
 
