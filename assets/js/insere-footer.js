@@ -33,7 +33,7 @@ footer.innerHTML = `
                 </div>
                 <div class="contato-footer">
                     <a href="https://redmatuff.github.io/site/pages/contato.html"">
-                        <img src="/assets/icons/envelope.png" alt="">
+                        <img src="https://redmatuff.github.io/site/assets/icons/envelope.png" alt="icone envelope">
                     </a>
                 </div>
             </div>
