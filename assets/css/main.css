@@ -465,7 +465,7 @@ main a button {
     /* align-items: start; */
     /* position: relative; */
     position: sticky;
-    height: 100vh;
+    /* height: 100vh; */
     top: 0px;
   }
 
