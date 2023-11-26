@@ -33,7 +33,6 @@ footer .footer-content{
 footer .sec-ft{
     text-align: center;
     overflow: hidden;
-    /* margin: 0 2rem; */
     /* border: solid 1px red; */
 }
 
@@ -117,7 +116,7 @@ footer #sec-1 a{
 
 footer #sec-2{
     /* max-width: 30vw; */
-    padding: 0 2rem 0 0;
+    padding: 0 2rem 0 0rem;
     /* background-color: red; */
 }
 
@@ -133,6 +132,8 @@ footer #sec-3{
 footer #sec-3{
     min-width: 300px;
     min-height: 225px;
+    /* background-color: red; */
+    /* transform: translate(-5vw,0); */
 }
 footer #sec-3 iframe {
     /* width: 300px; */
@@ -145,6 +146,13 @@ footer #sec-3 iframe {
         width: 1500px;
     }
 }
+
+@media (min-width: 1100px) {
+    footer .sec-ft{
+        margin: 0 2rem;
+    }
+}
+
 
 @media (max-width: 800px) {
     footer .footer-content .secs {

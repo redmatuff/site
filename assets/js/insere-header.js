@@ -139,7 +139,9 @@ header.innerHTML = `
                         <button class="btn-barra">Projetos de Extensão</button>
                     </a>
                     <div class="menu-btn">
-
+                        <a href="">Projeto 1</a>
+                        <a href="">Projeto 2</a>
+                        <a href="">Projeto 3</a>
                     </div>
                 </div>
                 <!-- Fim do Botão 7 -->

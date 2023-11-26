@@ -3,7 +3,6 @@
 <!-- Adição de links externos, conteúdo, e imagens -->
 <!-- Remover console.log dos JavaScripts -->
 <!-- Remover comentários inúteis e adicionar comentários importantes -->
-<!-- Estilizar hr especial no css -->
 <!-- Remover os css inutilizados -->
 
 <!DOCTYPE html>
@@ -24,110 +23,120 @@
 
         <main>
             <section class="sobre">
-                <h2>Sobre o Projeto</h2>
-                <p>
-                    O projeto de monitoria REDMat (Recursos Educacionais Digitais para o ensino da Matemática) nasceu em 2021 e visa desenvolver conteúdo digital para ajudar no processo de ensino-aprendizagem do discente em disciplinas do IME. O conteúdo é apresentado de uma maneira mais moderna e interativa através de plataformas digitais e recursos computacionais.
-                </p>
+                <div class="fixar">
+                    <h2>Sobre o Projeto</h2>
+                    <p>
+                        O projeto de monitoria REDMat (Recursos Educacionais Digitais para o ensino da Matemática) nasceu em 2021 e visa desenvolver conteúdo digital para ajudar no processo de ensino-aprendizagem do discente em disciplinas do IME. O conteúdo é apresentado de uma maneira mais moderna e interativa através de plataformas digitais e recursos computacionais.
+                    </p>
+                </div>
 
-                <div class="apenas-desktop">
-                    <hr>
-                    <div class="equipes">
-                        <h2>Equipes</h2>
-                        <ul>
-                            <li>
-                                <a href="pages/quem-somos.html#eq2024">
-                                    <img
-                                        src="assets/icons/pessoas-icone.png"
-                                        alt="icone pessoas"
-                                    />
-                                    <p>2024</p>
-                                </a>
-                            </li>
 
-                            <li>
-                                <a href="pages/quem-somos.html#eq2023">
-                                    <img
-                                        src="assets/icons/pessoas-icone.png"
-                                        alt="icone pessoas"
-                                    />
-                                    <p>2023</p>
-                                </a>
-                            </li>
+                <div class="fixar">
+                    <div class="apenas-desktop">
+                        <hr>
+                        <div class="equipes">
+                            <h2>Equipes</h2>
+                            <ul>
+                                <li>
+                                    <a href="pages/quem-somos.html#eq2024">
+                                        <img
+                                            src="assets/icons/pessoas-icone.png"
+                                            alt="icone pessoas"
+                                        />
+                                        <p>2024</p>
+                                    </a>
+                                </li>
 
-                            <li>
-                                <a href="pages/quem-somos.html#eq2022">
-                                    <img
-                                        src="assets/icons/pessoas-icone.png"
-                                        alt="icone pessoas"
-                                    />
-                                    <p>2022</p>
-                                </a>
-                            </li>
+                                <li>
+                                    <a href="pages/quem-somos.html#eq2023">
+                                        <img
+                                            src="assets/icons/pessoas-icone.png"
+                                            alt="icone pessoas"
+                                        />
+                                        <p>2023</p>
+                                    </a>
+                                </li>
 
-                            <li>
-                                <a href="pages/quem-somos.html#eq2021">
-                                    <img
-                                        src="assets/icons/pessoas-icone.png"
-                                        alt="icone pessoas"
-                                    />
-                                    <p>2021</p>
-                                </a>
-                            </li>
+                                <li>
+                                    <a href="pages/quem-somos.html#eq2022">
+                                        <img
+                                            src="assets/icons/pessoas-icone.png"
+                                            alt="icone pessoas"
+                                        />
+                                        <p>2022</p>
+                                    </a>
+                                </li>
 
-                            <li>
-                                <a href="pages/quem-somos.html#eq2020">
-                                    <img
-                                        src="assets/icons/pessoas-icone.png"
-                                        alt="icone pessoas"
-                                    />
-                                    <p>2020</p>
-                                </a>
-                            </li>
-                        </ul>
+                                <li>
+                                    <a href="pages/quem-somos.html#eq2021">
+                                        <img
+                                            src="assets/icons/pessoas-icone.png"
+                                            alt="icone pessoas"
+                                        />
+                                        <p>2021</p>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="pages/quem-somos.html#eq2020">
+                                        <img
+                                            src="assets/icons/pessoas-icone.png"
+                                            alt="icone pessoas"
+                                        />
+                                        <p>2020</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <hr>
+                </div>
+                <div class="fixar">
+                    <div class = "apenas-desktop">
+                        <hr>
 
-                    <div class="contato">
-                        <h2>Contato</h2>
 
-                        <form
-                            action="https://formsubmit.co/redmatuff@gmail.com"
-                            method="POST"
-                        >
-                            <div class="linha-form">
-                                <input type="text" placeholder="Nome" name="name" />
+                        <div class="contato">
+                            <h2>Contato</h2>
+
+                            <form
+                                action="https://formsubmit.co/redmatuff@gmail.com"
+                                method="POST"
+                            >
+                                <div class="linha-form">
+                                    <input type="text" placeholder="Nome" name="name" />
+                                    <input
+                                        type="text"
+                                        placeholder="E-mail"
+                                        name="email"
+                                        pattern=".+@.+[.].+"
+                                        required
+                                        title="Por favor, insira um endereço de e-mail válido (ex: exemplo@dominio.com)"
+                                    />
+                                </div>
+                                <div class="linha-form">
+                                    <input type="text" placeholder="Assunto" name="_subject" />
+                                </div>
+                                <input type="hidden" name="_captcha" value="false" />
+                                <div class="linha-form">
+                                    <textarea
+                                        id="mensagem"
+                                        class="msg"
+                                        type="text"
+                                        placeholder="Mensagem"
+                                        name="message"
+                                        required
+                                    ></textarea>
+                                </div>
+                                <div class="linha-form">
+                                    <button>Enviar Mensagem</button>
+                                </div>
                                 <input
-                                    type="text"
-                                    placeholder="E-mail"
-                                    name="email"
-                                    pattern=".+@.+[.].+"
-                                    required
-                                    title="Por favor, insira um endereço de e-mail válido (ex: exemplo@dominio.com)"
+                                    type="hidden"
+                                    name="_next"
+                                    value="https://redmatuff.github.io/site/pages/msg-enviada.html"
                                 />
-                            </div>
-                            <div class="linha-form">
-                                <input type="text" placeholder="Assunto" name="_subject" />
-                            </div>
-                            <input type="hidden" name="_captcha" value="false" />
-                            <div class="linha-form">
-                                <textarea
-                                    id="mensagem"
-                                    class="msg"
-                                    type="text"
-                                    placeholder="Mensagem"
-                                    name="message"
-                                    required
-                                ></textarea>
-                            </div>
-                            <div class="linha-form">
-                                <button>Enviar Mensagem</button>
-                            </div>
-                            <input
-                                type="hidden"
-                                name="_next"
-                                value="https://redmatuff.github.io/site/pages/msg-enviada.html"
-                            />
-                        </form>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -185,6 +194,11 @@
                         </a>
                     </li>
                 </ul>
+
+
+
+
+
 
                 <hr>
 
@@ -248,6 +262,11 @@
                 </ul>
                 <hr>
 
+
+
+
+
+
                 <h2>
                     <a href="pages/proj-ensino.html">
                         Plataformas com participação do REDMat
@@ -282,15 +301,15 @@
 
                 <hr>
 
+
+
+
                 <h2>
                     <a href="pages/recursos.html"> Recursos Computacionais </a>
                 </h2>
-
                 <p>
                     Os monitores REDMat colaboraram na produção do seguinte material digital:
                 </p>
-
-                <p class="comentario">Colocar links para páginas finais</p>
 
                 <ul>
                     <li>
@@ -330,6 +349,52 @@
                         </a>
                     </li>
                 </ul>
+
+                <hr>
+
+
+
+
+
+
+
+                <h2>
+                    <a href="pages/recursos.html"> Projetos de Extensão </a>
+                </h2>
+                <p>
+                    Os monitores REDMat colaboraram nos seguintes projetos de extensão:
+                </p>
+
+                <ul>
+                    <li>
+                        <a href="">
+                            <img
+                                src="assets/img/img-padrao.bmp"
+                                alt="Projeto 1"
+                            />
+                            <p>Projeto 1</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img
+                                src="assets/img/img-padrao.bmp"
+                                alt="Projeto 2"
+                            />
+                            <p>Projeto 2</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img
+                                src="assets/img/img-padrao.bmp"
+                                alt="Projeto 3"
+                            />
+                            <p>Projeto 3</p>
+                        </a>
+                    </li>
+                </ul>
+
 
             </section>
         </main>

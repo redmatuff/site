@@ -42,6 +42,7 @@ main {
 main .sobre {
   flex-direction: column;
   padding: 2rem 2rem 0.5rem 2rem;
+  /* flex: 1; */
   /* position: fixed; */
 }
 
@@ -240,6 +241,12 @@ main hr {
   );
 }
 
+main .linha-grossa{
+  height: 0.5rem;
+  margin-bottom: 10rem;
+  background-image: linear-gradient(to right, transparent, #999, transparent);
+}
+
 main .sobre hr {
   /* background-color: white; */
 }
@@ -426,7 +433,7 @@ main a button {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: start;
+    /* align-items: start; */
   }
 
   main .sobre hr {
@@ -464,9 +471,21 @@ main a button {
     /* display: block; */
     /* align-items: start; */
     /* position: relative; */
+    /* min-height: 100%; */
+    /* position: sticky; */
+    /* top: 0px; */
+    /* border: black solid 10px; */
+    /* height: 150%; */
+
+  }
+
+  main .sobre .fixar {
+    background-color: #3ca488;
     position: sticky;
+    top: -4px;
+    padding: 0rem 0.5rem;
     min-height: 100vh;
-    top: 0px;
+
   }
 
   main .sobre p {
