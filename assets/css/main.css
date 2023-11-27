@@ -188,6 +188,44 @@ main ul {
 }
 
 /* ************************ */
+main .lista ul {
+  display: block;
+  list-style-type: disc;
+  /* list-style: none; */
+  /* list-style-position: ; */
+  /* list-style: disc; */
+  /* list-style: circle; */
+  /* line-height-step: 110rem; */
+  /* color: #002321; */
+}
+/* main .lista ul li { */
+  /* list-style-type: disc; */
+  /* display: block; */
+  /* max-width: none; */
+  /* min-width: none; */
+  /* padding: 0.5rem; */
+  /* height: auto; */
+  /* margin: 0; */
+
+/* } */
+
+/* main .lista ul li a{ */
+  /* display: block; */
+/* } */
+main em{
+  text-decoration: underline;
+  font-style: italic;
+}
+main ol{
+  padding: 1rem;
+}
+
+main ol li {
+  padding: 0.3rem;
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
 main ul li a {
   display: flex;
   align-items: center;
@@ -479,11 +517,19 @@ main a button {
 
   }
 
+  main .sobre .naofixar {
+    /* background-color: #3ca488; */
+    /* position: sticky; */
+    /* top: -4px; */
+    padding: 0rem 0.3rem;
+    /* min-height: 50vh; */
+  }
+
   main .sobre .fixar {
     background-color: #3ca488;
     position: sticky;
     top: -4px;
-    padding: 0rem 0.5rem;
+    padding: 0rem 0.3rem;
     min-height: 100vh;
 
   }
