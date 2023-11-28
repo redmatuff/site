@@ -145,6 +145,7 @@ main .recurso-container .recurso-content .recurso-box {
   /* flex-direction: column; */
 }
 
+
 main .recurso-container .recurso-content .recurso-box .recurso-descricao {
   padding-top: 0.5rem;
   /* background-color: blue; */
@@ -269,6 +270,8 @@ main ul li p {
 
 main hr {
   margin-bottom: 3rem;
+  margin-top: 0;
+  /* padding-top: 1rem; */
   height: 1px;
   border: 0;
   /* background-color: white; */
@@ -480,6 +483,9 @@ main a button {
       rgb(255, 255, 255),
       rgb(255, 255, 255)
     );
+    /* background-color: #3ca488; */
+    /* margin: 0; */
+
   }
 
   main .sobre {
@@ -517,21 +523,32 @@ main a button {
 
   }
 
-  main .sobre .naofixar {
+  /* main .sobre .naofixar { */
     /* background-color: #3ca488; */
     /* position: sticky; */
     /* top: -4px; */
-    padding: 0rem 0.3rem;
+    /* padding: 0rem 0.3rem; */
     /* min-height: 50vh; */
-  }
+  /* } */
 
-  main .sobre .fixar {
+  main .sobre .fixar:last-child {
     background-color: #3ca488;
     position: sticky;
     top: -4px;
-    padding: 0rem 0.3rem;
-    min-height: 100vh;
+    border-left: solid 10px #3ca488;
+    border-right: solid 10px #3ca488;
+    /* min-heigh100vht: 100vh; */
+    /* height: ; */
+    /* max-height: 100vh */
+  }
 
+  /* main .sobre .fixar p:last-child{ */
+    /* padding-bottom: 5rem; */
+  /* } */
+  main .sobre .fixar{
+    padding: 0rem 0rem 3rem 0rem;
+    /* height: 100vh; */
+    /* padding-bottom: calc(100vh-3rem); */
   }
 
   main .sobre p {
