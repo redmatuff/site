@@ -134,9 +134,10 @@ header.innerHTML = `
                 <!-- Fim do Botão 6 -->
                 
                 <!-- Botão 7 -->
+                <!--
                 <div>
                     <a href="https://redmatuff.github.io/site/pages/projetos-extensao.html">
-                        <!-- <button class="btn-barra">Projetos de Extensão</button> -->
+                        <button class="btn-barra">Projetos de Extensão</button>
                     </a>
                     <div class="menu-btn">
                         <a href="">Projeto 1</a>
@@ -144,6 +145,7 @@ header.innerHTML = `
                         <a href="">Projeto 3</a>
                     </div>
                 </div>
+                -->
                 <!-- Fim do Botão 7 -->
 
             </div>

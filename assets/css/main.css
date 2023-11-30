@@ -457,7 +457,8 @@ main a button {
   }
 }
 
-@media (min-width: 1400px) {
+/* COMENTAR ESSA ÁREA PARA NAO CENTRALIZAR AREA VERDE / BRANCA */
+/* @media (min-width: 1400px) {
   main {
     background-image: linear-gradient(to right, #3ca488, #3ca488, white, white);
   }
@@ -467,13 +468,19 @@ main a button {
   main .content {
     max-width: 1000px;
   }
-}
+} */
+/* COMENTAR ATÉ AQUI */
+
 
 @media (min-width: 1100px) {
   main {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+
+    /* COMENTAR ABAIXO O JUSTIFY CONTENT*/
+    /* justify-content: center; */
+
+
     /* align-items: start; */
   }
 
@@ -489,9 +496,13 @@ main a button {
   }
 
   main .sobre {
+    
     width: 35%;
+    /* DESCOMENTAR O MAXWIDTH ABAIXO */
+    max-width: 700px;
   }
   main .content {
+    /* VERIFICAR O WIDTH ABAIXO */
     width: 65%;
   }
   main .apenas-desktop {
@@ -535,8 +546,8 @@ main a button {
     background-color: #3ca488;
     position: sticky;
     top: -4px;
-    border-left: solid 10px #3ca488;
-    border-right: solid 10px #3ca488;
+    /* border-left: solid 10px #3ca488; */
+    /* border-right: solid 10px #3ca488; */
     /* min-heigh100vht: 100vh; */
     /* height: ; */
     /* max-height: 100vh */
