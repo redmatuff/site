@@ -67,9 +67,10 @@ main .recurso-container {
 /* float: right; */
 /* } */
 
-main .recurso-container img {
+main .recurso-container .recurso-content .recurso-box img {
   height: 10rem;
   width: 15rem;
+  /* background-color: red; */
   /* object-fit: cover; */
   margin-right: 2rem;
   margin-bottom: 1rem;
@@ -89,7 +90,7 @@ main .recurso-container a:hover img {
   filter: contrast(65%);
 }
 
-main .recurso-box .logo {
+main .recurso-container .recurso-content .recurso-box .logo {
   position: absolute;
   width: 3rem;
   height: 3rem;
