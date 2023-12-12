@@ -492,7 +492,9 @@ main a button {
       rgb(255, 255, 255)
     );
     /* background-color: #3ca488; */
-    /* margin: 0; */
+    margin-bottom: 0;
+    margin-top: 3rem;
+    
 
   }
 
@@ -508,6 +510,8 @@ main a button {
   }
   main .apenas-desktop {
     display: inherit;
+    /* padding: 0rem; */
+    /* margin: 0rem; */
   }
 
   main .sobre {
@@ -535,7 +539,7 @@ main a button {
 
   }
 
-  /* main .sobre .naofixar { */
+  /* main .sobre .naobox-sobre { */
     /* background-color: #3ca488; */
     /* position: sticky; */
     /* top: -4px; */
@@ -543,10 +547,11 @@ main a button {
     /* min-height: 50vh; */
   /* } */
 
-  main .sobre .fixar:last-child {
-    background-color: #3ca488;
+  main .sobre .box-sobre:last-child {
+    /* background-color: #3ca488; */
     position: sticky;
-    top: -4px;
+    top: 2rem;
+    /* background-color: red; */
     /* border-left: solid 10px #3ca488; */
     /* border-right: solid 10px #3ca488; */
     /* min-heigh100vht: 100vh; */
@@ -554,10 +559,10 @@ main a button {
     /* max-height: 100vh */
   }
 
-  /* main .sobre .fixar p:last-child{ */
+  /* main .sobre .box-sobre p:last-child{ */
     /* padding-bottom: 5rem; */
   /* } */
-  main .sobre .fixar{
+  main .sobre .box-sobre{
     padding: 0rem 0rem 3rem 0rem;
     /* height: 100vh; */
     /* padding-bottom: calc(100vh-3rem); */
