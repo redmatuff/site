@@ -20,7 +20,7 @@ footer.innerHTML = `
             </div>
             <div class="sec-ft" id="sec-1">
                 <div>
-                    <a href="https://www.instagram.com/monitoriaredmatuff/" target="_blank">
+                    <a href="https://www.instagram.com/redmatuff/" target="_blank">
                         <img src="https://redmatuff.github.io/site/assets/icons/instagram.png" alt="icone do instagram">
                     </a>
 
