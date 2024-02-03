@@ -115,6 +115,8 @@ function handleResize() {
 
         // Evita chamar a função de fechar o menu em navegadores de smartphones onde o sumiço da barra de navegação provoca a chamada do resize pois há aumento na altura da janela. 
         if(window.innerWidth != larguraJanela){
+            // console.log("fechamenu");
+
             console.log('innerwidth = '+window.innerWidth+'. LarguraJanela = '+larguraJanela);
             menu.style.display = 'none';
             for (let i = 0; i < menuBtn.length; i++){
@@ -122,12 +124,13 @@ function handleResize() {
             }
             menuAtivo = 0;
             hamburgerIcon.src=urlHambTraco;
+            larguraJanela = window.innerWidth;
         
         }
 
     }
 
-    console.log('Janela redimensionada!');
+    console.log('Janela redimensionada! 001');
 }
 
 // Adiciona um ouvinte de evento para o evento de redimensionamento usando o debounce
