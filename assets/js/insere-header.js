@@ -79,11 +79,11 @@ header.innerHTML = `
                     </a>
                     <div class="menu-btn">
                         <a href="https://redmatuff.github.io/site/pages/proj-ensino.html#manim">Recursos Computacionais com Python</a>
-                        <a href="https://redmatuff.github.io/site/pages/proj-ensino.html#geog-3d">Geogebra 3D (2020-2021)</a>
-                        <a href="https://redmatuff.github.io/site/pages/proj-ensino.html#disc-dist-soc">Disciplinas no distanciamento social (2020)</a>
-                        <a href="https://redmatuff.github.io/site/pages/proj-ensino.html#novas-tec-ensino">Novas tecnologias de ensino (2020--)</a>
-                        <a href="https://redmatuff.github.io/site/pages/proj-ensino.html#gacv">GACV (2020-2022)</a>
                         <a href="https://redmatuff.github.io/site/pages/proj-ensino.html#fcg">FCG (2023--)</a>
+                        <a href="https://redmatuff.github.io/site/pages/proj-ensino.html#novas-tec-ensino">Tecnologias de ensino (2020--)</a>
+                        <a href="https://redmatuff.github.io/site/pages/proj-ensino.html#geog-3d">Geogebra 3D (2020-2021)</a>
+                        <a href="https://redmatuff.github.io/site/pages/proj-ensino.html#gacv">GACV (2020-2022)</a>
+                        <a href="https://redmatuff.github.io/site/pages/proj-ensino.html#disc-dist-soc">Disciplinas no distanciamento social (2020)</a>
                     </div>
                 </div>
                 <!-- Fim do Botão 3 -->
