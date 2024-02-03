@@ -1,17 +1,11 @@
-// *********** Ao redimensionar a tela de 769 para 766 px no PC o menu aparece de forma indesejada. A solução mais fácil que está comentada está com bug, fazendo o menu fechar ao fazer scroll em celular.
+// Ao redimensionar a tela de 769 para 766 px no PC o menu aparece de forma indesejada.
+// O valor ??? na linha que contem "window.addEventListener('resize', debounce(handleResize, ???));" controla o tempo do fechamento.
+// Um valor menor minimiza o bug, mas torna o redimensionamento menos eficiente.
+// 25 é um valor pouco eficiente mas sem bug. 250 é um valor muito eficiente mas com bug. (o bug é meramente visual)
 
 
 var urlHambX = 'https://redmatuff.github.io/site/assets/icons/hamb-x.png';
 var urlHambTraco = 'https://redmatuff.github.io/site/assets/icons/hamb-traco.png';
-
-// Corrige caminhos
-// var caminhoAtual = window.location.pathname;
-// if (!caminhoAtual.endsWith('index.html')) {
-//     urlHambX = 'https://redmatuff.github.io/site/assets/icons/hamb-x.png';
-//     urlHambTraco = 'https://redmatuff.github.io/site/assets/icons/hamb-traco.png';
-// }
-
-
 let menuAtivo = 0;
 
 const hamburgerIcon = document.querySelector('.hamb-icon');
@@ -20,30 +14,7 @@ const menuBtn = document.querySelectorAll('.menu-btn');
 const botoes = document.querySelectorAll('.btn-barra');
 
 
-// Melhorar esta função abaixo para diferentes níveis onde a página se encontra
-
-// urlHambX = verificarImagem(urlHambX);
-
-// function verificarImagem(url) {
-//     fetch(url, {
-//         method: 'HEAD'
-//     })
-//     .then(response => {
-//         if (response.ok) {
-//             console.log('A imagem existe no servidor.');
-//         } else {
-//             console.log('A imagem não existe no servidor.');
-//             return "../" + url;
-//         }
-//     })
-//     .catch(error => {
-//         console.error('Erro ao verificar a imagem:', error);
-//     });
-// }
-
-
-
-// Adicionar listener no icone do menu hamburguer
+// Adicionar listener no icone do menu hamburguer paa abrir e fechar o menu
 hamburgerIcon.addEventListener('click', function(){
     if (menuAtivo == 0){
         menu.style.display = 'flex';
@@ -52,17 +23,13 @@ hamburgerIcon.addEventListener('click', function(){
         }
         menuAtivo = 1;
         hamburgerIcon.src=urlHambX;
-        // console.log('menu visivel');
     }else{
         menu.style.display = 'none';
-        // menu.style.backgroundColor = 'green';
         for (let i = 0; i < menuBtn.length; i++){
             menuBtn[i].style.display = 'none';
         }        
         menuAtivo = 0;   
         hamburgerIcon.src=urlHambTraco;
-        // console.log('menu escondido');
-        
     }
 });
 
@@ -75,13 +42,7 @@ hamburgerIcon.addEventListener('click', function(){
 
 
 
-
-
-
 var larguraJanela = window.innerWidth;
-console.log(' ===== largutaJanela = '+ larguraJanela + '===========');
-// var larguraJanela = $(window).width();
-// var alturaJanela = $(window).height();
 
 // Função de debounce evita muitas chamadas da função ao executar um resize. Torna a navegação mais eficiente
 function debounce(func, wait, immediate) {
@@ -99,24 +60,19 @@ function debounce(func, wait, immediate) {
     };
 }
 
-// Função que será chamada quando a janela for redimensionada
+// Função chamada ao redimensionar
 function handleResize() {
-    console.log('resize');
-    // Coloque aqui o código que você deseja executar quando a janela for redimensionada
     if (window.innerWidth > 768){
+        // Abre menu para desktop
         menu.style.display = 'flex';
         for (let i = 0; i < menuBtn.length; i++){
             menuBtn[i].style.display = 'none';
         }
         menuAtivo = 0;
         hamburgerIcon.src=urlHambTraco;
-        console.log("chamou pra ativar menu");
     }else{
-
-        // Evita chamar a função de fechar o menu em navegadores de smartphones onde o sumiço da barra de navegação provoca a chamada do resize pois há aumento na altura da janela. 
+        // Fecha menu completamente
         if(window.innerWidth != larguraJanela){
-            // console.log("fechamenu");
-
             console.log('innerwidth = '+window.innerWidth+'. LarguraJanela = '+larguraJanela);
             menu.style.display = 'none';
             for (let i = 0; i < menuBtn.length; i++){
@@ -124,33 +80,22 @@ function handleResize() {
             }
             menuAtivo = 0;
             hamburgerIcon.src=urlHambTraco;
-            larguraJanela = window.innerWidth;
-        
         }
-
     }
+    larguraJanela = window.innerWidth;
 
-    console.log('Janela redimensionada! 001');
+    console.log('Janela redimensionada!');
 }
 
-// Adiciona um ouvinte de evento para o evento de redimensionamento usando o debounce
-window.addEventListener('resize', debounce(handleResize, 250));
+
+
+// Adiciona listener ao ajustar tamanho da janela para não desconfigurar o menu sem precisar recarregar a página. Este listener para redimensionamento usa o debounce para melhor eficiencia (chamadas de função e forma moderada durante redimensionamento).
+window.addEventListener('resize', debounce(handleResize, 30));
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-// Adicionar listener ao ajustar tamanho da janela para não desconfigurar o menu sem precisar recarregar a página
+// Adiciona listener ao ajustar tamanho da janela para não desconfigurar o menu sem precisar recarregar a página. Redundância com o código anterior para ação imediata, evitando bug quando o menu para celular estiver aberto e a largura da janela for ampliada
 window.addEventListener('resize', function(){
     if (window.innerWidth > 768){
         menu.style.display = 'flex';
@@ -159,41 +104,17 @@ window.addEventListener('resize', function(){
         }
         menuAtivo = 1;
         hamburgerIcon.src=urlHambTraco;
-    }else{
-        
-        // Solução abaixo não funciona
-        // Bug em Scroll em celulares está fechando o menu. O codigo abaixo testa se é um dispositivo móvel
-        // if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-            // console.log("Dispositivo móvel");
-        // } else {
-            // console.log("PC");
-        // }
-
-            // menu.style.display = 'none';
-            // for (let i = 0; i < menuBtn.length; i++){
-            //     menuBtn[i].style.display = 'none';
-            // }
-            // menuAtivo = 0;
-            // hamburgerIcon.src=urlHambTraco;
-
     }
 });
 
-// Esconder o menu quando for dado um click fora do menu
+// Esconder o menu quando for dado um click fora do menu (ou dentro?)
 document.addEventListener('click', function(event) {
     if (menu.contains(event.target) || hamburgerIcon.contains(event.target)) {
         // console.log('Clique dentro do menu!');
     }else {
         // console.log('Clique fora do menu!');
         if(window.innerWidth <= 768){
-
-
-
             menu.style.display = 'none';
-            // menu.style.backgroundColor = 'blue';
-
-
-
             for (let i = 0; i < menuBtn.length; i++){
                 menuBtn[i].style.display = 'none';
             }        
@@ -201,6 +122,19 @@ document.addEventListener('click', function(event) {
             hamburgerIcon.src=urlHambTraco;
         }
     }
+
+    // Código adicionado para fechar o menu se houver clique pois ao voltar na pagina o menu estaria aberto (versão celular)
+    if (menu.contains(event.target)) {
+        if(window.innerWidth <= 768){
+            menu.style.display = 'none';
+            for (let i = 0; i < menuBtn.length; i++){
+                menuBtn[i].style.display = 'none';
+            }        
+            menuAtivo = 0;
+            hamburgerIcon.src=urlHambTraco;
+        }
+    }
+
 });
 
 

@@ -192,24 +192,14 @@ main ul {
 /* ************************ */
 main .lista ul {
   display: block;
-  list-style-type: disc;
-  /* list-style: none; */
-  /* list-style-position: ; */
-  /* list-style: disc; */
-  /* list-style: circle; */
-  /* line-height-step: 110rem; */
-  /* color: #002321; */
+  list-style: disc outside;
+  padding: 2rem;}
+main .lista ul li {
+  display: list-item;
+  min-width: unset;
+  max-width: unset;
+  height: auto;
 }
-/* main .lista ul li { */
-  /* list-style-type: disc; */
-  /* display: block; */
-  /* max-width: none; */
-  /* min-width: none; */
-  /* padding: 0.5rem; */
-  /* height: auto; */
-  /* margin: 0; */
-
-/* } */
 
 /* main .lista ul li a{ */
   /* display: block; */
@@ -236,14 +226,14 @@ main ul li a {
 }
 
 main ul li {
-  /* display: flex; */
+  display: flex;
   align-items: center;
   min-width: 40%;
   max-width: 50%;
   flex: 1;
   /* border: solid 1px red; */
   padding: 0.5rem 0;
-  height: 3.5rem;
+  /* height: 3.5rem; */
 }
 
 main ul li img {

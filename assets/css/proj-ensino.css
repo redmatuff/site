@@ -1,15 +1,13 @@
 main .lista-personalizada ul {
     display: block;
-    list-style-type: disc;
     list-style: disc outside;
-    list-style-position: outside;
     padding: 2rem;
-
 }
-
 main .lista-personalizada ul li {
+    display: list-item;
     min-width: unset;
     max-width: unset;
     height: auto;
-    padding: 1rem;
 }
+
+/* OBS: Coloquei este código para ser usado em tags com classe "lista" nas linhas 193 a 202 do "main.css" padronizando assim quaisquer listas que porventura aparecer no site, desde que seja colocada dentro da tag main. */
