@@ -236,7 +236,7 @@ main ul li a {
 }
 
 main ul li {
-  display: flex;
+  /* display: flex; */
   align-items: center;
   min-width: 40%;
   max-width: 50%;

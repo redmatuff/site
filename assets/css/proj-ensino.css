@@ -1,0 +1,15 @@
+main .lista-personalizada ul {
+    display: block;
+    list-style-type: disc;
+    list-style: disc outside;
+    list-style-position: outside;
+    padding: 2rem;
+
+}
+
+main .lista-personalizada ul li {
+    min-width: unset;
+    max-width: unset;
+    height: auto;
+    padding: 1rem;
+}
