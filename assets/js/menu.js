@@ -1,20 +1,17 @@
-// Ao redimensionar a tela de 769 para 766 px no PC o menu aparece de forma indesejada.
-// O valor ??? na linha que contem "window.addEventListener('resize', debounce(handleResize, ???));" controla o tempo do fechamento.
-// Um valor menor minimiza o bug, mas torna o redimensionamento menos eficiente.
-// 25 é um valor pouco eficiente mas sem bug. 250 é um valor muito eficiente mas com bug. (o bug é meramente visual)
-
-
 var urlHambX = 'https://redmatuff.github.io/site/assets/icons/hamb-x.png';
 var urlHambTraco = 'https://redmatuff.github.io/site/assets/icons/hamb-traco.png';
 let menuAtivo = 0;
-
 const hamburgerIcon = document.querySelector('.hamb-icon');
 const menu = document.querySelector('.div-btns-barra');
 const menuBtn = document.querySelectorAll('.menu-btn');
 const botoes = document.querySelectorAll('.btn-barra');
 
 
-// Adicionar listener no icone do menu hamburguer paa abrir e fechar o menu
+
+
+
+// ***** Adicionar listener no icone do menu hamburguer paa abrir e fechar o menu
+
 hamburgerIcon.addEventListener('click', function(){
     if (menuAtivo == 0){
         menu.style.display = 'flex';
@@ -37,10 +34,12 @@ hamburgerIcon.addEventListener('click', function(){
 
 
 
+// ***** Redimensionamento
 
-
-
-
+// Ao redimensionar a tela de 769 para 766 px no PC o menu aparece de forma indesejada.
+// O valor ??? na linha que contem "window.addEventListener('resize', debounce(handleResize, ???));" controla o tempo do fechamento.
+// Um valor menor minimiza o bug, mas torna o redimensionamento menos eficiente.
+// 25 é um valor pouco eficiente mas sem bug. 250 é um valor muito eficiente mas com bug. (o bug é meramente visual)
 
 var larguraJanela = window.innerWidth;
 
@@ -73,7 +72,7 @@ function handleResize() {
     }else{
         // Fecha menu completamente
         if(window.innerWidth != larguraJanela){
-            console.log('innerwidth = '+window.innerWidth+'. LarguraJanela = '+larguraJanela);
+            // console.log('innerwidth = '+window.innerWidth+'. LarguraJanela = '+larguraJanela);
             menu.style.display = 'none';
             for (let i = 0; i < menuBtn.length; i++){
                 menuBtn[i].style.display = 'none';
@@ -84,15 +83,11 @@ function handleResize() {
     }
     larguraJanela = window.innerWidth;
 
-    console.log('Janela redimensionada!');
+    // console.log('Janela redimensionada!');
 }
-
-
 
 // Adiciona listener ao ajustar tamanho da janela para não desconfigurar o menu sem precisar recarregar a página. Este listener para redimensionamento usa o debounce para melhor eficiencia (chamadas de função e forma moderada durante redimensionamento).
 window.addEventListener('resize', debounce(handleResize, 30));
-
-
 
 
 // Adiciona listener ao ajustar tamanho da janela para não desconfigurar o menu sem precisar recarregar a página. Redundância com o código anterior para ação imediata, evitando bug quando o menu para celular estiver aberto e a largura da janela for ampliada
@@ -107,7 +102,12 @@ window.addEventListener('resize', function(){
     }
 });
 
-// Esconder o menu quando for dado um click fora do menu (ou dentro?)
+
+
+
+
+// ***** Esconder o menu quando for dado um click fora do menu (ou dentro para evitar bug de exibir menu ao voltar)
+
 document.addEventListener('click', function(event) {
     if (menu.contains(event.target) || hamburgerIcon.contains(event.target)) {
         // console.log('Clique dentro do menu!');
@@ -141,13 +141,7 @@ document.addEventListener('click', function(event) {
 
 
 
-
-
-
-
-
-
-
+// ***** Configuração dos sub-menus dos botões e versão desktops
 
 // Listeners que só agem quando a tela for maior que 768px
 document.addEventListener('DOMContentLoaded', function() {
@@ -186,7 +180,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Adiciona um ouvinte de clique ao documento para fechar o menu se clicar fora do botão/menus (importante em celular exibindo versão para PC)
+    // Adiciona um listener de clique ao documento para fechar o menu se clicar fora do botão/menus (importante em celular exibindo versão para PC)
     document.addEventListener('click', function(event) {
         if (!event.target.matches('.div-btns-barra .btn-barra') && window.innerWidth > 768) {
             menuBtn.forEach(function(menu) {
