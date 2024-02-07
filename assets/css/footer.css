@@ -1,101 +1,44 @@
 footer{
     color: white;
     background-color: #222;
-    /* background-image: linear-gradient(to left, #000, #222, #000); */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* flex: 1; */
     z-index: 5;
 }
 
+/* Formatação de links */
 footer a{
     text-decoration: none;
     color: white;
 }
-
-footer .secs{
-    display: flex;
-    width: calc(100% - 4rem);
-    justify-content: space-around;
-    /* flex-direction: column; */
-    padding: 2rem;
-    /* background-color: red; */
+footer a:hover img {
+    filter: contrast(65%);
 }
 
+/* Estruturação do conteúdo */
 footer .footer-content{
     display: flex;
     flex-direction: column;
-    /* background-color: yellow; */
 }
-
+footer .secs {
+    display: flex;
+    width: calc(100% - 4rem);
+    justify-content: space-around;
+    padding: 2rem;
+}
 footer .sec-ft{
     text-align: center;
     overflow: hidden;
-    /* border: solid 1px red; */
 }
-
 footer .sec-ft p{
     padding-bottom: 0.5rem;
     padding-left: 2rem;
     text-align: left;
 }
 
-footer .copyright{
-    /* background-color: red; */
-    font-size: 0.7rem;
-    /* display: flex; */
-    /* flex: 1; */
-    /* width: 100%; */
-    background-color: black;
-    /* flex: 1; */
-    width: 100%;
-    text-align: center;
-    /* align-items: center; */
-    /* justify-content: center; */
-    /* height: 3rem; */
-    /* align-items: center; */
-}
-
-footer .copyright p {
-    padding: 0.5rem;
-    /* margin: 2rem; */
-    /* background-color: red; */
-}
-
-footer #sec-1 img{
-    width: 3rem;
-    background-color: white;
-    border-radius: 50%;
-    padding: 0.17rem;
-    box-shadow: 5px 5px 5px black;  
-}
-
-footer .contato-footer {
-    padding-top: 2rem;
-    /* background-color: blue; */
-}
-
-footer img{
-    transition: filter 0.3s ease;
-}
-
-footer a:hover img {
-    /* box-shadow: 5px 5px 9px black; */
-    filter: contrast(65%);
-}
-
-footer #sec-1 .contato-footer img {
-    width: 6rem;
-    height: 4rem;
-    border-radius: 0%;
-    background-color: transparent;
-    box-shadow: none;
-    /* border: 1px solid black; */
-    /* background-color: red; */
-}
-
+/* Seções Personalizadas */
 footer #sec-1{
     display: flex;
     height: 100%;
@@ -103,21 +46,29 @@ footer #sec-1{
     flex-direction: column;
 }
 footer #sec-1 a{
-    /* background-color: red; */
     border-radius: 50%;
-    /* display: flex; */
     margin: 0.75rem;
-    /* flex-direction: row; */
-    /* flex-wrap: wrap; */
-    /* padding: 0; */
-    /* flex-direction: column; */
-
+}
+footer #sec-1 img {
+    width: 3rem;
+    background-color: white;
+    border-radius: 50%;
+    padding: 0.17rem;
+    box-shadow: 5px 5px 5px black;
+}
+footer #sec-1 .contato-footer {
+    padding-top: 2rem;
+}
+footer #sec-1 .contato-footer img {
+    width: 6rem;
+    height: 4rem;
+    border-radius: 0%;
+    background-color: transparent;
+    box-shadow: none;
 }
 
 footer #sec-2{
-    /* max-width: 30vw; */
     padding: 0 2rem 0 0rem;
-    /* background-color: red; */
 }
 
 footer #sec-3{
@@ -125,21 +76,27 @@ footer #sec-3{
     border-radius: 10px;
     box-shadow: 5px 5px 5px black;
     width: fit-content;
-    /* background-color: red; */
-    /* height: fit-content; */
-}
-
-footer #sec-3{
     min-width: 300px;
     min-height: 225px;
-    /* background-color: red; */
-    /* transform: translate(-5vw,0); */
 }
-footer #sec-3 iframe {
-    /* width: 300px; */
-    /* min-width: 300px; */
-    /* width: 30rem; */
+
+
+/* Copyright */
+footer .copyright {
+    font-size: 0.7rem;
+    background-color: black;
+    width: 100%;
+    text-align: center;
 }
+
+footer .copyright p {
+    padding: 0.5rem;
+}
+
+
+
+/* Responsividade */
+
 
 @media (min-width: 1600px) {
     footer .footer-content {
@@ -153,14 +110,12 @@ footer #sec-3 iframe {
     }
 }
 
-
 @media (max-width: 800px) {
     footer .footer-content .secs {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-
     footer .sec-ft p{
         text-align: center;
         padding-left: 0;

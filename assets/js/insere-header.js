@@ -44,12 +44,6 @@ header.innerHTML = `
 
 
 
-
-
-
-
-
-
                 <!-- Botão 1 -->
                 <div>
                     <a href="https://redmatuff.github.io/site/pages/quem-somos.html">
@@ -133,7 +127,7 @@ header.innerHTML = `
                 </div>
                 <!-- Fim do Botão 6 -->
                 
-                <!-- Botão 7 -->
+                <!-- Botão 7 (comentado) -->
                 <!--
                 <div>
                     <a href="https://redmatuff.github.io/site/pages/projetos-extensao.html">

@@ -74,7 +74,6 @@ header .div-btns-barra{
 header .btn-barra{
     cursor: pointer;
     font-size: 9pt;
-    /* font-weight: 600; */
     margin: 0 0.3rem;
     width: 4.8rem;
     height: 2.5rem;
@@ -111,15 +110,6 @@ header .menu-btn a {
     text-decoration: none;
     padding: 0.7rem 0.4rem;
     text-align: center;
-}
-
-header .menu-btn a{
-    /* transition: filter 0.5s ease; */
-}
-
-header .menu-btn a:hover{
-    /* filter: contrast(200%); */
-    /* opacity: 70%; */
 }
 
 header .menu-btn a:hover{
@@ -190,19 +180,10 @@ header .titulo-dir{
 
 
 
-
-
-
 /* RESPONSIVIDADE */
-
-
-
-
-
 
 /* Estilos para telas com largura menor ou igual a 1100px */
 @media (max-width: 1100px){
-
     header .titulo-barra{
         display: none;
     }
@@ -217,10 +198,8 @@ header .titulo-dir{
     }
 }
 
-
 /* Estilos para telas com largura menor ou igual a 768px */
 @media (max-width: 768px){
-
     header .barra-sup{
         height: 7rem;
         background-image: url("../img/banner-peq.png");        
@@ -292,10 +271,8 @@ header .titulo-dir{
     }
 }
 
-
 /* Estilos para telas com largura menor ou igual a 670px */
 @media (max-width: 670px){
-
     header .titulo-barra-longo{
         display: none;
     }
@@ -307,10 +284,8 @@ header .titulo-dir{
     }
 }
 
-
 /* Estilos para telas com largura maior ou igual a 1400px */
 @media (min-width: 1400px){
-
     header .banner-txt-container{
         padding-left: 20vw;
         padding-right: 0;
@@ -320,7 +295,6 @@ header .titulo-dir{
 
 /* Estilos para telas com largura maior ou igual a 1200px */
 @media (min-height: 1200px){
-
     header h1{
         font-size: 80pt;
     }

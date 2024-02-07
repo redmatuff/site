@@ -11,28 +11,10 @@ body {
   background-color: #002321;
 }
 
-.revisar {
-  color: rgb(222, 78, 78);
-}
-
-.comentario {
-  color: red;
-  background-color: yellow;
-  width: fit-content;
-  font-size: 1rem;
-  font-family: "Courier New", Courier, monospace;
-  font-weight: 600;
-  border-radius: 10px;
-  padding: 1rem;
-  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.65);
-  /* position: absolute; */
-}
-
 main {
   padding: 0rem;
   background-color: white;
   color: #777;
-  /* overflow: hidden; */
   display: flex;
   flex: 1; /* Para manter o footer sempre no final da pagina memso se o conteúdo for pequeno e a tela comprida*/
   flex-direction: column;
@@ -42,8 +24,6 @@ main {
 main .sobre {
   flex-direction: column;
   padding: 2rem 2rem 0.5rem 2rem;
-  /* flex: 1; */
-  /* position: fixed; */
 }
 
 main .content {
@@ -53,275 +33,185 @@ main .content {
 
 main .apenas-desktop {
   display: none;
-  /* position: absolute; */
 }
 
+/* Containers dos recursos */
 main .recurso-container {
   display: flex;
   flex-direction: column;
   margin: 1rem 0 2rem 0;
-  /* background-color: blue; */
+}
+main .recurso-container .recurso-content {
+}
+main .recurso-container .recurso-content .recurso-box {
+  display: flex;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  text-align: justify;
 }
 
-/* .recurso-container .img-container{ */
-/* float: right; */
-/* } */
-
+/* Imagens dos recursos */
 main .recurso-container .recurso-content .recurso-box img {
   height: 10rem;
   width: 15rem;
-  /* background-color: red; */
-  /* object-fit: cover; */
   margin-right: 2rem;
   margin-bottom: 1rem;
   border-radius: 1rem;
-  /* background-color: black; */
   box-shadow: 3px 3px 5px black;
   padding: 0.3rem;
-  /* border: solid 1px black; */
-  /* float: left; */
-  /* opacity: 0.9; */
-  /* transition: box-shadow 0.3s ease; */
   transition: filter 0.3s ease;
 }
 
-main .recurso-container a:hover img {
-  /* box-shadow: 5px 5px 9px black; */
-  filter: contrast(65%);
-}
-
+/* Logo dentro das imagens dos recursos */
 main .recurso-container .recurso-content .recurso-box .logo {
   position: absolute;
   width: 3rem;
   height: 3rem;
-  /* width: 10rem; */
-  /* transform: translate(-14.75rem); */
   margin: 0;
   border-radius: 50%;
-  /* border-color: white solid 1rem; */
   transform: translate(-5.6rem, 7rem);
   background-color: rgba(255, 255, 255, 1);
   padding: 0.1rem;
   opacity: 50%;
   border: solid black 0.1rem;
-  /* box-shadow: 3px 3px 5px white; */
+}
+main .recurso-container a:hover img {
+  filter: contrast(65%);
 }
 
-
-
-main .recurso-container .recurso-content {
-  /* display: flex; */
-  /* flex-wrap: wrap; */
-  /* align-items: space-between  ; */
-  /* background-color: green; */
-}
-
-main .recurso-container .recurso-content .recurso-box {
-  /* padding-left: 1rem; */
-  /* max-height: 10rem; */
-  /* overflow: auto; */
-  margin-bottom: 1rem;
-  margin-top: 1rem;
-  text-align: justify;
-  /* background-color: red; */
-  /* display: flex; */
-  /* width: 54rem; */
-  /* width: 100%; */
-  /* clear: both; */
-  /* flex: 1; */
-  /* display: flex; */
-  /* flex: 1; */
-  /* flex-direction: column; */
-  /* justify-content: space-around; */
-  /* flex: 1; */
-
-  /* align-items: column; */
-  /* width: 100%; */
-  /* min-width: 10rem; */
-  /* float: right; */
-}
-
-main .recurso-container .recurso-content .recurso-box {
-  display: flex;
-  /* flex-direction: column; */
-}
-
-
+/* Descrição dos recursos */
 main .recurso-container .recurso-content .recurso-box .recurso-descricao {
   padding-top: 0.5rem;
-  /* background-color: blue; */
   flex-direction: column;
-  /* flex: 1; */
-  /* width: 100%; */
-  /* width: 30rem; */
-  /* width: fit-content;   */
-  /* display: flex; */
-  /* flex: 1; */
-  /* width: 130%; */
 }
 
 
 
-
+/* Barras de rolagem */
 main ::-webkit-scrollbar {
   width: 5px;
   border-radius: 3px;
 }
-
 main ::-webkit-scrollbar-thumb {
   background-color: #003f3cab;
   border-radius: 3px;
 }
-
 main ::-webkit-scrollbar-track {
   background-color: #e0e0e0;
   border-radius: 3px;
-  /* Cor da trilha da barra de rolagem */
 }
 
-main ul {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-items: stretch;
-  /* padding-right: 3vw; */
-  padding-bottom: 4rem;
-  padding-top: 1rem;
-}
 
-/* ************************ */
-main .lista ul {
-  display: block;
-  list-style-type: disc;
-  /* list-style: none; */
-  /* list-style-position: ; */
-  /* list-style: disc; */
-  /* list-style: circle; */
-  /* line-height-step: 110rem; */
-  /* color: #002321; */
-}
-/* main .lista ul li { */
-  /* list-style-type: disc; */
-  /* display: block; */
-  /* max-width: none; */
-  /* min-width: none; */
-  /* padding: 0.5rem; */
-  /* height: auto; */
-  /* margin: 0; */
 
-/* } */
-
-/* main .lista ul li a{ */
-  /* display: block; */
-/* } */
-main em{
-  text-decoration: underline;
-  font-style: italic;
-}
-main ol{
+/* Listas Ordenadas */
+main ol {
   padding: 1rem;
 }
-
 main ol li {
   padding: 0.3rem;
   list-style-type: disc;
   list-style-position: inside;
 }
 
-main ul li a {
-  display: flex;
-  align-items: center;
-  /* color: black;res REDMat atuaram ou atuam nos seguintes projetos de ensino do Instituto de Matemática e Estatística. ￼ */
-  color: inherit;
+
+/* Listas Sem Ordem Personalizadas (com marcadores) */
+main .lista ul {
+  display: block;
+  list-style: disc outside;
+  padding: 2rem;
+}
+main .lista ul li {
+  display: list-item;
+  min-width: unset;
+  max-width: unset;
+  height: auto;
+  min-height: auto;
 }
 
+
+
+/* Listas Sem Ordem Padrão */
+main ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: stretch;
+  padding-bottom: 2rem;
+  padding-top: 1rem;
+}
 main ul li {
   display: flex;
   align-items: center;
   min-width: 40%;
   max-width: 50%;
   flex: 1;
-  /* border: solid 1px red; */
   padding: 0.5rem 0;
-  height: 3.5rem;
+  min-height: 3.5rem;
 }
-
+main ul li a {
+  display: flex;
+  align-items: center;
+  color: inherit;
+}
 main ul li img {
   height: 2rem;
   width: 2rem;
   padding: 0.2rem;
   border-radius: 50%;
   box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.75);
-  /* border: solid 1px red; */
   background-color: rgba(255, 255, 255, 0.519);
-  /* margin: 0 1rem; */
   transition: filter 0.3s ease;
 }
-
 main ul li:hover img {
-  /* box-shadow: 5px 5px 9px black; */
   filter: contrast(65%);
 }
-
 main ul li p {
   margin: 0 2rem 0 1rem;
-  /* line-height: 50%; */
-  /* background-color: blue; */
 }
 
+
+
+/* Linhas horizontais */
 main hr {
   margin-bottom: 3rem;
-  margin-top: 0;
-  /* padding-top: 1rem; */
+  margin-top: 2rem;
   height: 1px;
   border: 0;
-  /* background-color: white; */
   background-image: linear-gradient(
     to right,
     rgba(0, 0, 0, 0.5),
     rgba(255, 255, 255, 0)
   );
-}
-
+} 
 main .linha-grossa{
   height: 0.5rem;
   margin-bottom: 10rem;
   background-image: linear-gradient(to right, transparent, #999, transparent);
 }
 
-main .sobre hr {
-  /* background-color: white; */
-}
 
+
+/* Títulos */
 main h1 {
   color: #003f3cab;
   font-size: 2.8rem;
   padding: 1rem 0;
-  /* color: #2c7b66; */
-  /* background-image: linear-gradient(to bottom, #4ACAA8, #2c7b66); */
-  /* color: transparent; */
-  /* -webkit-background-clip: text; */
-  /* background-clip: text; */
 }
-
 main h2 {
   color: #003f3cab;
   font-size: 2rem;
   padding: 1rem 0;
 }
-
 main h3 {
   color: #003f3cab;
   font-size: 1.4rem;
   padding: 1rem 0 0.4rem 0;
 }
-
 main h4 {
   color: #003f3cab;
   font-size: 1.2rem;
   padding: 1rem 0 0.4rem 0;
 }
-
 main h5 {
   color: #003f3cab;
   font-size: 0.85rem;
@@ -329,14 +219,12 @@ main h5 {
   /* text-decoration: underline; */
   padding: 0rem 0;
 }
-
 main h6 {
   color: #003f3cab;
   font-size: 0.7rem;
   /* text-decoration: underline; */
   padding: 0.3rem 0;
 }
-
 main p {
   /* text-indent: 1.5rem; */
   font-size: 1rem;
@@ -344,19 +232,20 @@ main p {
   line-height: 1.4rem;
   font-weight: 100;
 }
-
 main a {
   text-decoration: none;
   color: inherit;
   /* font-weight: 600; */
 }
 
+
+
+/* Formulário */
 main .linha-form {
   display: flex;
   flex: 1;
   justify-content: end;
 }
-
 main .linha-form input {
   font-family: "Reem";
   width: 100%;
@@ -366,7 +255,6 @@ main .linha-form input {
   margin: 0.2rem;
   border: #3ca488 solid 1px;
 }
-
 main .linha-form textarea {
   font-family: "Reem";
   width: 100%;
@@ -377,7 +265,6 @@ main .linha-form textarea {
   height: 8rem;
   border: #3ca488 solid 1px;
 }
-
 main .linha-form button {
   font-family: "Reem";
   padding: 0.6rem;
@@ -386,7 +273,6 @@ main .linha-form button {
   border: transparent;
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.65);
 }
-
 main button {
   font-family: "Reem";
   padding: 0.6rem;
@@ -399,30 +285,50 @@ main a button {
   cursor: pointer;
 }
 
+
+
+/* Enfatizar, comentários e textos para revisão */
+main em {
+  text-decoration: underline;
+  font-style: italic;
+}
+.revisar {
+  color: rgb(222, 78, 78);
+}
+.comentario {
+  color: red;
+  background-color: yellow;
+  width: fit-content;
+  font-size: 1rem;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 600;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.65);
+}
+
+
+
+
+/* Responsividade Telas Estreitas*/
+
 @media (max-width: 400px) {
   main .recurso-container img {
-    /* height: 40vw; */
-    /* width: 60vw; */
-    /* padding-right: 1rem; */
   }
   main .recurso-box .logo {
-    /* transform: translate(-6%,12%); */
   }
 }
 
 @media (max-width: 650px) {
   main .recurso-container div {
     display: flex;
-    /* background-color: red; */
     flex-direction: column;
     align-items: center;
-    /* justify-content: center; */
   }
   main .recurso-box {
     padding: 1rem 0;
     order: 1;
   }
-
   main .recurso-box .logo {
     transform: translate(-3.6rem, 7rem);
   }
@@ -439,26 +345,64 @@ main a button {
   main .recurso h3 {
     text-align: center;
   }
-
   main .recurso-container img {
-    /* height: 10rem; */
-    /* width: 15rem; */
     max-width: none;
     float: none;
     margin-right: 0rem;
-    /* margin-bottom: 1rem; */
-    /* padding: ; */
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* padding-right: 1rem; */
   }
-
   main ul li {
     min-width: 100%;
   }
 }
 
-/* COMENTAR ESSA ÁREA PARA NAO CENTRALIZAR AREA VERDE / BRANCA */
+
+/* Responsividade Telas Largas */
+
+@media (min-width: 1100px) {
+  main {
+    display: flex;
+    flex-direction: row;
+  }
+  main .sobre {
+    background-color: #3ca488;
+    box-shadow: 4px 0px 3px rgba(0, 0, 0, 0.6);
+    z-index: 2;
+    width: 35%;
+    max-width: 700px;
+  }
+  main .sobre .box-sobre {
+    padding: 0rem 0rem 3rem 0rem;
+  }
+  main .sobre .box-sobre:last-child {
+    position: sticky;
+    top: 2rem;
+  }
+  main .sobre hr {
+    background-image: linear-gradient(to right,
+        rgb(255, 255, 255),
+        rgb(255, 255, 255));
+    margin-bottom: 0;
+    margin-top: 3rem;
+  }
+  main .sobre h1 {
+    font-size: 2.8rem;
+    padding: 1rem 0;
+    color: #00282685;
+  }
+  main .sobre p {
+    color: white;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);
+  }
+  main .content {
+    width: 65%;
+  }
+  main .apenas-desktop {
+    display: inherit;
+  }
+}
+
+
+/* COMENTAR ESSA ÁREA PARA NAO CENTRALIZAR AREA VERDE / BRANCA EM TELAS GRANDES */
 /* @media (min-width: 1400px) {
   main {
     background-image: linear-gradient(to right, #3ca488, #3ca488, white, white);
@@ -471,125 +415,3 @@ main a button {
   }
 } */
 /* COMENTAR ATÉ AQUI */
-
-
-@media (min-width: 1100px) {
-  main {
-    display: flex;
-    flex-direction: row;
-
-    /* COMENTAR ABAIXO O JUSTIFY CONTENT*/
-    /* justify-content: center; */
-
-
-    /* align-items: start; */
-  }
-
-  main .sobre hr {
-    background-image: linear-gradient(
-      to right,
-      rgb(255, 255, 255),
-      rgb(255, 255, 255)
-    );
-    /* background-color: #3ca488; */
-    margin-bottom: 0;
-    margin-top: 3rem;
-    
-
-  }
-
-  main .sobre {
-    
-    width: 35%;
-    /* DESCOMENTAR O MAXWIDTH ABAIXO */
-    max-width: 700px;
-  }
-  main .content {
-    /* VERIFICAR O WIDTH ABAIXO */
-    width: 65%;
-  }
-  main .apenas-desktop {
-    display: inherit;
-    /* padding: 0rem; */
-    /* margin: 0rem; */
-  }
-
-  main .sobre {
-    /* background-image: linear-gradient(to bottom, white, #2c7b66, white); */
-    background-color: #3ca488;
-    /* background-image: linear-gradient(to right, #2c7b66, #2c7b66, black); */
-    /* background-color: #2c7b66; */
-    /* border-top: solid 1px white; */
-    /* border-bottom: solid 1px white; */
-    /* border-right: solid 1px black; */
-    box-shadow: 4px 0px 3px rgba(0, 0, 0, 0.6);
-    z-index: 2;
-    /* overflow-y: scroll; */
-    /* background-image: repeating-radial-gradient(black, white); */
-    /* display: flex; */
-
-    /* display: block; */
-    /* align-items: start; */
-    /* position: relative; */
-    /* min-height: 100%; */
-    /* position: sticky; */
-    /* top: 0px; */
-    /* border: black solid 10px; */
-    /* height: 150%; */
-
-  }
-
-  /* main .sobre .naobox-sobre { */
-    /* background-color: #3ca488; */
-    /* position: sticky; */
-    /* top: -4px; */
-    /* padding: 0rem 0.3rem; */
-    /* min-height: 50vh; */
-  /* } */
-
-  main .sobre .box-sobre:last-child {
-    /* background-color: #3ca488; */
-    position: sticky;
-    top: 2rem;
-    /* background-color: red; */
-    /* border-left: solid 10px #3ca488; */
-    /* border-right: solid 10px #3ca488; */
-    /* min-heigh100vht: 100vh; */
-    /* height: ; */
-    /* max-height: 100vh */
-  }
-
-  /* main .sobre .box-sobre p:last-child{ */
-    /* padding-bottom: 5rem; */
-  /* } */
-  main .sobre .box-sobre{
-    padding: 0rem 0rem 3rem 0rem;
-    /* height: 100vh; */
-    /* padding-bottom: calc(100vh-3rem); */
-  }
-
-  main .sobre p {
-    /* position: sticky; */
-    /* top: 10px; */
-    /* height: 100vh; */
-    
-
-    color: white;
-    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);
-    /* position: sticky; */
-  }
-
-  main .sobre h1 {
-    font-size: 2.8rem;
-    padding: 1rem 0;
-    
-    color: #00282685;
-    /* color: red; */
-    /* position: sticky; */
-    /* top: 40px; */
-    /* background-image: linear-gradient(to bottom, #2c7b66, #2c7b66, #000);
-        color: transparent;
-        -webkit-background-clip: text;
-        background-clip: text; */
-  }
-}
