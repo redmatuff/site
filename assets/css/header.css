@@ -21,7 +21,7 @@ header{
 /* 1. BARRA SUPERIOR */
 header .barra-sup{
     display: flex;
-    background-color: #222;
+    background-color: #222222;
     background-image: linear-gradient(to left, #000, #111, #000);
     align-items: center;
     justify-content: space-around;
@@ -143,7 +143,7 @@ header .banner-txt-container{
     flex-direction: column;
     justify-content: center;
     padding: 0 3rem;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(44, 139, 161, 0.407);
     width: calc(100% - 2*3rem);
     color: rgba(255, 255, 255, 0.8);
 }
