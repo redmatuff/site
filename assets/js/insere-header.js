@@ -57,8 +57,8 @@ header.innerHTML = `
                 
                 <!-- Botão 2 -->
                 <div>
-                    <a href="https://redmatuff.github.io/site/pages/seja-membro.html">
-                        <button class="btn-barra">Seja Membro</button>
+                    <a href="https://redmatuff.github.io/site/pages/seja-monitor">
+                        <button class="btn-barra">Seja Monitor</button>
                     </a>
                     <div class="menu-btn">
 
@@ -70,14 +70,16 @@ header.innerHTML = `
                 <div>
                     <a href="https://redmatuff.github.io/site/pages/proj-ensino.html">
                         <button class="btn-barra">Projetos de Ensino</button>
-                    </a>
+                    </a>                   
                     <div class="menu-btn">
+                        <!-- Acho que fica poluido, pois essa parte é po
                         <a href="https://redmatuff.github.io/site/pages/proj-ensino.html#manim">Recursos Computacionais com Python</a>
                         <a href="https://redmatuff.github.io/site/pages/proj-ensino.html#fcg">FCG (2023--)</a>
                         <a href="https://redmatuff.github.io/site/pages/proj-ensino.html#novas-tec-ensino">Tecnologias de ensino (2020--)</a>
                         <a href="https://redmatuff.github.io/site/pages/proj-ensino.html#geog-3d">Geogebra 3D (2020-2021)</a>
                         <a href="https://redmatuff.github.io/site/pages/proj-ensino.html#gacv">GACV (2020-2022)</a>
                         <a href="https://redmatuff.github.io/site/pages/proj-ensino.html#disc-dist-soc">Disciplinas no distanciamento social (2020)</a>
+                        -->
                     </div>
                 </div>
                 <!-- Fim do Botão 3 -->
@@ -85,7 +87,7 @@ header.innerHTML = `
                 <!-- Botão 4 -->
                 <div>
                     <a href="https://redmatuff.github.io/site/pages/livros-eletronicos.html">
-                        <button class="btn-barra">Livros Eletrônicos</button>
+                        <button class="btn-barra">Livros e apostilas</button>
                     </a>        
                     <div class="menu-btn">
                         <a href="https://www.geogebra.org/m/hzvsftdf">Calculo com Geobebra 3D vol. I</a>
@@ -105,9 +107,9 @@ header.innerHTML = `
                     <!-- </a> -->
                     
                     <div class="menu-btn">
-                        <a href="http://www.gma.uff.br/calculo1a/">Site Cálculo 1A </a>
+                        <a href="http://www.gma.uff.br/calculo1/">Site Cálculo 1 </a>
                         <a href="https://redmatuff.github.io/calculovariasvariaveis/">Site Cálculo 2B </a>
-                        <a href="http://www.gma.uff.br/calculo3a/">Site Cálculo 3A </a>
+                        <a href="http://www.gma.uff.br/calculo3/">Site Cálculo 3 </a>
                     </div>               
                 </div>
                 <!-- Fim do Botão 5 -->
@@ -123,6 +125,7 @@ header.innerHTML = `
                         <a href="https://redmatuff.github.io/site/pages/recursos.html#calc-func-uma-var">Cálculo de Funções de Uma Variável</a>
                         <a href="https://redmatuff.github.io/site/pages/recursos.html#calc-func-varias-var">Cálculo de Funções de Várias Variáveis</a>
                         <a href="https://redmatuff.github.io/site/pages/recursos.html#edo">Equações Diferenciais Ordinárias</a>
+                        <a href="https://redmatuff.github.io/site/pages/recursos.html#ga">Geometria analítica</a>
                     </div>               
                 </div>
                 <!-- Fim do Botão 6 -->
