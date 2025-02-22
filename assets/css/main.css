@@ -8,17 +8,20 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-color: #002321;
+  background-color: rgb(255, 255, 255);
 }
 
 main {
   padding: 0rem;
-  background-color: white;
-  color: #777;
+  /* background: rgb(11,154,228);
+  background: linear-gradient(135deg, rgba(11,154,228,1) 0%, rgba(134,214,212,1) 15%, rgba(250,250,250,1) 100%); */
   display: flex;
-  flex: 1; /* Para manter o footer sempre no final da pagina memso se o conteúdo for pequeno e a tela comprida*/
+  background-color: aliceblue;
+  align-items: center;
+  justify-content: center;
+  flex: 1; /* Para manter o footer sempre no final da pagina mesmo se o conteúdo for pequeno e a tela comprida*/
   flex-direction: column;
-  background-color: white;
+  width: 100%;
 }
 
 main .sobre {
@@ -27,8 +30,16 @@ main .sobre {
 }
 
 main .content {
+  margin-left: 15px;
+  margin-right: 50px;
   padding: 2rem;
-  background-color: white;
+  display:flex;
+  flex-direction: column;
+  
+  
+  /*background-color: rgb(141, 31, 192);*/
+
+  width: 85%;
 }
 
 main .apenas-desktop {
@@ -79,6 +90,41 @@ main .recurso-container a:hover img {
   filter: contrast(65%);
 }
 
+
+/* Imagem Matinho index */
+
+.content-1{
+  
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.matinho{
+  border: 0.5px solid rgba(185, 185, 185, 0.644);
+  border-radius: 20px ;
+  max-width: 30%;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 10px 5px 5px rgba(110, 107, 107,0.5);
+}
+
+.matinho:hover{
+  transform: scale(1.1)
+}
+
+
+.sobre-o-projeto{
+  background-color: white;
+  border: 0.5px solid rgba(185, 185, 185, 0.644);
+  margin-right: 16px;
+  padding: 8px;
+  border-radius: 20px ;
+  box-shadow: 10px 5px 5px rgba(110, 107, 107,0.5);
+ 
+}
+
 /* Descrição dos recursos */
 main .recurso-container .recurso-content .recurso-box .recurso-descricao {
   padding-top: 0.5rem;
@@ -93,7 +139,7 @@ main ::-webkit-scrollbar {
   border-radius: 3px;
 }
 main ::-webkit-scrollbar-thumb {
-  background-color: #003f3cab;
+  background-color: #3e3f00ab;
   border-radius: 3px;
 }
 main ::-webkit-scrollbar-track {
@@ -193,34 +239,34 @@ main .linha-grossa{
 
 /* Títulos */
 main h1 {
-  color: #003f3cab;
+  color: #FD5151;
   font-size: 2.8rem;
   padding: 1rem 0;
 }
 main h2 {
-  color: #003f3cab;
+  color: #FD5151;
   font-size: 2rem;
   padding: 1rem 0;
 }
 main h3 {
-  color: #003f3cab;
+  color: #FD5151;
   font-size: 1.4rem;
   padding: 1rem 0 0.4rem 0;
 }
 main h4 {
-  color: #003f3cab;
+  color: #FD5151;
   font-size: 1.2rem;
   padding: 1rem 0 0.4rem 0;
 }
 main h5 {
-  color: #003f3cab;
+  color: #FD5151;
   font-size: 0.85rem;
   font-weight: 600;
   /* text-decoration: underline; */
   padding: 0rem 0;
 }
 main h6 {
-  color: #003f3cab;
+  color: #FD5151;
   font-size: 0.7rem;
   /* text-decoration: underline; */
   padding: 0.3rem 0;
@@ -231,6 +277,7 @@ main p {
   padding: 0.4rem 0;
   line-height: 1.4rem;
   font-weight: 100;
+  text-indent: 30px;
 }
 main a {
   text-decoration: none;
@@ -310,6 +357,7 @@ main em {
 
 
 
+
 /* Responsividade Telas Estreitas*/
 
 @media (max-width: 400px) {
@@ -358,7 +406,7 @@ main em {
 
 /* Responsividade Telas Largas */
 
-@media (min-width: 1100px) {
+/* @media (min-width: 1100px) {
   main {
     display: flex;
     flex-direction: row;
@@ -399,7 +447,7 @@ main em {
   main .apenas-desktop {
     display: inherit;
   }
-}
+} */
 
 
 /* COMENTAR ESSA ÁREA PARA NAO CENTRALIZAR AREA VERDE / BRANCA EM TELAS GRANDES */

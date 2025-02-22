@@ -15,186 +15,45 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="assets/icons/icone-aba.png" type="image/png" />
-    <title>REDMat</title>
+    <title>REDMAT</title>
     <link rel="stylesheet" href="assets/css/reset.css" />
     <link rel="stylesheet" href="assets/css/header.css" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/css/footer.css" />
-    <link rel="stylesheet" href="assets/css/index.css" />
   </head>
   <body>
     <header></header>
 
     <main>
-      <!-- 1. Área Especial (área que aparece em verde em desktops) -->
-      <section class="sobre">
-        <!-- 1.1 Descrição do projeto na Área Especial -->
-        <div class="box-sobre">
-          
-          <h2>Sobre o Projeto</h2>
-          <p>
-            <!--REDMAT (Recursos Educacionais Digitais para o
-            ensino da Matemática) é um projeto de pesquisa, ensino e extensão que visa estudar, desenvolver e aplicar conteúdo
-            digital para auxiliar docentes e discentes no processo de ensino-aprendizagem em disciplinas de matemática. <br/>
-            Os tópicos serão apresenados de maneira mais intuitiva, dinâmica e interativa através de plataformas digitais e recursos
-            computacionais. -->
-            O projeto de pesquisa, ensino e extensão REDMAT (Recursos Educacionais 
-            Digitais para o ensino da Matemática) tem seus origens em 2019 quando três 
-            professores do Instituto de Matemática e Estatística da UFF sentiram a 
-            necessidade de criar um projeto de ensino interdepartamental para
-            desenvolver recursos computacionais 3D para as disciplinas com conteúdos 
-            de geometria analítica e cálculo de várias variáveis. 
-          </p>
-          <p>
-            No entanto, foi em 2020 quando teve um grande impulso devido à urgência de produzir recursos 
-            educacionais digitais para todas as disciplinas de graduação. Alunos da 
-            matemática, física, engenharia e computação, entre outros, foram se 
-            interessando no projeto, o que derivou na ampliação da proposta original com
-            projetos de monitoria e de extensão. 
-          </p>
-          <p>            
-            Desde 2021, os monitores vem atuando em vários projetos de ensino do IME junto
-            a professores.  E a equipe extensionista vem desenvolvendo tecnologia de educação,
-            apresentando trabalhos e ministrando oficinas para docentes e discentes da
-            rede básica de ensino. 
-          </p>
-          <p>
-            Aos poucos, estão sendo orientados Trabalhos de conclusão de curso 
-            e apresentado trabalhos em eventos científicos.
-          </p>
-          
-          <hr/>
-        </div>
-
-        <!-- 1.2 Área das Equipes na Área Especial (não aparece em celulares) -->
-        <div class="box-sobre">
-          <div class="apenas-desktop">
-            <div class="equipes">
-              <h2>Equipes</h2>
-              <ul>
-                                  <!-- <li>
-                                    <a href="pages/quem-somos.html#eq2024">
-                                        <img
-                                            src="assets/icons/pessoas-icone.png"
-                                            alt="icone pessoas"
-                                        />
-                                        <p>2024</p>
-                                    </a>
-                                </li> -->
-
-                <li>
-                  <a href="pages/quem-somos.html#eq2023">
-                    <img
-                      src="assets/icons/pessoas-icone.png"
-                      alt="icone pessoas"
-                    />
-                    <p>2023</p>
-                  </a>
-                </li>
-
-                <li>
-                  <a href="pages/quem-somos.html#eq2022">
-                    <img
-                      src="assets/icons/pessoas-icone.png"
-                      alt="icone pessoas"
-                    />
-                    <p>2022</p>
-                  </a>
-                </li>
-
-                <li>
-                  <a href="pages/quem-somos.html#eq2021">
-                    <img
-                      src="assets/icons/pessoas-icone.png"
-                      alt="icone pessoas"
-                    />
-                    <p>2021</p>
-                  </a>
-                </li>
-
-                <li>
-                  <a href="pages/quem-somos.html#eq2020">
-                    <img
-                      src="assets/icons/pessoas-icone.png"
-                      alt="icone pessoas"
-                    />
-                    <p>2020</p>
-                  </a>
-                </li>
-
-              </ul>
-            </div>
-            <hr/>
-          </div>
-        </div>
-
-        <!-- 1.3 Formulário de Contato na Área Especial (não aparece em celulares)-->
-        <div class="box-sobre">
-          <div class="apenas-desktop">
-            <div class="contato">
-              <h2>Contato</h2>
-
-              <form
-                action="https://formsubmit.co/redmatuff@gmail.com"
-                method="POST"
-              >
-                <div class="linha-form">
-                  <input type="text" placeholder="Nome" name="name" />
-                  <input
-                    type="text"
-                    placeholder="E-mail"
-                    name="email"
-                    pattern=".+@.+[.].+"
-                    required
-                    title="Por favor, insira um endereço de e-mail válido (ex: exemplo@dominio.com)"
-                  />
-                </div>
-                <div class="linha-form">
-                  <input type="text" placeholder="Assunto" name="_subject" />
-                </div>
-                <input type="hidden" name="_captcha" value="false" />
-                <div class="linha-form">
-                  <textarea
-                    id="mensagem"
-                    class="msg"
-                    type="text"
-                    placeholder="Mensagem"
-                    name="message"
-                    required
-                  ></textarea>
-                </div>
-                <div class="linha-form">
-                  <button>Enviar Mensagem</button>
-                </div>
-                <input
-                  type="hidden"
-                  name="_next"
-                  value="https://redmatuff.github.io/site/pages/msg-enviada.html"
-                />
-              </form>
-
-            </div>
-          </div>
-        </div>
-
-
-            <!-- Contador e Estatística de Visitas -->
-            <!-- Descomente a linha abaixo para esconder o contador -->
-            <!-- <div style="display: hidden; width: 0px; position: absolute; top: -100%;"> -->
-              <div>
-                <h4>Contador de Visitas</h4>
-                <a href="https://www.webcontadores.com/geozoom.php?c=jxhk7tsaz4al2m5jpa5k4tahagekpsx7&base=counter11&type_clic=0">
-                  <div style="display: hidden; width: 0px;" id="sfcjxhk7tsaz4al2m5jpa5k4tahagekpsx7"></div>
-                  <script type="text/javascript" src="https://counter11.optistats.ovh/private/counter.js?c=jxhk7tsaz4al2m5jpa5k4tahagekpsx7&down=async" async></script>  
-                </a>
-              </div>
-
-      </section>
-
       
-      <!-- 2. Conteúdo Principal da Página (Área Branca em desktops e celulares) -->
+      <!-- 1. Conteúdo Principal da Página (Área Branca em desktops e celulares) -->
       <section class="content">
-        <!-- 2.1. Projetos de Ensino -->
+
+        <div class="content-1">
+        <div class="sobre-o-projeto">
+        <h2>Sobre o Projeto</h2>
+        <p>
+          <!--REDMAT (Recursos Educacionais Digitais para o
+          ensino da Matemática) é um projeto de pesquisa, ensino e extensão que visa estudar, desenvolver e aplicar conteúdo
+          digital para auxiliar docentes e discentes no processo de ensino-aprendizagem em disciplinas de matemática. <br/>
+          Os tópicos serão apresenados de maneira mais intuitiva, dinâmica e interativa através de plataformas digitais e recursos
+          computacionais. -->
+          O Projeto REDMAT (Recursos Educacionais Digitais para o ensino/divulgação da Matemática) é uma jovem iniciativa da Universidade Federal Fluminense (UFF) que busca aproximar a matemática da sociedade por meio de tecnologias digitais.
+        </p> <!--Faltou falar sobre a monitoria-->
+        <p>Desde 2021, o REDMAT desenvolve recursos inovadores, como e-books interativos, vídeos, animações e aplicativos, elaborados em colaboração com estudantes de graduação que atuam no projeto. Esses discentes participam ativamente, auxiliando professores em projetos de ensino ou extensão, contribuindo com ideias criativas e modernas para tornar o aprendizado mais dinâmico e significativo. Além disso, o REDMAT se destaca por sua presença nas redes sociais, como o Instagram @redmatuff, onde divulga conteúdos educativos, interage com o público e amplia o alcance de suas ações.</p>
+      </div>
+        
+
+        
+        <img class='matinho' src="assets/img/Matinho.JPG" alt="Ilustração do Matinho, o robô mascote do REDMAT, sentado num muro ao lado de um gato preto de olhos verdes, com fundo repleto de natureza, como pássaros, folhas e flores, e de elementos urbanos, como uma chaminé de tijolos, uma antena e fios elétricos. Matinho tem um monitor como cabeça, e seu corpo é estilizado com tons de azul e preto. Sua expressão amigável e sorridente destaca sua aparência simpática.">
+      </div>
+
+    <!--Não sei o motivo, mas quando removo ou comento este hn ele remove todos os hr-->
+      <hn>
+
+      <hr>
+
+        <!-- 1.1. Projetos de Ensino -->
         <h2>
           <a href="pages/proj-ensino.html">
             Projetos de Ensino relacionados ao projeto REDMAT
@@ -248,9 +107,11 @@
           </li>
           
         </ul>
-        <hr/>
+       
 
-        <!-- 2.2. Livros Eletrônicos -->
+        <hr>
+
+        <!-- 1.2. Livros Eletrônicos -->
         <h2>
           <a href="pages/livros-eletronicos.html">
             Livros eletrônicos e apostilas
@@ -312,107 +173,13 @@
           </li>
 
         </ul>
-        <hr/>
-
-        <!-- 2.3. Recursos Computacionais -->
-        <h2>
-          <a href="pages/recursos.html"> Recursos Computacionais </a>
-        </h2>
-        <!-- <p>
-          Os monitores REDMat colaboraram na produção do seguinte material
-          digital:
-        </p> -->
-
-        <ul>
-
-          <li>
-            <a href="pages/recursos.html#func-uma-var">
-              <img
-                src="assets/icons/icone-func.png"
-                alt="Funções de Uma Variável"
-              />
-              <p>Funções</p>
-            </a>
-          </li>
-
-          <li>
-            <a href="pages/recursos.html#calc-func-uma-var">
-              <img
-                src="assets/icons/icone-func.png"
-                alt="Funções de Uma Variável"
-              />
-              <p>Cálculo de Funções de Uma Variável</p>
-            </a>
-          </li>
-
-          <li>
-            <a href="pages/recursos.html#calc-func-varias-var">
-              <img
-                src="assets/icons/icone-func.png"
-                alt="Funções de Uma Variável"
-              />
-              <p>Cálculo de Funções de Várias Variáveis</p>
-            </a>
-          </li>
-
-          <li>
-            <a href="pages/recursos.html#edo">
-              <img
-                src="assets/icons/icone-func.png"
-                alt="Funções de Uma Variável"
-              />
-              <p>Equações Diferenciais Ordinárias</p>
-            </a>
-          </li>
-
-          <li>
-            <a href="pages/recursos.html#calc-func-uma-var">
-              <img
-                src="assets/icons/icone-func.png"
-                alt="Geometria Analítica"
-              />
-              <p>Geometria Analítica</p>
-            </a>
-          </li>
-
-        </ul>
-        <hr/>
-
-        <!-- 2.4. Plataformas -->
-        <h2>
-          <a href="pages/proj-ensino.html">
-            Plataformas virtuais de aprendizagem
-          </a>
-        </h2>
-        <!-- <p> Os monitores REDMat atuaram nas seguintes plataformas:</p> -->
-
-        <ul>
-          <li>
-            <a href="http://www.gma.uff.br/calculo1/">
-              <img src="assets/icons/site-icone.png" alt="icone geogebra 3D" />
-              <p>Cálculo&nbsp;1 (em andamento)</p>
-            </a>
-          </li>
-
-          <li>
-            <a href="https://redmatuff.github.io/calculovariasvariaveis/">
-              <img src="assets/icons/site-icone.png" alt="icone geogebra 3D" />
-              <p>Cálculo diferencial de várias variáveis (em andamento)</p>
-            </a>
-          </li>
-
-          <!-- <li>
-            <a href="http://www.gma.uff.br/calculo3/">
-              <img src="assets/icons/site-icone.png" alt="icone geogebra 3D" />
-              <p>Site Cálculo&nbsp;3A e Cálculo 3A especial (em andamento)</p>
-            </a>
-          </li> -->
-          
-        </ul>
         
+        
+<!--Aqui tinham as seções de Recursos Educacionais e Plataformas Visuais de Aprendizagem que a Begoña pediu para tirar-->
+
         <!-- <hr> -->
 
-        <!-- 2.5. Projetos de Extensão -->
+        <!-- 1.3. Projetos de Extensão -->
                 <!-- <h2>
                   <a href="pages/recursos.html"> Projetos de Extensão </a>
                 </h2>
@@ -428,7 +195,19 @@
                                 alt="Projeto 1"
                             />
                             <p>Projeto 1</p>
-                        </a>
+ <div>
+                    <a href="https://redmatuff.github.io/site/pages/proj-ensino.html">
+                        <button class="btn-barra">Projetos de Ensino</button>
+                    </a> <div>
+                    <a href="https://redmatuff.github.io/site/pages/proj-ensino.html">
+                        <button class="btn-barra">Projetos de Ensino</button>
+                    </a> <div>
+                    <a href="https://redmatuff.github.io/site/pages/proj-ensino.html">
+                        <button class="btn-barra">Projetos de Ensino</button>
+                    </a> <div>
+                    <a href="https://redmatuff.github.io/site/pages/proj-ensino.html">
+                        <button class="btn-barra">Projetos de Ensino</button>
+                    </a>                        </a>
                     </li>
                     <li>
                         <a href="">
@@ -448,8 +227,72 @@
                             <p>Projeto 3</p>
                         </a>
                     </li>
-                </ul> -->
+                </ul>  <div>
+                    <a href="https://redmatuff.github.io/site/pages/proj-ensino.html">
+                      <button class="btn-barra">Projetos de Ensino</button>
+                  </a>-->
 
+ <!-- 1.3 Formulário de Contato na Área Especial (não aparece em celulares)-->
+        <!--<div class="box-sobre">
+          <div class="apenas-desktop">
+            <div class="contato">
+              <h2>Contato</h2>
+
+              <form
+                action="https://formsubmit.co/redmatuff@gmail.com"
+                method="POST"
+              >
+                <div class="linha-form">
+                  <input type="text" placeholder="Nome" name="name" />
+                  <input
+                    type="text"
+                    placeholder="E-mail"
+                    name="email"
+                    pattern=".+@.+[.].+"
+                    required
+                    title="Por favor, insira um endereço de e-mail válido (ex: exemplo@dominio.com)"
+                  />
+                </div>
+                <div class="linha-form">
+                  <input type="text" placeholder="Assunto" name="_subject" />
+                </div>
+                <input type="hidden" name="_captcha" value="false" />
+                <div class="linha-form">
+                  <textarea
+                    id="mensagem"
+                    class="msg"
+                    type="text"
+                    placeholder="Mensagem"
+                    name="message"
+                    required
+                  ></textarea>
+                </div>
+                <div class="linha-form">
+                  <button>Enviar Mensagem</button>
+                </div>
+                <input
+                  type="hidden"
+                  name="_next"
+                  value="https://redmatuff.github.io/site/pages/msg-enviada.html"
+                />
+              </form>
+
+            </div>
+          </div>
+        </div>-->     
+
+        <hr>
+
+   <!-- 1.4. Contador e Estatística de Visitas -->
+            <!-- Descomente a linha abaixo para esconder o contador -->
+            <!-- <div style="display: hidden; width: 0px; position: absolute; top: -100%;"> -->
+              <div class="contador">
+                <h4>Contador de Visitas</h4>
+                <a href="https://www.webcontadores.com/geozoom.php?c=jxhk7tsaz4al2m5jpa5k4tahagekpsx7&base=counter11&type_clic=0">
+                  <div style="display: hidden; width: 0px;" id="sfcjxhk7tsaz4al2m5jpa5k4tahagekpsx7"></div>
+                  <script type="text/javascript" src="https://counter11.optistats.ovh/private/counter.js?c=jxhk7tsaz4al2m5jpa5k4tahagekpsx7&down=async" async></script>  
+                </a>
+              </div>
 
       </section>
 
